@@ -1,0 +1,14 @@
+# Fdb version 3
+["dvipdf"] 0 "10_include.dvi" "10_include.pdf" "10_include" 0
+  "10_include.dvi" 0 -1 0 "latex"
+  (generated)
+  "10_include.pdf"
+["latex"] 1546747130 "10_include.tex" "10_include.dvi" "10_include" 1546747130
+  "/usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf" 1544742277 35176 ce7fee66be1fb01dfc6b702a7dbfa0ea ""
+  "/usr/local/texlive/2018/texmf-var/web2c/euptex/uplatex.fmt" 1546729829 4480922 3cee28bbb6974c7b005c930359208ca1 ""
+  "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
+  "10_include.aux" 1546747130 8 a94a2480d3289e625eea47cd1b285758 ""
+  "10_include.tex" 1546747130 8791 40970b984ac4e6c027a9a5c443a939c3 ""
+  (generated)
+  "10_include.log"
+  "10_include.dvi"
