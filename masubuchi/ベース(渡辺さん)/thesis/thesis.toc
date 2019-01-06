@@ -1,0 +1,65 @@
+\contentsline {chapter}{\numberline {第1章}序論}{1}
+\contentsline {chapter}{\numberline {第2章}準備}{3}
+\contentsline {section}{\numberline {2.1}群}{3}
+\contentsline {section}{\numberline {2.2}環}{4}
+\contentsline {subsection}{\numberline {2.2.1}環の定義}{4}
+\contentsline {subsection}{\numberline {2.2.2}部分環, イデアル, 商環}{4}
+\contentsline {subsection}{\numberline {2.2.3}準同型}{5}
+\contentsline {subsection}{\numberline {2.2.4}多項式環}{5}
+\contentsline {section}{\numberline {2.3}体}{6}
+\contentsline {subsection}{\numberline {2.3.1}有限体}{6}
+\contentsline {subsection}{\numberline {2.3.2}拡大体}{6}
+\contentsline {section}{\numberline {2.4}中国の剰余定理}{7}
+\contentsline {section}{\numberline {2.5}離散対数問題}{7}
+\contentsline {chapter}{\numberline {第3章}楕円曲線と楕円曲線暗号}{8}
+\contentsline {section}{\numberline {3.1}楕円曲線の定義}{8}
+\contentsline {section}{\numberline {3.2}フロベニウス写像}{9}
+\contentsline {section}{\numberline {3.3}Hasseの定理}{9}
+\contentsline {section}{\numberline {3.4}楕円曲線上の点の加算}{9}
+\contentsline {section}{\numberline {3.5}Torsion group}{11}
+\contentsline {section}{\numberline {3.6}楕円曲線上の点のスカラー倍算}{11}
+\contentsline {subsection}{\numberline {3.6.1}Algorithm 1 : Double and add}{12}
+\contentsline {subsection}{\numberline {3.6.2}Algorithm 2 : Double and add always}{12}
+\contentsline {subsection}{\numberline {3.6.3}Algorithm 3 : Montgomery ladder}{12}
+\contentsline {section}{\numberline {3.7}楕円曲線暗号}{13}
+\contentsline {subsection}{\numberline {3.7.1}楕円曲線上の離散対数問題}{13}
+\contentsline {chapter}{\numberline {第4章}ペアリング暗号}{14}
+\contentsline {section}{\numberline {4.1}ペアリング}{14}
+\contentsline {subsection}{\numberline {4.1.1}双線形ペアリング}{14}
+\contentsline {subsection}{\numberline {4.1.2}Weilペアリング}{15}
+\contentsline {subsection}{\numberline {4.1.3}Tateペアリング}{15}
+\contentsline {section}{\numberline {4.2}ペアリング暗号}{16}
+\contentsline {subsection}{\numberline {4.2.1}Miller algorithm}{16}
+\contentsline {subsection}{\numberline {4.2.2}ペアリング暗号の課題}{16}
+\contentsline {chapter}{\numberline {第5章}楕円曲線暗号に対する攻撃}{17}
+\contentsline {section}{\numberline {5.1}攻撃の種類}{17}
+\contentsline {section}{\numberline {5.2}サイドチャネル攻撃}{17}
+\contentsline {subsection}{\numberline {5.2.1}タイミング攻撃}{17}
+\contentsline {subsection}{\numberline {5.2.2}電力解析攻撃}{18}
+\contentsline {subsection}{\numberline {5.2.3}故障利用攻撃}{18}
+\contentsline {chapter}{\numberline {第6章}フォールト攻撃}{19}
+\contentsline {section}{\numberline {6.1}フォールト導入技術}{19}
+\contentsline {subsection}{\numberline {6.1.1}マルチレーザー攻撃}{19}
+\contentsline {subsection}{\numberline {6.1.2}電磁波照射攻撃}{19}
+\contentsline {section}{\numberline {6.2}Invalid-Curve Attack}{19}
+\contentsline {subsection}{\numberline {6.2.1}防御策}{20}
+\contentsline {section}{\numberline {6.3}Skipping Attack}{20}
+\contentsline {subsection}{\numberline {6.3.1}防御策}{21}
+\contentsline {section}{\numberline {6.4}ペアリング暗号に対するフォールト攻撃}{22}
+\contentsline {subsection}{\numberline {6.4.1}防御策}{22}
+\contentsline {chapter}{\numberline {第7章}提案手法}{23}
+\contentsline {section}{\numberline {7.1}提案手法}{23}
+\contentsline {subsection}{\numberline {7.1.1}前提}{23}
+\contentsline {subsection}{\numberline {7.1.2}反復回数の変更}{23}
+\contentsline {subsection}{\numberline {7.1.3}秘密鍵$ k $の復元}{23}
+\contentsline {section}{\numberline {7.2}防御策}{25}
+\contentsline {chapter}{\numberline {第8章}実験}{26}
+\contentsline {section}{\numberline {8.1}実験条件}{26}
+\contentsline {subsection}{\numberline {8.1.1}NIST曲線 P-192, P-256}{26}
+\contentsline {section}{\numberline {8.2}実験結果}{26}
+\contentsline {subsection}{\numberline {8.2.1}結果の考察}{26}
+\contentsline {chapter}{\numberline {第9章}結論}{28}
+\contentsline {section}{\numberline {9.1}結論}{28}
+\contentsline {section}{\numberline {9.2}今後の課題}{28}
+\contentsline {chapter}{謝辞}{29}
+\contentsline {chapter}{参考文献}{30}

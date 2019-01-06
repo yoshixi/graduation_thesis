@@ -1,0 +1,138 @@
+%-------------------------------------------------------------------------------
+% 卒論 本論用テンプレート
+% タイトル,  目次を除いて30ページ以上を目指してください. 
+%-------------------------------------------------------------------------------
+% 要 TeX フルインソール
+\documentclass[a4j, oneside, openany]{jsbook} % 用紙サイズ
+\usepackage{amsmath, amssymb, amsthm} % 数学記号
+\usepackage{fleqn}                  % 数式を中央揃えではなく左寄りにするため
+\usepackage{graphicx}               % 図
+\usepackage{enumerate}
+\usepackage{theorem}
+\usepackage{comment}
+\usepackage{slashbox}
+%\usepackage[dvipdfmx]{graphicx,color}
+\usepackage{. /thesis}               % 卒論用スタイルファイル
+%-------------------------------------------------------------------------------
+% ここから本文
+%-------------------------------------------------------------------------------
+\begin{document}
+%-------------------------------------------------------------------------------
+% タイトル
+%-------------------------------------------------------------------------------
+\title{反復回数を利用した楕円曲線暗号に対するフォールト攻撃}{Fault attacks to elliptic curve cryptosystems with number of iteration}{12D8101003C}{渡邊　千尋}{Chihiro Watanabe}{趙}{2016}
+%-------------------------------------------------------------------------------
+% 概論 : 論文に書いた内容を要約して書きます. 
+% キーワード : 研究のキーワードとなる単語を列挙します.  
+%-------------------------------------------------------------------------------
+\pagenumbering{roman}
+\chapter*{概論}
+
+現在, あらゆる情報機器に暗号が実装されており, 暗号の安全性がセキュリティの根拠となっている. 暗号装置への実装における安全性解析において注目を集めている手法にFault攻撃がある. Fault攻撃とは, 暗号装置への物理的干渉により意図的に機器にエラーを起こさせ, 秘密情報を推測・特定する攻撃手法である. 
+
+本研究では, 楕円曲線暗号におけるスカラー倍算中のループ部分の反復回数をフォールトの導入対象とした, 新しい攻撃手法を提案する. さらに, NIST推奨パラメータを用いた楕円曲線暗号への攻撃を行い, 攻撃の有効性を示した. 
+ 
+
+\section*{キーワード}
+\begin{itemize}
+ \item 楕円曲線暗号
+% \item 離散対数問題
+ \item Fault攻撃
+\end{itemize}
+%-------------------------------------------------------------------------------
+% 目次 : 勝手に作ってくれるのでこのままで
+%-------------------------------------------------------------------------------
+\tableofcontents
+\newpage 
+%-------------------------------------------------------------------------------
+% 序論 : なぜ,  この研究をしようと思ったか研究背景を書きます. 
+%-------------------------------------------------------------------------------
+\pagenumbering{arabic}
+\chapter{序論}
+%スマートカードなどの実装系の楕円曲線暗号装置において, 秘密鍵は耐タンパー装置に格納されている. すなわち, その装置を破壊することなく秘密情報を直接的に盗み出すことは困難である.
+
+近年, スマートフォンやデジタル家電に代表されるスマートデバイスが急速に普及している. モノのインターネットと盛んに言われるように, それらのスマートデバイスはインターネットに接続するのみならず, さまざまな機種間でデータのやりとりをすることができる. そのような低機能な情報機器の運用には, 機種に適した情報セキュリティ技術が必要不可欠であり, 世界中で盛んに研究されている. 
+
+\bigskip
+
+低機能, 低コストな情報機器の情報セキュリティを実現するための核となる技術が暗号技術である. 暗号化手法には共通鍵暗号方式と公開鍵暗号方式の2つの方式がある. 共通鍵暗号方式は, 暗号化と複合化に同様の鍵を用いる暗号方式である. 共通鍵暗号方式は解読に必要な計算量をその安全性の根拠としている. 一方, 公開鍵暗号方式は暗号化の処理を行う鍵と複合化を行う鍵とを別のものを用いる. 公開鍵暗号方式は有限体上の素因数分解と離散対数問題などの求解の困難性に基づいている. 
+共通鍵暗号方式は主に情報の秘匿, 公開鍵暗号方式は主に認証の場面に用いられる. 
+
+\bigskip
+
+本研究の対象となる, 公開鍵暗号方式の一種である楕円曲線暗号は, 有限体上に定義された楕円曲線の有理点に対する離散対数問題の求解の困難性を利用したもので, 従来の公開鍵暗号にくらべ格段に鍵長を短くできる. そのため, 楕円曲線暗号が次世代暗号として注目されているとともに, 物理メモリが制限されている状況での運用が容易であるため, 暗号機能付きIC カードなどの低機能な装置への実装が期待されている. 
+
+\bigskip
+
+ICカードやRFIDなどの低機能な情報機器は, コストのかかるセキュリティ対策を取ることが難しい上に, 暗号モジュールが攻撃者自身に所持されることが多い. また, 暗号装置に対して物理的なアクセスに要する設備が比較的安価なことから, 暗号処理を実行中の装置から生じる漏洩情報(消費電力, 電磁波放射, 処理時間など)を計測するサイドチャネル攻撃や, 暗号処理に誤りを導入し秘密情報の漏えいを誘発するFault攻撃などの危険性が指摘されている. とりわけ, Fault攻撃は直接的に誤りを導入するためアルゴリズムレベルでの誤りの検出が必要となる. 
+\par
+楕円曲線暗号を対象としたFault攻撃は, 2000年にBiehlらによってRSA暗号を対象とした攻撃手法が拡張され, 初めて示された\cite{DFA}. その後いくつかの攻撃手法が, RSA暗号を対象とした攻撃手法の拡張として, あるいは独自に提案されてきた. 
+
+
+%-------------------------------------------------------------------------------
+% ～章 : ここから本論
+%-------------------------------------------------------------------------------
+% 第2章 : 準備-群・環・体
+\input{2-GroupRingField.tex}
+% 第3章 : 楕円曲線と離散対数問題
+\input{3-ECC.tex}
+% 第4章 : Injection
+%\input{4-Injection.tex}
+% 第4章 : Fault攻撃
+\input{5-FaultAttack.tex}
+% 第5章 : ペアリング暗号
+\input{5-Pairing.tex}
+% 第6章 : 提案手法
+\input{6-Main.tex}
+%-------------------------------------------------------------------------------
+% 結論 : 研究内容のまとめと今後の課題を書きます.  
+%-------------------------------------------------------------------------------
+\chapter{結論}
+\section{結論}
+
+本研究では, Montgomery ladderを用いた楕円曲線暗号における曲線のパラメータをFault導入の対象とした, 新しい攻撃手法を提案した. この手法ではTwist Attackで示されたtwist曲線上の攻撃手法を組み合わせることによって, 曲線パラメータに対する単純な攻撃方法よりも攻撃成功率を高めた. さらに, プログラミング言語Magma上で, NIST標準パラメータ\cite{NIST}を用いた楕円曲線暗号に対する攻撃の実験を行い, 提案手法の有効性を実際に確かめた. 
+
+これは, 楕円曲線暗号の実装における, Fault攻撃への対策の必要性を強調するものである.
+\section{今後の課題}
+今後の課題としては以下のものがあげられる. 
+\begin{itemize}
+\item 定義体の標数が2の場合の攻撃.
+\item パラメータチェックへの対抗策を付加する. 
+\item 特定の物理的干渉手段の特性を考慮した上での攻撃.
+\end{itemize}
+%-------------------------------------------------------------------------------
+% 謝辞 : お世話になった方々に感謝の言葉を書きます. 
+%-------------------------------------------------------------------------------
+\chapter*{謝辞}
+\addcontentsline{toc}{chapter}{謝辞}
+本研究を進めるにあたり，適切な御指導, 御助言, 御検討を頂いた
+中央大学 理工学部 趙 晋輝 教授に，深く感謝いたします.
+また, デバイスの知識に関してご助言を頂いた中央大学 理工学部 古屋 清 教授に, 深く感謝いたします. 最後に, 日ごろの学生生活においてお世話になった中央大学趙研究室の皆様に深く感謝いたします.
+
+%-------------------------------------------------------------------------------
+% 参考文献 : 研究の参考にした論文や本を列挙します. 
+%-------------------------------------------------------------------------------
+\begin{thebibliography}{99}
+	 \bibitem{DFA}I. Biehl, B. Meyer, and V. M\"{u}ller. {\em Differential Fault Attacks on Elliptic Curve Cryptosystems}, Springer-Verlag, CRYPTO, pp.131-146, LNCS, 2000.
+    \bibitem{Montgomery}Montgomery, P.L.: {\em Speeding the Pollard and Elliptic Curve Methods of Factorization}. Mathematics of Computation, Volume 48, pp.243-264, 1987.
+    \bibitem{izu-takagi}Tetsuya Izu, Bodo M\"{o}ller, Tsuyoshi Takagi:{\em Improved Elliptic Curve Multiplication Methods Resistant against Side Channel Attacks}, Progress in Cryptology - INDOCRYPT 2002, pp. 296-313, Springer-Verlag,  A. Menezes, P. Sarkar, 2002.
+    \bibitem{Pohlig}Stephen C. Pohlig and Martin E. Hellman. {\em An improved algorithm for computing logarithms over GF(p) and its cryptographic significance}, IEEE Trans. on Inf. Theory, 24:106-110, 1978.
+    \bibitem{Pollard}J.M. Pollard. {\em Monte Carlo methods for index computation (modp)},Mathematics of Computation, 32:918-924, 1978.
+    \bibitem{377}Sergei P. Skorobogatov: {\em Semi-invasive attacks: A new approach to hardware security analysis}, Technical Report UCAM-CL-TR-630, Computer Laboratory, University of Cambridge, 2005.
+    \bibitem{23}Barenghi, A., Bertoni, G., Parrinello, E. \& Pelosi, G. {\em Low Voltage Fault Attacks on the RSA Cryptosystem}, 2009 Workshop on Fault Diagnosis and Tolerance in Cryptography (FDTC), 2009, pp.23-31. 
+    \bibitem{24}Alessandro Barenghi, Guido Bertoni, Luca Breveglieri, and others, {\em Low Voltage Fault Attacks to AES and RSA on General Purpose Processors}, IEEE International Workshop on Hardware-Oriented Security and Trust, 2010, pp.7-12.
+    \bibitem{359}Schmid, J.M., Herbst, C.: {\em A Practical Fault Attack on Square and Multiply},Fault Diagnosis and Tolerance in Cryptography (FDTC) 2008, pp.53-58, IEEE Computer Society, 2008.
+	\bibitem{369}Nidhal Selmane, Sylvain Guilley, Jean-Luc Danger: {\em Practical Setup Time Violation Attacks on AES},Seventh European Dependable Computing Conference, pp.91-96, IEEE Computer Society, 2002.
+	\bibitem{Fouque}P. A. Fouque, R. Lercier, D. R{\'e}al, F. Valette: {\em Fault Attack on Elliptic Curve Montgomery Ladder Implementation}, 2008 5th Workshop on Fault Diagnosis and Tolerance in Cryptography, 2008.
+	\bibitem{Ciet}M. Ciet and M. Joye: {\em Elliptic Curve Cryptosystems in the Presence of Permanent and Transient Faults}, Designs, Codes and Cryptography 36 (2005), pp.33-43, 2005.
+	\bibitem{NIST}Federal Information Processing Standards Publication FIPS 186-2. Digital Signature Standard (DSS), appendix 6: {\em Recommended Elliptic Curves for Federal Government Use}, Technical report, NIST, January 27, 2000.
+   \bibitem{ANS99}ANSI X9.63.: {\em Public Key Cryptography For The Financial Services Industry:Key Agreement and Key Transport Using Elliptic Curve Cryptography}, 1999.
+	\bibitem{361}J\"{o}rn-Marc Schmidt, Michael Hutter, Thomas Plos: {\em Optical Fault Attacks on AES: A Threat in Violet}, Fault Diagnosis and Tolerance in Cryptography (FDTC) 2009, pp.13-22, IEEE Computer Society, 2009.
+	\bibitem{169}Sudhakar Govindavajhala, Andrew W. Appel: {\em Using Memory Errors to Attack a Virtual Machine}, 2003 IEEE Symposium on Security and Privacy, pp.154-165, IEEE Computer Society, 2003.
+	\bibitem{360}J\"{o}rn-Marc Schmidt, Michael Hutter: {\em Optical and EM Fault-Attacks on CRT-based RSA: Concrete Results}, 15th Austrian Workshop on Microelectronics (Austrochip 2007), pp.61-67, Verlag der Technischen Universit\"{a}t Graz, 2007
+   \bibitem{GRF} 新妻弘, 木村哲三 : {\bf 群・環・体\ \ 入門}, 共立出版, 1999. 
+   \bibitem{EC} Christophe Doche, Tanja Lange : {\em Arithmetic of Elliptic Curves}, Handbook of elliptic and hyperelliptic curve cryptography, pp.267--302, Chapman \& Hall/CRC, 2006.
+\end{thebibliography}
+%-------------------------------------------------------------------------------
+\end{document}
+%-------------------------------------------------------------------------------

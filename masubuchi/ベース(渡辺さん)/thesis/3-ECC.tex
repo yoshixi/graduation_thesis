@@ -1,0 +1,285 @@
+
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%楕円曲線
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\chapter{楕円曲線と楕円曲線暗号}
+%コブリッツ
+近年, 有限体上で定義される楕円曲線論が暗号理論へ応用されている. その理由は有限体上の楕円曲線が沢山の種類のアーベル群を提供し, 有限体に比べて高い柔軟性を持つためである. 
+
+\section{楕円曲線の定義}
+体$ K $上で定義される楕円曲線とは，一般的に
+\begin{equation}
+y^2 + a_1xy + a_3y = x^3 + a_2x^2 + a_4x + a_6 \ \ \ (a_1,a_2,a_3,a_4,a_6 \in K)
+\end{equation}
+で与えられる$ (x,y) $に関する方程式のことである. $ K $上の楕円曲線とは, 無限遠点と呼ばれる要素$ \mathcal{O} $を加えた$ x,y \in K $である点$ (x,y) $の集合を表す. このとき, 係数$ a_n $が属する体$ K $を{\bf 係数体}, 変数$ x,y $が属する体を{\bf 定義体}と呼ぶ. 
+\par
+もし, $ K $が標数2の体であるとき, $ K $上の楕円曲線とは, 無限遠点$ \mathcal{O} $を含む方程式
+\begin{equation}
+y^2 + xy = x^3 + ax^2 + b \ \ \ (a,b \in K)
+\label{p2_1}
+\end{equation}
+または, 
+\begin{equation}
+y^2 + cy = x^3 +ax + b \ \ \ (a,b,c \in K)
+\label{p2_2}
+\end{equation}
+のどちらかを満たす点の集合である. 
+\par
+また, $ K $が標数3の体であるとき, $ K $上の楕円曲線とは, 無限遠点$ \mathcal{O} $を含む方程式
+\begin{equation}
+y^2 = x^3 + ax^2 + bx + c \ \ \ (a,b,c \in K)
+\label{p3}
+\end{equation}
+を満たす点の集合である. 
+\par
+$ K $の標数が3より大きい場合は, 
+\begin{equation}
+E : y^2 = x^3 + ax + b \ \ \ (a,b \in K )
+\label{primecurve}
+\end{equation}
+を満たす点の集合である. 
+
+\bigskip
+
+$ F(x,y)=0 $を, 式(\ref{primecurve})(または式(\ref{p2_1}), 式(\ref{p2_2}), 式(\ref{p3}))における$ y $に対する$ x $の陰関数方程式とする. すなわち, $ F(x,y)=y^2-x^3-ax-b $とする. このとき, 2つの偏微分 $ \partial F /\partial x, \ \partial F / \partial y $のうち少なくともひとつがゼロでない曲線上の点$ (x,y) $は, {\bf 非特異}(または滑らかな点)であるという. また, 式(\ref{primecurve})や式(\ref{p3})の右辺の3次多項式が多重根を持たないということと, 曲線上のすべての点が非特異でなければならない, ということは同値である. 
+
+\section{フロベニウス写像}
+$ p $を素数, $ n $を自然数とし, $ q=p^{n} $とする. 有限体$ \mathbb{F}_q $上で, 曲線上の有理点は有限である. 有理点の個数を$ \# E( \mathbb{F}_q ) $で表し, $ t $を以下のように定義する. 
+\begin{displaymath} \# E( \mathbb{F}_q ) = q + 1 - t
+\end{displaymath}
+これにより定義された$ t $を, $ q $におけるフロベニウスのトレースと呼ぶ. 
+\par
+$ {\mathbb{F}}_{q} $上の楕円曲線$E$の$q$上フロベニウス写像$ \varphi $は以下の様に定義される. 
+\begin{eqnarray*}
+E(\overline{\mathbb{F}}_{q})&\rightarrow &E(\overline{\mathbb{F}}_{q}) \\
+(x, y)&\rightarrow &(x^{q}, y^{q}) \\
+\infty &\rightarrow & \infty
+\end{eqnarray*} 
+この写像$ \varphi $は$E(\overline{\mathbb{F}}_{q})$の群自己同型であり, フロベニウス自己同型写像と呼ばれる. また, ハッセの定理よりフロベニウスのトレース$t$は
+\begin{displaymath}|t|\leq 2\sqrt{\mathstrut q}\end{displaymath}
+をみたす. 
+
+%ここは直してない↓----
+$楕円曲線E$には, supersingular曲線, anomalous曲線と呼ばれる2つの特別なクラスがある. 
+\par
+それぞれ, 標数$p$が曲線$E({\mathbb{F}}_{q})$のフロベニウスのトレース$t$を割る場合, 曲線$E({\mathbb{F}}_{q})$のトレースが$1$となる場合である. 
+%-----
+
+\section{Hasseの定理}
+$ N $を体$ \mathbb{F}_q  $上で定義された楕円曲線の$ \mathbb{F}_q  $の点の個数としたとき, 
+\begin{equation}
+|N-(q+1)| \leq 2\sqrt{q}
+\end{equation}
+が成り立つ. 
+
+\bigskip
+
+\section{楕円曲線上の点の加算}
+楕円曲線上の有理点における点の加算を以下のように定義すると, 有理点全体と$ \mathcal{O} $の和集合は可換群を成すことが知られている. 
+\par
+楕円曲線上の点$ P $と$ Q $の加算を考える. ます, 点$ P, Q $を通る直線を描き, 直線$ PQ $と曲線の第三の交点$ R $を見つけ, $ R $の$ x $軸について対称な点$ P+Q $とする. $ P=Q $の場合は, $ P $から曲線の接線を描き, 接線と曲線の第二の交点の$ x $軸について対称な点を$ 2P $とする. 
+\par
+この加算で楕円曲線は群構造をなす. 例えば, 点$ P = (x,y) $と$ Q = (x,-y) $の場合, 第三の交点は無限遠点となる. よって, $ P + Q = \mathcal{O} $となり点$ Q $が点$ P $の逆元, $ -P $となる. すなわち単位元が無限遠点, 逆元は$ x $軸と対称な点になる. 結合法則は加算の定義により自明である. 
+\par
+この定義を実数上で描かれた楕円曲線のグラフを用いて示す. ただし, $ P,Q \in E(\mathbb{F}_q) $について$ P = (x_1,y_1),\ Q = (x_2,y_2) $とする. 
+
+\bigskip
+\begin{description}
+\item[{[Case 1]}] $ P \neq Q, \ (x_1 \neq x_2) \longrightarrow $図\ref{fig:elliptic01.eps}
+\item[{[Case 2]}] $ P = Q \longrightarrow $図\ref{fig:elliptic02.eps}
+\item[{[Case 3]}] $ P \neq Q, \ (x_1 = x_2) \longrightarrow $図\ref{fig:elliptic03.eps}
+\end{description}
+
+\begin{figure}[htbp]
+  \begin{minipage}{0.5\hsize}
+    \begin{center}
+      \includegraphics[width=80mm]{elliptic01.eps}
+    \end{center}
+    \caption{$ P + Q $}
+    \label{fig:elliptic01.eps}
+  \end{minipage}
+  \begin{minipage}{0.5\hsize}
+    \begin{center}
+      \includegraphics[width=80mm]{elliptic02.eps}
+    \end{center}
+    \caption{$ 2P $}
+    \label{fig:elliptic02.eps}
+  \end{minipage}
+\end{figure}
+\begin{figure}[htbp]
+  \begin{minipage}{0.5\hsize}
+    \begin{center}
+      \includegraphics[width=80mm]{elliptic03.eps}
+    \end{center}
+    \caption{$ P + Q = \mathcal{O} $}
+    \label{fig:elliptic03.eps}
+  \end{minipage}
+\end{figure}
+
+\newpage
+\bigskip
+ここで, $ P+Q $を効率的に計算する為の公式を与える. 
+また, 計算を簡略化する為に, 楕円曲線は標数が3より大きいものとする. 
+\par
+$ (x_1, y_1), (x_2, y_2), (x_3, y_3)$を, それぞれ$ P, \ Q, \ P+Q $の座標表示とし, 2点$ P, \ Q $を通る直線の方程式を, $ y= \alpha x + \beta $とする. $ x_3, y_3 $を, $ x_1, y_1, x_2, y_2 $を用いて表すことを考える. 
+\par
+$ P \neq Q $のとき, $ \alpha = (y_2 - y_1)/ (x_2 - x_1) , \ \beta = y_1 - \alpha x_1 $は明らかである. 
+\par
+弦$ PQ $上の点を$ (x, \alpha x + \beta) $とすると, この点と曲線の交点は, 
+\begin{equation}
+y^2 = {(\alpha x + \beta)}^2 = x^3 + ax + b
+\end{equation}
+を満たす点である. このことから, $ x^3 - {(\alpha x + \beta)}^2 + ax + b = 0 $の根の数は, 交点の数に等しいことが分かる. $ x^3 - {(\alpha x + \beta)}^2 + ax + b $はモニック多項式なので, モニック多項式の解の和が多項式の2番目に高次の項の係数の負の数になることを用いて, 以下が得られる. 
+\begin{equation}
+x_3 = \alpha^2 - x_1 - x_2 = { \Bigl( \frac{y_2-y_1}{x_2-x_1} \Bigr) }^2 - x_1 - x_2
+\end{equation}
+\begin{equation}
+y_3 = \alpha(x_1- x_3)-y_1 = -y_1 + \Bigl( \frac{y_2 - y_1}{x_2 - x_1} \Bigl) (x_1- x_3) 
+\end{equation}
+
+$P = Q$のとき, $ \alpha $は, $ \alpha = \frac{\partial_y}{\partial_x} = \frac{\partial_y}{\partial_E} \cdot \frac{\partial_E}{\partial_x} $を用いて, 
+\begin{equation}
+\alpha = \frac{3x_{1}^{2}-a}{2y_1}
+\end{equation}
+となり、以下が得られる. 
+\begin{equation}
+x_3 = {\Bigl( \frac{3x_{1}^{2} + a}{2y_1} \Bigl)}^2 - 2x_1
+\end{equation}
+\begin{equation}
+y_3 = -y_1 + \Bigl( \frac{3x_{1}^{2} + a}{2y_1} \Bigl)(x_1 - x_3)
+\end{equation}
+
+\section{Torsion group}
+楕円曲線上の点$ P $の{\bf}位数とは, $ NP=\mathcal{O} $ となる最も小さな正整数$ N $である. 
+\par
+$ E $を体$ K $上で定義された楕円曲線とする. 自然数$ n $について楕円曲線$ E/K $上の点の位数が$ n $となる場合, 
+\begin{eqnarray*}
+E[n] = \{ P \in E( \overline{K} ) \ | \ nP= \mathcal{O} \} \ (ただし, \ \overline{K} \ はKの代数的閉包)
+\end{eqnarray*}
+を n-torsion group といい, $ E[n] $のことを n-torsion point という. 
+
+\section{楕円曲線上の点のスカラー倍算}
+楕円曲線上の点のスカラー倍算とは, 楕円曲線上の任意の点$ P \in E(\mathbb{F}_q) $と, 任意の整数$ n \in \mathbb{Z} $に対して
+\[
+nP = 
+\left \{
+\begin{array}{ll}
+  P + P + \cdots + P \ (n \mbox{回}) & (n > 0) \\
+  -P - P - \cdots - P \ (-n \mbox{回}) & (n < 0) \\
+\end{array}
+\right.
+\]
+と定義される. この演算は楕円曲線暗号の根幹を成す部分であり, 暗号演算の大半の時間を占めている. この演算をより高速に計算でき, かつ安全性を兼ね備えたスカラー倍算アルゴリズムが提案されている. 
+
+\bigskip
+
+\subsection{Algorithm 1 : Double and add}
+以下は秘密鍵$ k $を２進展開$ k=(k_{ n-1 },...,k_{ 0 })_2 $として表し, スカラー倍算$ kP $を計算するアルゴリズムである\cite{doubleandadd}. 
+
+\begin{table}[htbp]
+  \begin{center}
+    \caption{Algorithm 1:Double and add}
+      \begin{tabular}{ | l | }
+        \hline
+        {\bf input}: $ k=(k_{ n-1 },....,k_0)_2, P\in E(K)    $\\
+        {\bf output}: $kP$\\
+        \hline
+        1 : $ Q ← \mathcal{O} $\\
+        2 : {\bf for} $ i = n-1 $ {\bf down to 0 do}\\
+        2.1 : $ Q ← 2Q $\\
+        2.2 : {\bf if} $ k_i = 1 $\\
+        2.2.1 : $ Q ← Q + P $\\
+        3 : {\bf end for}\\
+        4 : {\bf return} $ Q $\\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+Algorithm 1の計算時間は, $ k_i $の値に依存するため, 暗号装置の電力消費を観測するサイドチャネル攻撃に対して脆弱性を持つ. 
+
+\subsection{Algorithm 2 : Double and add always}
+Double and add alwaysは, Algorithm 1を改良した, 各演算ステップの計算量が等しいスカラー倍算アルゴリズムである\cite{doubleandaddalways}. 
+
+\begin{table}[htbp]
+  \begin{center}
+    \caption{Algorithm 2:Double and add always}
+      \begin{tabular}{ | l | }
+        \hline
+        {\bf input}: $ k=(k_{ n-1 },....,k_0)_2, P\in E(K)    $\\
+        {\bf output}: $kP$\\
+        \hline
+        1 : $ Q[0] ← \mathcal{O} $\\
+        2 : {\bf for} $ i = n-1 $ {\bf down to 0 do}\\
+        2.1 : $ Q[0] ← 2Q $\\
+        2.2 : $ Q[1] ← Q[0] + P $\\
+        2.3 : $ Q[0] ← Q[k_i] $\\
+        3 : {\bf end for}\\
+        4 : {\bf return} $ Q[0] $\\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\subsection{Algorithm 3 : Montgomery ladder}
+Montgomery ladder\cite{montgomery}はさらにAlgorithm 1, Algorithm 2を改良した, スカラー倍算アルゴリズムである. 
+Montgomery ladder は, 点の加算や倍算において $ y $ 座標を使用せずに $ x $ 座標を計算可能だということが示されている. 
+
+具体的には, $ P = (x_1, y_1), Q = (x_2, y_2), Q-P = (x_3, y_3) $ を, 楕円曲線 $ E : y^2 = x^3 + ax + b $ 上の点に移し, $ P+Q = (x_4, y_4), 2P = (x_5, y_5) $ の $ x $ 座標を以下の方程式で計算できる. 
+
+%楕円曲線 $ E $ 上の2点 $ P = (x_1, y_1), Q = (x_2, y_2) $ の点加算を考える. $ Q \ominus P = (x_3, y_3) $ とおく. このとき加算結果 $ P \oplus Q = (x_4, y_4) $ の $ x $ 座標は, 点 $ P,Q $ の $ y $ 座標 $ y_1, y_2 $ を使用せずに計算することが可能である\cite{Montgomery}. 
+
+%具体的には, 曲線を $ E : y^2 = x^3 + ax + b $ , 加算結果を $ P \oplus Q = (x_4, y_4) $ , 2倍算を $ 2Q = (x_5, y_5) $ として
+
+\begin{equation}
+x_4 = \frac{2(x_1 + x_2)(x_1 x_2 + a) + 4b}{(x_1 + x_2)^2} - x_3
+\end{equation}
+\begin{equation}
+x_5 = \frac{(x_1^2 - a)^2 - 8bx_1}{4(x_1^3 + ax_1 + b)}
+\end{equation}
+
+%と求まる. このことから, 点のスカラー倍算結果の $ x $ 座標についても, 基準点の $ y $ 座標を使用せずに計算することが可能となる.
+このことを利用した高速なスカラー倍算アルゴリズムであるMontgomery ladder を以下に記す.
+
+\begin{table}[htbp]
+  \begin{center}
+    \caption{Algorithm 3: Montgomery ladder}
+      \begin{tabular}{ | l | }
+        \hline
+        {\bf input}: $ k=(k_{ n-1 },....,k_0)_2, P\in E(K)    $\\
+        {\bf output}: The $x$-coordinate of $ kP $\\
+        \hline	
+        1 : $ Q[0] ←  \mathcal{O} , Q[1] ← P $\\
+        2 : {\bf for} $ i = n-1 $ {\bf down to 0 do}\\
+        2.1 : $ Q[1 - k_i] ← Q[0] + Q[1] $\\
+        2.2 : $ Q[k_i] ← 2Q[k_i] $\\
+        3 : {\bf end for}\\
+        4 : {\bf return} $ Q[0] $\\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\bigskip
+
+\section{楕円曲線暗号}
+
+楕円曲線暗号の安全性は, {\bf 楕円曲線離散対数問題(ECDLP)}の求解の困難性に基づいている. ECDLPを解くには, 一般に完全指数時間かかる. しかし, supersingularな曲線などの特別な曲線は準指数関数時間で解けることも示されている. そのため, 楕円曲線暗号を実装する際には暗号的に脆弱な曲線を避けた, 強固な曲線を選ぶ必要がある.
+
+\subsection{楕円曲線上の離散対数問題}
+有限体 $ K = \mathbb{F}_q $ 上の楕円曲線を $ E $ とし, その曲線上の位数 $ n $ の点を $ P \in E(K) $ とする. 点$ P $に対して, $ \langle P \rangle = \{ \mathcal{O}, P, 2P, \ldots \} $は有限巡回群となる. この巡回群の位数を$ n $とすると, 任意の$ Q \in \langle P \rangle $に対して, 
+\begin{eqnarray*}
+xP=Q \ ( x \in ( \ \mathbb{Z} \ / \ \mathbb{Z}_n ))
+\end{eqnarray*}
+となる$ x $が唯一つ存在する.
+\par
+$ P $と$ Q $が与えられたとき, $ x $を求める問題を楕円曲線離散対数問題という. これは, $ x $と$ P $から$ xP=Q $となる$ Q $を求めることは容易だが, $ P $と$ Q $から$ x $を求めるのは非常に困難であることに基づいている. 
+
+
+%\section{NIST曲線}
+%楕円曲線暗号で利用される楕円曲線には, NIST（米国立標準技術研究所）が推奨するものがある\cite{NIST}.  

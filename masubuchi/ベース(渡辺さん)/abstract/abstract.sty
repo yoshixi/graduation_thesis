@@ -1,0 +1,113 @@
+%-------------------------------------------------------------------------------
+% 卒論 要約用スタイルファイル
+%-------------------------------------------------------------------------------
+% ページ設定
+%-------------------------------------------------------------------------------
+\setlength{\oddsidemargin}{-5.5mm}
+\setlength{\voffset}{-5.5mm}
+\setlength{\topmargin}{0pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
+\setlength{\textheight}{255.5mm}
+\setlength{\textwidth}{170mm}
+\setlength{\columnsep}{10mm}
+\pagestyle{empty}
+%-------------------------------------------------------------------------------
+% マクロ
+%-------------------------------------------------------------------------------
+\lineskip 1pt
+\normallineskip 1pt
+\def\baselinestretch{1}
+
+\def\@normalsize{
+        \@setsize{\normalsize}{15pt plus1pt minus1pt}{\xpt}{\@xpt}
+        \let\rubyfont=\fivmin
+        \kanjiskip=0zw plus .1zw minus .05zw
+        \abovedisplayskip=2pt plus 1pt minus 1pt
+        \belowdisplayskip=\abovedisplayskip
+        \abovedisplayshortskip=\z@ plus 2pt
+        \belowdisplayshortskip=2pt plus 1pt minus 1pt
+        \let\@listi=\@listI}
+
+\def\small{
+	\@setsize{\small}{11pt}{\ixpt}{\@ixpt}
+	\abovedisplayskip=8.5pt plus 3pt minus 4pt
+	\belowdisplayskip=\abovedisplayskip
+	\abovedisplayshortskip=\z@ plus2pt
+	\belowdisplayshortskip=4pt plus2pt minus 2pt
+	\def\@listi{
+		\leftmargin=\leftmargini
+		\topsep=4pt plus 2pt minus 2pt
+		\parsep=2pt plus 1pt minus 1pt
+		\itemsep=\parsep}}
+
+\def\footnotesize{
+	\@setsize{\footnotesize}{9.5pt}{\viiipt}{\@viiipt}
+	\abovedisplayskip=6pt plus 2pt minus 4pt
+	\belowdisplayskip=\abovedisplayskip
+	\abovedisplayshortskip=\z@ plus 1pt
+	\belowdisplayshortskip=3pt plus 1pt minus 2pt
+	\def\@listi{
+		\leftmargin=\leftmargini
+		\topsep=3pt plus 1pt minus 1pt
+		\parsep=2pt plus 1pt minus 1pt
+		\itemsep=\parsep}}
+
+\def\scriptsize{\@setsize\scriptsize{8pt}\viipt\@viipt}
+\def\tiny{\@setsize\tiny{6pt}\vpt\@vpt}
+\def\large{\@setsize\large{17pt}\xiipt\@xiipt
+	\kanjiskip=1.0pt plus .2pt minus .1pt}
+\def\Large{\@setsize\Large{21pt}\xivpt\@xivpt
+	\kanjiskip=1.0pt plus .2pt minus .1pt}
+\def\LARGE{\@setsize\LARGE{25pt}\xviipt\@xviipt
+	\kanjiskip=1.0pt plus .2pt minus .1pt}
+\def\huge{\@setsize\huge{28pt}\xxpt\@xxpt}
+\def\Huge{\@setsize\Huge{33pt}\xxvpt\@xxvpt}
+\normalsize 
+\renewcommand{\baselinestretch}{0.80}
+
+\def\section{\@startsection{section}{1}{\z@}
+  {2ex plus 5ex minus .2ex}
+  {.3ex plus .05ex}{\large\bf}}
+\def\subsection{\@startsection{subsection}{2}{\z@}
+  {1ex plus .5ex minus .2ex}
+  {.1ex plus .02ex}{\normalsize\bf}}
+\def\subsubsection{\@startsection{subsubsection}{3}{\z@}
+  {1ex plus .5ex minus .2ex}
+  {-1em}{\normalsize\bf}}
+\def\paragraph{\@startsection{paragraph}{4}{\z@}
+  {1ex plus 5ex minus .2ex}
+  {-1em}{\normalsize\bf}}
+\def\subparagraph{\@startsection{subparagraph}{4}{\parindent}
+  {1ex plus 5ex minus .2ex}
+  {-1em}{\normalsize\bf}}
+
+\def\thebibliography#1{
+	\section*{参考文献\markboth{参 考 文 献}{参 考 文 献}}
+	\small
+	\list{[\arabic{enumi}]}
+		{\settowidth\labelwidth{[#1]}
+		\leftmargin=\labelwidth
+		\advance \leftmargin by \labelsep
+		\usecounter{enumi}}
+	\def\newblock{\hskip .11em plus .33em minus .07em}
+	\sloppy
+	\sfcode`\.=1000\relax}
+\let\endthebibliography=\endlist
+
+\renewcommand{\title}[6]{
+\twocolumn[
+   \begin{center}
+   {\Large \bf #1}\\
+   \vspace{0.1cm}
+   {\normalsize \sf #2}\\
+   \vspace{0.2cm}
+   \begin{large}
+   #3\hspace{1zw}#4\\
+   中央大学理工学部情報工学科 #5研究室\\
+   #6年3月
+   \end{large}
+   \end{center}
+   \vspace{8mm}
+]}
+%-------------------------------------------------------------------------------

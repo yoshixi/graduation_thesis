@@ -1,0 +1,250 @@
+%-------------------------------------------------------------------------------
+% 卒論 要約用テンプレート
+% 要約（アブスト）は両面コピーで1枚（2ページ分）です.
+% \vspace{-5mm}などを駆使して詰め込んでください.
+%-------------------------------------------------------------------------------
+\documentclass[twocolumn]{jsarticle} % 用紙設定
+\usepackage{amsmath,amssymb,amsthm}  % 数学記号
+\usepackage{graphicx}                % 図
+\usepackage{abstract}                % 要約用スタイルファイル
+\usepackage{slashbox}
+\usepackage{multirow}
+\usepackage{comment}
+%-------------------------------------------------------------------------------
+% ここから本文
+%-------------------------------------------------------------------------------
+\begin{document}
+%-------------------------------------------------------------------------------
+% タイトル
+%-------------------------------------------------------------------------------
+\title{反復回数改ざんを利用した楕円曲線暗号に対するフォールト攻撃}{Fault attacks to elliptic curve cryptosystems by tampering the number of iterations}{12D8101003C}{渡邊　千尋}{趙}{2016}
+%-------------------------------------------------------------------------------
+% 要約 : 本論の内容を要約して書きます.
+%-------------------------------------------------------------------------------
+\paragraph{要約}
+フォールト攻撃は暗号装置の実装上の脆弱性をつく強力な攻撃である. 本研究では, Montgomery ladderなどを用いる楕円曲線暗号において, スカラー倍算の反復回数を改ざんする新しいフォールト攻撃手法を示す.
+%-------------------------------------------------------------------------------
+% キーワード : 論文に関係するキーワードを書きます. 例）楕円曲線暗号, ペアリング
+%-------------------------------------------------------------------------------
+
+\paragraph{キーワード}
+楕円曲線暗号, フォールト攻撃
+%-------------------------------------------------------------------------------
+% 序論 : 研究背景を書きます.
+%-------------------------------------------------------------------------------
+\section{序論}
+現在, あらゆる情報機器に暗号が実装されており, 暗号の安全性がセキュリティの根拠となっている. フォールト攻撃とは, 暗号装置への物理的干渉により意図的に機器にエラーを起こさせ, 秘密情報を推測する攻撃手法である. 本研究では, 楕円曲線暗号におけるスカラー倍算中のループ回数をフォールトの導入対象とした新しい攻撃手法を提案する. さらに, NIST 推奨パラメータを用いた楕円曲線暗号への攻撃を行い, 攻撃の有効性を示した.
+
+%-------------------------------------------------------------------------------
+% 節
+%-------------------------------------------------------------------------------
+\vspace{-4mm}
+\section{楕円曲線}
+\subsection{楕円曲線の定義}
+標数が3より大きい有限体$ \mathbb{F}_q $上に定義されるWeierstrassの標準型の楕円曲線$E$は以下の式で表される. 
+\abovedisplayskip=-2pt
+\begin{equation}
+E : y^2 = x^3 + ax + b \ \ \ (a,b \in \mathbb{F}_q ) \label{primecurve}
+\end{equation}
+\subsection{楕円曲線上の点のスカラー倍算}
+楕円曲線上の点のスカラー倍算とは, 楕円曲線上の任意の点$ P \in E(\mathbb{F}_q) $と, 任意の整数$ n \in \mathbb{Z} $に対して
+\[
+nP = 
+\left \{
+\begin{array}{ll}
+  P + P + \cdots + P \ (n \mbox{回}) & (n > 0) \\
+  -P - P - \cdots - P \ (-n \mbox{回}) & (n < 0) \\
+\end{array}
+\right.
+\]
+と定義される. 
+\par
+Algorithm 1: Double and add は秘密鍵$ k $を$ k=(k_{ n-1 },...,k_{ 0 })_2 $として表し, スカラー倍算$ kP $を計算するアルゴリズムである. また, Algorithm 2: Double and add alwaysは, Algorithm 1を改良した, 各演算ステップの計算量が等しいスカラー倍算アルゴリズムである. さらに, Algorithm 3: Montgomery ladder\cite{Montgomery}はAlgorithm 1, Algorithm 2を改良した,  $ y $ 座標を使用せずに $ x $ 座標を計算可能なスカラー倍算アルゴリズムである. 
+\begin{table}[htbp]
+  \begin{center}
+    \caption{Algorithm 1:Double and add}
+	\small
+      \begin{tabular}{ | l | }
+        \hline
+        {\bf input}: $ k=(k_{ n-1 },....,k_0)_2, P\in E(K) $\\
+        {\bf output}: $kP$\\
+        \hline
+        1 : $ Q ← \mathcal{O} $\\
+        2 : {\bf for} $ i = n-1 $ {\bf down to 0 do}\\
+        2.1 : $ Q ← 2Q $\\
+        2.2 : {\bf if} $ k_i = 1 $\\
+        2.2.1 : $ Q ← Q + P $\\
+        3 : {\bf end for}\\
+        4 : {\bf return} $ Q $\\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+\begin{table}[htbp]
+  \begin{center}
+    \caption{Algorithm 2:Double and add always}
+	\small
+      \begin{tabular}{ | l | }
+        \hline
+        {\bf input}: $ k=(k_{ n-1 },....,k_0)_2, P\in E(K) $\\
+        {\bf output}: $kP$\\
+        \hline
+        1 : $ Q[0] ← \mathcal{O} $\\
+        2 : {\bf for} $ i = n-1 $ {\bf down to 0 do}\\
+        2.1 : $ Q[0] ← 2Q $\\
+        2.2 : $ Q[1] ← Q[0] + P $\\
+        2.3 : $ Q[0] ← Q[k_i] $\\
+        3 : {\bf end for}\\
+        4 : {\bf return} $ Q[0] $\\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+\begin{table}[htbp]
+  \begin{center}
+    \caption{Algorithm 3: Montgomery ladder}
+	\small
+      \begin{tabular}{ | l | }
+        \hline
+        {\bf input}: $ k=(k_{ n-1 },....,k_0)_2, P\in E(K)    $\\
+        {\bf output}: The $x$-coordinate of $ kP $\\
+        \hline	
+        1 : $ Q[0] ←  \mathcal{O} , Q[1] ← P $\\
+        2 : {\bf for} $ i = n-1 $ {\bf down to 0 do}\\
+        2.1 : $ Q[1 - k_i] ← Q[0] + Q[1] $\\
+        2.2 : $ Q[k_i] ← 2Q[k_i] $\\
+        3 : {\bf end for}\\
+        4 : {\bf return} $ Q[0] $\\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\subsection{楕円曲線上の離散対数問題(ECDLP)}
+楕円曲線上の2点$P,Q=kP$からスカラー$k$を求めることを, ECDLPを解くという. 楕円曲線暗号の安全性は, ECDLPの求解の困難性を根拠としている. 
+
+\section{フォールト攻撃}
+フォールト攻撃は暗号装置が秘密鍵を用いた演算中に起こる誤りを利用する攻撃である. 攻撃者は誤りにより得られる不正な出力値を基に秘密鍵の情報を得る. 
+
+
+\subsection{Skipping Attack}
+Skipping Attackは, SchmidtとHerbstによって提案された\cite{skipping}. 
+この攻撃はRSA暗号に対する実用的なフォールト攻撃であるが, 楕円曲線暗号にも拡張できる. 
+スカラー倍算アルゴリズム中のforループの$ j $回目の処理をスキップした結果を基にビット毎に秘密鍵$ d=(d_i) $を取り出す. 
+\[
+\hat{y_j} = 
+\left \{
+\begin{array}{ll}
+  \hat{y}_{j-1} \ \ \ \ \ \ \ \ \ (d_j=0) \\
+  x^{2^{j-1}}\hat{y}_{j-1} \ \ (d_j=1) \\
+\end{array}
+\right.
+\]
+ 
+\subsection{ペアリング暗号に対するフォールト攻撃}
+
+ペアリング暗号に対するフォールト攻撃は, El Mrabetによって提案された\cite{pairing}. 
+この攻撃は, Miller algorithmのMiller ループの反復回数を標的としており, その回数を変更した際の出力を得ることで秘密点Pを見つける. 
+
+%---------------------------------------------------------
+%---------------------------------------------------------
+%---------------------------------------------------------
+\vspace{-4mm}
+\section{提案手法}
+
+\subsection{前提}
+\label{sec:zentei}
+定義体を素体 $ K =\mathbb{F}_q $ とし, $ K $ 上に定義された楕円曲線を $ E : y^2 = x^3 + ax + b $ とする. 
+点の高速スカラー倍算Double and add, Double and add always, Montgomery ladder アルゴリズムに対し, それぞれアルゴリズム中のループの反復回数を変更する. 
+
+\subsection{反復回数の変更}
+\label{sec:Battack}
+ループ回数は秘密鍵$ k $のビット数$ n $によって定まる. リバースエンジニアリングによって反復回数のカウンターに属しているフリップフロップを見つけ, クロック周期をカウントすることで$ n $の値が分かる. $ kP $と$ n $の値を記録しておき, レーザー等を用いて障害を起こし, アルゴリズム中の反復回数を変更する. 
+%2015 survey of fault attack against pairing 3.1 より
+\subsection{秘密鍵$ k $の復元}
+反復回数を変更して得られた出力を集め, 秘密鍵$ k $を復元する. 
+
+\subsubsection*{1回ずつ減らす方法}
+反復回数を1回減らすと, $ k $の値は先頭のビットが抜かされ$ k=(k_{n-1}, k_{n-2}, \ldots, k_0)_2 $から$ k'=(0, k_{ n-2 }, \ldots, k_0)_2 $へと変化する. もし$ kP $と$ k'P $が同じ点ならば, $ k_{n-1} $は0であることが分かり, 異なる点ならば, $ k_{n-1} $は1であることが分かる. これを繰り返し, $ k $を1ビットずつ復元していく. 
+
+\subsubsection*{2回ずつ減らす方法}
+フォールトの挿入回数はより少ない方が好ましいため, 反復回数を2回ずつ減らし, 1回ずつ減らす方法に比べてフォールト挿入回数を減らす. 2回減らすと, $ k $の値は$ k=(k_{n-1}, k_{n-2}, k_{n-3}, \ldots, k_0)_2 $から, $ k'=(0, 0, k_{n-3}, \ldots, k_0)_2 $へと変化する. もし$ kP $と$ k'P $が同じ点ならば, $ k_{n-1}=0 $かつ$ k_{n-2}=0 $であることが分かる. もし異なる点ならば, $ (k_{n-1}, k_{n-2}) $は, $ (0, 1), (1, 0), (1, 1) $のいずれかであるので一つずつ調べる. 
+
+\subsection{防御策}
+この攻撃手法に対する防御策は, ペアリング暗号に対するフォールト攻撃と同様に, フォールトに耐性のあるカウンターを用いる, 反復をランダムな回数実行する, 中間値の点が元の楕円曲線上にあるかチェックする, などが挙げられる. 
+\section{実験}
+提案する攻撃アルゴリズムの数値実験を行った. 実験プログラムにはMagmaを用いた.
+\subsection{実験条件}
+以下の条件において, 試行回数に対して攻撃成功となる確率を測定する. 
+\begin{itemize}
+\item 各スカラー倍算アルゴリズムのforループの反復回数を変更する. 
+%\item 反復回数の変更の回数は, $ n $回と$ (n-1)/2 $回とする.  
+\item 秘密鍵$ k $が復元できたとき, 攻撃成功とする. 
+\item 試行回数$m$は100回とする.
+\item 使用する曲線は, NISTが推奨する曲線P-192とP-256\cite{NIST}を用いる. 
+\end{itemize}
+
+\begin{table}[htbp]
+  \caption{NIST P-192 Curve(フォールト挿入回数(n-1)回)}
+  \begin{tabular}{|l|c|r|} \hline
+    アルゴリズム & 成功率(\%) & 実行時間(秒)  \\ \hline \hline
+    Double and add & 100 & 27.190 \\ \hline
+    Double and add always & 100 & 41.435 \\ \hline
+    Montgomery Ladder & 100 & 36.633 \\ \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \caption{NIST P-256 Curve(フォールト挿入回数(n-1)回)}
+  \begin{tabular}{|l|c|r|} \hline
+    アルゴリズム & 成功率(\%) & 実行時間(秒)  \\ \hline \hline
+    Double and add & 100 & 72.038 \\ \hline
+    Double and add always & 100 & 104.035 \\ \hline
+    Montgomery Ladder & 100 & 93.511 \\ \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \caption{NIST P-192 Curve(フォールト挿入回数(n-1)/2回)}
+  \begin{tabular}{|l|c|r|} \hline
+    アルゴリズム & 成功率(\%) & 実行時間(秒)  \\ \hline \hline
+    Double and add & 100 & 31.824(+4.634) \\ \hline
+    Double and add always & 100 & 55.395(+13.96) \\ \hline
+    Montgomery Ladder & 100 & 41.636(+5.003) \\ \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[htbp]
+  \caption{NIST P-256 Curve(フォールト挿入回数(n-1)/2回)}
+  \begin{tabular}{|l|c|r|} \hline
+    アルゴリズム & 成功率(\%) & 実行時間(秒)  \\ \hline \hline
+    Double and add & 100 & 82.432(+10.394) \\ \hline
+    Double and add always & 100 & 142.225(+38.19) \\ \hline
+    Montgomery Ladder & 100 & 106.566(+13.055) \\ \hline
+  \end{tabular}
+\end{table}
+\vspace{-3mm}
+\section{結論}
+本研究では, 新しいフォールト攻撃手法を提案し, NIST推奨曲線に対する攻撃の成功確率を示した. 
+実験結果としては, 既存手法よりも高い成功確率が得られた. これは提案手法の攻撃の強力さを示すとともに, 楕円曲線暗号の実装における, フォールト攻撃への対策の必要性を強調するものである.
+
+
+%-------------------------------------------------------------------------------
+% 謝辞
+%-------------------------------------------------------------------------------
+\section*{謝辞}
+本研究を進めるにあたり，適切な御指導を頂いた
+中央大学理工学部 趙晋輝教授に深く感謝いたします. %また, デバイスの知識に関してご助言を頂いた中央大学理工学部 古屋清教授に深く感謝いたします. 
+%-------------------------------------------------------------------------------
+% 参考文献 : 本論とは違い, 主なものだけでもOK.
+%-------------------------------------------------------------------------------
+\begin{thebibliography}{99}
+  \bibitem{Montgomery}Montgomery, P.L.: {\em Speeding the Pollard and Elliptic Curve Methods of Factorization}. Mathematics of Computation, Volume 48, pp.243-264, 1987.
+  \bibitem{skipping}J\"{o}rn-marc Schmidt and Christoph Herbst. {\em A Practical Fault Attack on Square and Multiply}, Fault Diagnosis and Tolerance in Cryptography, 2008. FDTC '08. 5th Workshop on, pp. 53-58, IEEE, 2008.
+  \bibitem{pairing}Nadia El Mrabet. {\em What about vulnerability to a fault attack of the Miller algorithm during an Identity Based Protocol ?}, Advances in Information Security and Assurance, pp. 122-134, Springer Berlin Heidelberg, 2009.
+  \bibitem{NIST}Federal Information Processing Standards Publication FIPS 186-2. Digital Signature Standard (DSS), appendix 6: {\em Recommended Elliptic Curves for Federal Government Use}, Technical report, NIST, January 27, 2000.
+
+\end{thebibliography}
+%-------------------------------------------------------------------------------
+\end{document}
+%-------------------------------------------------------------------------------

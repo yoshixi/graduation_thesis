@@ -1,0 +1,55 @@
+\contentsline {chapter}{\numberline {第1章}序論}{1}% 
+\contentsline {chapter}{\numberline {第2章}準備}{2}% 
+\contentsline {section}{\numberline {2.1}群の定義}{2}% 
+\contentsline {section}{\numberline {2.2}環の定義}{3}% 
+\contentsline {subsection}{\numberline {2.2.1}環}{3}% 
+\contentsline {subsection}{\numberline {2.2.2}部分環,\ イデアル,\ 商環}{3}% 
+\contentsline {subsection}{\numberline {2.2.3}多項式環}{4}% 
+\contentsline {section}{\numberline {2.3}体の定義}{5}% 
+\contentsline {subsection}{\numberline {2.3.1}有限体，ガロア体}{5}% 
+\contentsline {subsection}{\numberline {2.3.2}拡大体}{5}% 
+\contentsline {subsection}{\numberline {2.3.3}代数的閉包}{5}% 
+\contentsline {section}{\numberline {2.4}離散対数問題とElGamal\ 暗号}{6}% 
+\contentsline {subsection}{\numberline {2.4.1}離散対数問題}{6}% 
+\contentsline {subsection}{\numberline {2.4.2}ElGamal\ 暗号}{6}% 
+\contentsline {chapter}{\numberline {第3章}楕円曲線}{7}% 
+\contentsline {section}{\numberline {3.1}楕円曲線の定義}{7}% 
+\contentsline {section}{\numberline {3.2}楕円曲線上の点の加算}{7}% 
+\contentsline {section}{\numberline {3.3}楕円離散対数問題}{9}% 
+\contentsline {subsection}{\numberline {3.3.1}離散対数問題(DLP)}{9}% 
+\contentsline {subsection}{\numberline {3.3.2}楕円離散対数問題(ECDLP)}{9}% 
+\contentsline {chapter}{\numberline {第4章}ペアリング}{10}% 
+\contentsline {section}{\numberline {4.1}ペアリングの定義}{10}% 
+\contentsline {section}{\numberline {4.2}ペアリングと関係する様々な定義}{10}% 
+\contentsline {subsection}{\numberline {4.2.1}divisorの定義}{10}% 
+\contentsline {subsection}{\numberline {4.2.2}埋め込み次数の定義}{11}% 
+\contentsline {section}{\numberline {4.3}Weilの定理}{11}% 
+\contentsline {section}{\numberline {4.4}Weil ペアリング}{11}% 
+\contentsline {section}{\numberline {4.5}Tate ペアリング}{12}% 
+\contentsline {section}{\numberline {4.6}Miller Algorithm}{13}% 
+\contentsline {section}{\numberline {4.7}distortion map}{15}% 
+\contentsline {section}{\numberline {4.8}Supersingular curve}{15}% 
+\contentsline {chapter}{\numberline {第5章}ペアリング演算の高速化}{16}% 
+\contentsline {section}{\numberline {5.1}Signed Miller Algorithm}{16}% 
+\contentsline {section}{\numberline {5.2}高速化手法}{17}% 
+\contentsline {subsection}{\numberline {5.2.1}部分体の要素による乗算}{17}% 
+\contentsline {subsection}{\numberline {5.2.2}点による因子の置換}{17}% 
+\contentsline {subsection}{\numberline {5.2.3}分母消去}{17}% 
+\contentsline {subsection}{\numberline {5.2.4}群位数のHamming Weight}{17}% 
+\contentsline {subsection}{\numberline {5.2.5}最終べき乗の高速化}{17}% 
+\contentsline {section}{\numberline {5.3}BKLS Algorithm}{18}% 
+\contentsline {section}{\numberline {5.4}Duursma and Lee Algorithm}{19}% 
+\contentsline {chapter}{\numberline {第6章}既存研究と提案手法}{20}% 
+\contentsline {section}{\numberline {6.1}Double-Base Chains}{20}% 
+\contentsline {section}{\numberline {6.2}Double-Base Chainsを用いたMiller Algorithm}{21}% 
+\contentsline {section}{\numberline {6.3}提案手法}{23}% 
+\contentsline {chapter}{\numberline {第7章}実行結果}{24}% 
+\contentsline {section}{\numberline {7.1}実行結果}{24}% 
+\contentsline {subsection}{\numberline {7.1.1}実装環境}{24}% 
+\contentsline {subsection}{\numberline {7.1.2}実装条件}{24}% 
+\contentsline {subsection}{\numberline {7.1.3}実行結果}{25}% 
+\contentsline {chapter}{\numberline {第8章}考察と今後の課題}{27}% 
+\contentsline {section}{\numberline {8.1}考察}{27}% 
+\contentsline {section}{\numberline {8.2}今後の課題}{28}% 
+\contentsline {chapter}{謝辞}{29}% 
+\contentsline {chapter}{参考文献}{30}% 

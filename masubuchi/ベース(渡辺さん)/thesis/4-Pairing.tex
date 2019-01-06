@@ -1,0 +1,165 @@
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%ペアリング暗号
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+
+\chapter{ペアリング暗号}
+ペアリング暗号とは, 楕円曲線上で定義される双線形写像である「ペアリング」を用いた暗号方式である. ペアリング暗号を応用した「関数型暗号」や「検索可能暗号」は, 従来の公開鍵暗号では実現困難であったクラウドに適した新しい暗号として研究が盛んに行われている. 
+%http://www.nict.go.jp/publication/NICT-News/1209/01.html 2015/1/17
+
+%以下にFault攻撃の既存手法を紹介する. 
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\section{ペアリング} 
+%\label{sec:DFA}
+
+ペアリングとは, 楕円曲線上のtorsion groupの直積から有限体の乗法群への写像である. ペアリングの例としては，有限体上の楕円曲線上のWeil ペアリングとTate ペアリングがある．
+
+\subsection{双線形ペアリング}
+$ G_1, G_2 $ を単位元0の加法に関するアーベル群とし, $ G_3 $ を単位元１の乗法に関する位数 $ n $ の巡回群とする. このとき,
+\begin{equation} 
+e : G_1×G_2 → G_3
+\end{equation}
+が, 以下の2つの性質を満たす時, $ e $ をペアリング写像と呼ぶ. 
+
+\begin{enumerate}
+  \item 双線形性\\
+    $ {}^{\forall}P, P' \in G_1 $ と $ {}^{\forall}Q, Q' \in G_2 $ に対して, 以下の2つが成り立つ.
+      \begin{equation} 
+        e(P+P', Q)=e(P, Q)+e(P', Q)
+      \end{equation}
+      \begin{equation}
+      e(P, Q+Q')=e(P, Q)+e(P, Q')
+      \end{equation}
+  \item 非退化 \\
+  \begin{itemize}
+    \item $ {}^{\forall}P \in G_1 (P≠0) $に対して$ e(P, Q)≠1 $となる$ Q \in G_2 $が存在する.
+    \item ${}^{\forall}P \in G_2 (P≠0) $に対して$ e(P, Q)≠1 $となる$ Q \in G_1 $が存在する. 
+  \end{itemize}
+\end{enumerate}
+\par
+また, $ e $を双線形ペアリングとし, $ P \in G_1, \ Q \in G_2 $とすると, 以下が成り立つ. 
+\begin{enumerate}
+  \item $ e(P, 0)=e(0, Q)=1 $ 
+  \item $ e(-P, Q)={e(P, Q)}^{-1} = e(P, -Q) $ 
+  \item すべての$ j \in \mathbb{Z} $に対して, $ e([j]P, Q)={e(P, Q)}^j = e(P, [j]Q) $
+\end{enumerate}
+\subsection{Weilペアリング}
+%\begin{definition}
+%\upshape
+$K$を体とする．
+$E$を$K$上で定義された楕円曲線とし，$n$を$K$の標数と互いに素な整数とする．
+$E[n]$を$n$-torsion groupとし，$ \mu $を$\overline{K}$の中の
+1の$n$乗根の集合，すなわち
+\[
+\mu_n=\{x\in \overline{K}\mid x^n=1\}
+\]
+とする．Weil ペアリングとは
+\[
+e_n:E[n]\times E[n]\to \mu_n\subseteq \overline{K}^*
+\]
+となる写像のことである．Weil ペアリングには以下に示すような性質がある．
+\\
+$P,P',Q,Q'\in E[n]$とする．
+\begin{enumerate}
+\item 任意の$P,P',Q,Q'$に対し，
+\[
+e_n(P+P',Q)=e_n(P,Q)e_n(P',Q)
+\]
+かつ
+\[
+e_n(P,Q+Q')=e_n(P,Q)e_n(P,Q')
+\]
+である．
+\item $e_n(P,P)=1$
+\item $e_n(P,Q)=e_n(Q,P)^{-1}$
+\item 任意の$Q$において$e_n(P,Q)=1$ならば，$P=\mathcal{O}$である．
+\end{enumerate}
+
+\subsection{Tateペアリング}
+$E$を$K_0$上の楕円曲線とする．$n$を体$K_0$の標数と互いに素な正整数とする．
+1の$n$乗根の集合を$\mu_n=\{x\in \overline{K_0}^*\mid x^n=1\}$とする．
+1の$n$乗根から生成された$K_0$の拡大体を$K=K_0(\mu_n)$と定義する．
+また，
+\begin{eqnarray*}
+&&E(K)[n]=\{P\in E(K)\mid nP=\mathcal{O}\} \\
+&&nE(K)=\{nP\mid P\in E(K)\}
+\end{eqnarray*}
+と定義する．
+Tate ペアリングとは
+\[
+\langle \cdot ,\cdot \rangle _n :
+E(K)[n]\times E(K)/nE(K)\to K^*/(K^*)^n
+\]
+となる写像のことである．
+\par
+Tate ペアリングには以下のような性質がある． \\
+$E$は$K_0$上の楕円曲線とし，$n$は$K_0$の標数と互いに素であるとする．
+$K=K_0(\mu_n)$とする．
+このとき，Tate ペアリングは以下を満たす．
+\begin{enumerate}
+\item 任意の$P,P_1,P_2\in E(K)[n]$と$Q,Q_1,Q_2\in E(K)/nE(K)$に対し，
+\[
+\langle P_1+P_2,Q\rangle _n=\langle P_1,Q\rangle _n\langle P_2,Q\rangle _n
+\]
+かつ，
+\[
+\langle P,Q_1+Q_2\rangle _n=\langle P,Q_1\rangle _n\langle P,Q_2\rangle _n
+\]
+である．
+\item $K$を有限体とする．任意の$P\in E(K)[n]\ (P\not=\mathcal{O})$に対して，
+$\langle P,Q\rangle _n\not=1$となるような$Q\in E(K)/nE(K)$が存在する．
+同様にして，任意の$Q\in E(K)/nE(K)\ (Q\not\in nE(K))$に対して，
+$\langle P,Q\rangle _n\not=1$となるような$P\in E(K)[n]$が存在する．
+\end{enumerate}
+
+\section{ペアリング暗号}
+
+ペアリング暗号とは, ペアリングを用いた暗号方式である. 
+ペアリングの処理は, RSA暗号の暗号化・復号処理に比べて, 安全性強度が同程度と仮定した上で数倍の計算コストを要すると言われている. 
+そのため, ペアリング計算の高速化はペアリング暗号の普及のための課題の一つとなっている. 
+
+\subsection{Miller algorithm}
+Miller algorithmは, ペアリングを計算するアルゴリズムとして広く用いられており, WeilペアリングやTateペアリングを計算する際の最も重要なステップである. 
+\par
+Miller algorithmは, $ G_1 \subset E(\mathbb{F}_q) $の生成元$ P $に関する有理関数$ F_p $で構成されており, 同時に, 点$ Q \in G_2 \subset E(\mathbb{F}_q^2) $に対する$ F_P(Q) $を評価する. 
+
+\bigskip
+
+\begin{table}[htbp]
+  \begin{center}
+    \caption{Algorithm 4:Miller algorithm}
+      \begin{tabular}{ | l | }
+        \hline
+        {\bf input}: $ r=(r_n,....,r_0)_2, P\in G_1(\subset E(\mathbb{F}_q)), Q\in G_2(\subset E(\mathbb{F}_{q^k}))$\\
+        {\bf output}: $F_P(Q)\in G_3( \subset {\mathbb{F}}^*_{q^k}))$\\
+        \hline
+        1 : $ T ← P $\\
+        2 : $ f_1 ← 1 $\\
+        3 : $ f_2 ← 1 $\\
+        4 : {\bf for} $ i = n-1 $ {\bf down to 0 do}\\
+        4.1 : $ T ← [2]T, where \ T = (X, Y, Z), [2]T = (X_2, Y_2, Z_2) $\\
+        4.2 : $ f_1 ← {f_1}^2×h_1(Q) $\\
+        4.2.1 : {\bf if} $ r_i = 1 \ {\bf then}$\\
+        4.2.2 : $ T ← T+P $\\
+        4.2.3 : $ f_1 ← f_1×h_2(Q) $\\
+        5 : {\bf end for}\\
+        6 : {\bf return} $ f_1 $\\
+      \hline
+    \end{tabular}
+  \end{center}
+\end{table}
+ 
+
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\bigskip
+
+\subsection{ペアリング暗号の課題}
+%http://www.cipher.risk.tsukuba.ac.jp/?page_id=603
+ペアリングの処理は, RSA暗号の暗号化・復号に比べると, 安全性強度が同程度と仮定した上で, 数倍の計算コストを要すると言われている. そのため, ペアリング暗号の普及のためにはペアリング計算の高速化が大きな課題となっている. 

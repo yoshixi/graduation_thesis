@@ -1,0 +1,62 @@
+%-------------------------------------------------------------------------------
+% 卒論 本論用スタイルファイル for Chao-Lab.
+%-------------------------------------------------------------------------------
+% ページ設定
+%-------------------------------------------------------------------------------
+\setlength{\oddsidemargin}{-5.5mm}
+\setlength{\evensidemargin}{-5.5mm}
+\setlength{\textwidth}{\fullwidth}
+\setlength{\topmargin}{-17mm}
+\setlength{\textheight}{255.5mm}
+\setlength{\textwidth}{170mm}
+\setlength{\columnsep}{10mm}
+\makeatletter
+%-------------------------------------------------------------------------------
+% マクロ
+%-------------------------------------------------------------------------------
+\renewcommand{\chapter}{
+  \if@openright\cleardoublepage\else\clearpage\fi
+  \global\@topnum\z@
+  \secdef\@chapter\@schapter
+}
+
+\let\@mkboth\@gobbletwo
+\let\@oddhead\@empty
+\let\@evenhead\@empty
+\def\@oddfoot{\normalfont\hfil- \thepage\ -\hfil}
+\let\@evenfoot\@oddfoot
+\makeatother
+\setlength{\footskip}{2\baselineskip}
+\addtolength{\textheight}{-2\baselineskip}
+
+\renewcommand{\title}[7]{
+\begin{titlepage}
+	\vspace*{2.5cm}
+  	\begin{center}
+  		{\LARGE 卒業研究論文}
+  	\end{center}
+  	\vspace*{1.8cm}
+  	\begin{center}
+  		{\Huge \bf  #1}
+  	\end{center}
+  	\vspace*{1cm}
+  	\begin{center}
+  		{\Large {\sf #2}}
+  	\end{center}
+  	\vspace*{2.0cm}
+  	\begin{center}
+  		{\large 学籍番号\hspace*{1zw}#3\\\vspace*{2mm}{\LARGE #4}\\\vspace*{1.5mm}{\Large \sc #5}}
+  	\end{center}
+  	\vspace*{1.2cm}
+  	\begin{center}
+  		{\LARGE 中央大学理工学部情報工学科\\\vspace*{3mm}#6研究室}
+  	\end{center}
+  	\vspace*{2.0cm}
+  	\begin{center}
+  		{\LARGE #7年3月}
+  	\end{center}
+\end{titlepage}
+}
+
+\renewcommand{\bibname}{参考文献}
+%-------------------------------------------------------------------------------
