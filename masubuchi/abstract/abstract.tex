@@ -1,0 +1,307 @@
+%-------------------------------------------------------------------------------
+% 卒論 要約用テンプレート
+% 要約（アブスト）は両面コピーで1枚（2ページ分）です.
+% \vspace{-5mm}などを駆使して詰め込んでください.
+%-------------------------------------------------------------------------------
+\documentclass[twocolumn]{jsarticle} % 用紙設定
+\usepackage{amsmath,amssymb,amsthm}  % 数学記号
+\usepackage{graphicx}                % 図
+\usepackage{abstract}                % 要約用スタイルファイル
+%-------------------------------------------------------------------------------
+% ここから本文
+%-------------------------------------------------------------------------------
+\begin{document}
+%-------------------------------------------------------------------------------
+% タイトル
+%-------------------------------------------------------------------------------
+\title{BKLS AlglorithmにWindow法をを用いた \\ Tateペアリングの高速化に
+関する考察}{Fast Computation of Tate Pairing with BKLS Algorithm and Window Method}{15D8101012B}{増渕 佳輝}{趙}{2019}
+%-------------------------------------------------------------------------------
+% 要約 : 本論の内容を要約して書きます.
+%-------------------------------------------------------------------------------
+\vspace{-5cm}
+\paragraph{要約}
+本研究ではペアリング暗号の演算で使用するMiller Algorithmを改良したBKLS Algorihtmに, にWindow法をを適用し, Tate ペアリングの高速化を行った.
+%-------------------------------------------------------------------------------
+% キーワード : 論文に関係するキーワードを書きます. 例）楕円曲線暗号, ペアリング
+%-------------------------------------------------------------------------------
+\vspace{-2mm}
+\paragraph{キーワード}
+ペアリング暗号, Tate ペアリング, Miller Algorithm, BKLS Algorithm,
+%-------------------------------------------------------------------------------
+% 序論 : 研究背景を書きます.
+%-------------------------------------------------------------------------------
+\vspace{-5mm}
+\section{序論}
+楕円曲線暗号とは有限体上の楕円曲線を用いた暗号で, これに対する攻撃方法としてペアリングが用いられた. その後, ペアリングを用いた暗号であるIDベース暗号への応用などに使われ,
+近年では，ペアリングを用いたプロトコルが数多く提案されている．
+楕円曲線上のペアリングとして,
+Weil ペアリングやTate ペアリングがあるが, 通常の楕円演算に比べて演算量が多いことが問題となっている.
+したがって, ペアリングの高速化が課題となっている.
+\par
+本研究ではペアリング暗号の演算で使用するMiller Algorithmを改良したBKLS Algorihtmに, にWindow法を適用しのTate ペアリングの高速化を行い,  計算コストと計算時間の比較を行った.
+
+%-------------------------------------------------------------------------------
+% 節 楕円曲線の定義, Miller's Algorithm, Double-Base Chain
+%-------------------------------------------------------------------------------
+\section{楕円曲線の定義}
+楕円曲線とは,一般的に
+\vspace{-2mm}
+\[E:y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6\]
+で与えられる. 有限体$\mathbb {F}_q$ $(q=p^m)$上の楕円曲線とは,この方程式を満たす有理点$(x,y)$に無限遠点$\mathcal{O}$を加えた集合のことであり, $E(\mathbb {F}_q)$と表す. また,定義体$\mathbb {F}_q$の標数が3より大きい場合は変数変換により, $y^2=x^3+ax+b$と一般化できる.
+\section{ペアリング}
+\subsection{Tate ペアリング}
+有限体\ $\mathbb{F}_q$上の楕円曲線を$y^2=x^3+ax+b$とし, 素数\ $n$, 埋め込み次数\ $k$を$n|q^k-1$を満たす最小の整数とする. 楕円曲線上の点$P,Q$を$P\in E(\mathbb{F}_q)[n]$,\ $Q\in E(\mathbb{F}_{q^k})$と定め, Tateペアリングを次に定義する.
+\vspace{-2mm}
+\[E(\mathbb{F}_q)[n]\times E(\mathbb{F}_{q^k})/nE(\mathbb{F}_{q^k})\rightarrow \mathbb{F}_{q^k}^{*}/(\mathbb{F}_{q^k}^{*})^n\]
+\vspace{-8mm}
+\[e(P,Q)=f_{n}(Q)^{{(q^k-1)/n}}=(f_P(Q+S)/f_P(S))^{(q^k-1)/n}\]
+\subsection{Reduced Tate ペアリング}
+Tate ペアリングの値は剰余類全体の集合$\mathbb{F}_{q^k}^\ast/(\mathbb{F}_{q^k}^\ast)^n$に属しており, 一意に定まらないので, $(q^k - 1) / n$乗することで, 一意な値を得られる. 最終べき乗したReduced Tate ペアリングを次に定義する.
+\vspace{-2mm}
+\[P \in E(\mathbb{F}_q)[n],\ Q \in E(\mathbb{F}_{q^k}),\ \mu_n = \left\{ x \in \mathbb{F}_{q^k}^\ast | x^n = 1 \right\}\]
+\vspace{-4mm}
+\[\tau \langle P,Q \rangle = \langle P,Q \rangle _n^{(q^k - 1) / n} = f_{n,P}(Q)^{(q^k - 1) / n} \in \mu_n\]
+\par
+\vspace{-2mm}
+さらに, $N = hn$に対して次の式が成立する.
+\vspace{-2mm}
+\[
+\tau(P,Q) = \langle P,Q \rangle _n^{(q^k - 1) / n}
+\]
+\vspace{-7mm}
+\subsection{Miller Algorithm}
+ペアリングの計算手法としてMiller Algorithmがある. $\mathbb{F}_q$上の楕円曲線のReduced Tate ペアリングにおけるMiller Algorithmを次に示す. \\\\
+\noindent Algorithm 1: Miller Algorithm\\
+Input: $n, \ l=\log n, \ P \in E(\mathbb{F}_q)[n], \ Q \in E(\mathbb{F}_{q^k})$ \\
+Output: $f \in \mathbb{F}_{q^k}$  \\
+1: \quad $V \gets P, \ f \gets 1,\ n=\sum^{l-1}_{i=0} n_i 2^i, \ n_i \in \{0,1\}$\\
+2: \quad for $j \gets l-1$ down do 0\\
+3: \quad \quad $f \gets f^2 \cdot \frac{g_{V,V}(Q)}{g_{2V}(Q)}.\ V \gets 2V$\\
+4: \quad if $n_j = 1$ then\\
+5: \quad \quad $f \gets f \cdot \frac{g_{V,P}(Q)}{g_{V+P}(Q)},\ V \gets V+P$\\
+6: \quad return $f$\\
+
+\subsection{BKLS Algorithm}
+ supersingular curveのdistortion map $\psi$ を利用して分母消去の手法を適用したBKLS Algorithm \cite{BKLS02}を次に示す. ordinary curveの場合, $Q' \in E'(K)$として, distortion mapではなくtwistの同型写像 $\psi _d$を用いる. \\\\
+ Input: $P,\ Q \in E(K_0)[n]$\\
+ Output: $f \in K$\\
+ 1: \quad $f \gets 1,\ V \gets P$\\
+ 2: \quad $n=\sum_{l-1}^{i=0} n_i 2^i, \ n_i \in \{0,1\}$\\
+ 3: \quad for $j \gets l-1$ down 0 do 0\\
+ 4: \quad \quad $f \gets f^2 \cdot g_{V,\ V}(\psi (Q))$\\
+ 5: \quad \quad $V \gets 2V$\\
+ 6: \quad if $n_j = 1$ then\\
+ 7: \quad \quad $f \gets f \cdot g_{V,\ P}(\psi (Q))$\\
+ 8: \quad \quad $V \gets V+P$\\
+ 9: \quad return $f$\\
+\par
+\subsection{Window Miller Algorithm}
+
+Input: $n, \ P \in E(\mathbb{F}_q)[n], \ Q \in E(\mathbb{F}_{q^k}) \ S \in E(\mathbb{F}_{q^k})$ \\
+Output: $f \in \mathbb{F}_{q^k}$  \\
+(online computation) \\
+1: \quad $P_1 = P, f'_1=1 $\\
+2: \quad for $i \gets i$ up to do $2^w -1$\\
+3: \quad $P_i \gets iP_i $\\
+4: \quad \quad $f \gets f \cdot \frac{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}$ \\
+(main computation) \\
+5: \quad $T \gets P_i, f \gets 1 $\\
+6: \quad $n=\sum^{l - 1}_{i=0} n_i 2^i, \ n_i \in \{0,1\},\ n_0 = 1$\\
+7: \quad for $ n-1 \gets i$ down to 0 step w\\
+8: \quad step 8-1 から 8-2 をw回繰り返す\\
+8-1: \quad \quad $T \gets 2T $\\
+8-2: \quad \quad $f \gets f^2 \cdot \frac{g_{T,-2T}(Q+S)g_{\mathcal{O},2T}(S)}{g_{T,-2T}(Q+S)g_{\mathcal{O},2T}(S)}$\\
+9: \quad $m' \gets =\sum^{j=i-w+1}_{i} m[j]2^{j-i+w-1} $\\
+10: \quad if $m' \neq 0$ then\\
+10-1: \quad \quad $T \gets T + P_{m'} $\\
+10-2: \quad \quad $f \gets f^2 \cdot \frac{g_{T,-2T}(Q+S)g_{\mathcal{O},2T}(S)}{g_{T,-2T}(Q+Sg_{\mathcal{O},2T}(S)}$ \\
+11: \quad return $f$\\
+\section{提案手法}
+
+% \subsection{Double-Base Chains}
+% Double-Base Number System(DBNS)はV. S. Dimitrovらによって提案された手法で, 整数$k$は2, 3のべき乗を使って次のように表すことができる.
+% \vspace{-3mm}
+% \[
+% k = \sum ^m_{i = 1} s_i 2^{b_i} 3^{t_i},\ s_i \in \{-1,1\},\ b_i,\ t_i \ge 0.
+% \]
+% \vspace{-3mm}
+% \par
+% この手法を楕円曲線上の$k$倍点を求めるために適用した手法をDouble-Base Chains(DBC)\cite{DBNS}と呼び, 次にアルゴリズムを示す. \\\\
+% DBNS representation algorithm(DBC)\\
+% Input: $k,\ b_{max},\ t_{max} > 0$\\
+% Output: $k=\sum ^m_{i = 1} s_i 2^{b_i} 3^{t_i}となるような集合(s_i,b_i,t_i),\ b_1 \ge \cdots \ge b_m \ge 0,\ t_1 \ge \cdots \ge t_m \ge 0$\\
+% 1. \quad $s \gets 1$\\
+% 2. \quad while $k > 0$ do\\
+% 3. \quad \quad $k$に最も近似した値$z = 2^b 3^t$を定義する. \\
+% \quad \quad \quad $0 \le b \le b_{max},\ 0 \le t \le t_{max}$\\
+% 4. \quad \quad print $(s,b,t)$\\
+% 5. \quad \quad $b_{max} \gets b,\ t_{max} \gets t$\\
+% 6. \quad \quad if $k < z$ then\\
+% 7. \quad \quad \quad $s \gets -s$\\
+% 8. \quad \quad $k \gets |k - z|$
+% \par
+% このとき, 2進展開と3進展開の上限をそれぞれ$b_{max},\ t_{max}$と呼ぶ. これらの値は$b_{max} < \mbox{log} _2(k) < n,\ t_{max} < \mbox{log} _3(k) \approx 0.63n$となる.
+% \subsection{DBCを用いたMiller Algorithm}
+% C. ZhaoらによってDBCを用いたMiller Algorithm \cite{DBCT}が提案された.
+% 計算量は$\mathbb{F}_q^\ast$上では乗算一回を1M, 2乗を1S, 除算を1Iとする. $\mathbb{F}_{q^k}^\ast$では乗算一回を$1\mbox{M}_k$, 2乗を$1\mbox{S}_k$, 除算を$1\mbox{I}_k$とし, $\mathbb{F}_q^\ast と\mathbb{F}_{q^k}^\ast$の要素の乗算一回を$1\mbox{M}_b$とする. 同一の演算, スカラー倍は時間がかからないものとし, $\mathbb{F}_q^\ast,\ \mathbb{F}_{q^k}^\ast$上の加算, 減算は乗算のコストに比べて小さいので無視する. さらに, $\mbox{S} = 0.8 \mbox{M},\ \mbox{I} = 10 \mbox{M},\ \mbox{M}_k = k^{1.6} \mbox{M},\ \mbox{S}_k = 0.8k^{1.6} \mbox{M},\ \mbox{I}_k = 10k^{1.6} \mbox{M},\ \mbox{M}_b = k \mbox{M}$と換算できる. Tate ペアリングにおける加算(TADD), 減算(TSUB), 2倍算(TDBL), 3倍算(TTRL)の計算量は次のようになっている.
+% \vspace{-2mm}
+% \begin{table}[htbp]
+%  \begin{center}
+%  \scalebox{.77}{
+%   \begin{tabular}{|l|c|}
+%   \hline
+%   演算 & 計算量 \\
+%   \hline
+%   TADD & $\mbox{M}_k + 2.5 \mbox{M}_b + 1 \mbox{I} + 3 \mbox{M} + 1 \mbox{S}$ \\
+%   \hline
+%   TSUB & $\mbox{M}_k + 1 \mbox{I} + (2k + 3) \mbox{M} + 1 \mbox{S}$ \\
+%   \hline
+%   TDBL & $\mbox{M}_k + \mbox{S}_k + 3.5 \mbox{M}_b + 1 \mbox{I} + 4 \mbox{M} + 2 \mbox{S}$ \\
+%   \hline
+%   TTRL & $3 \mbox{M} _k + \mbox{S}_k + 2 \mbox{M}_b + 1 \mbox{I} + 9 \mbox{M} + 4 \mbox{S}$ \\
+%   \hline
+%   \end{tabular}
+%   }
+%  \end{center}
+%  \caption{Tate ペアリングにおける各演算の計算量}
+% \end{table}
+% \vspace{-5mm}
+% \par
+% V. S. Dimitrovらによって提案されたDBCを用いたMiller Algorithmの計算量を次に示す. $lはnのビット数$.
+% \vspace{-2mm}
+% \begin{table}[htbp]
+% \scalebox{.8}{
+%   \begin{tabular}{|l|c|}
+%   \hline
+%   Algorithm & 計算量\\
+%   \hline
+%   Miller Algorihtm &  $l$TDBL$+\frac{l}{2}$TTRL\\
+%   \hline
+%   Signed Miller Algorithm &  $l$TDBL$+\frac{l}{3}(\frac{1}{2}$TADD$+\frac{1}{2}$TSUB)\\
+%   \hline
+%   \raisebox{1.5ex}{Miller Algorithm with DBC} & \shortstack{$b_{max}$TDBL$+t_{max}$TTRL\\ $+\frac{m}{2}($TADD$+$TSUB)}\\
+%   \hline
+%   \end{tabular}
+%   }
+%   \caption{各手法の計算量}
+% \end{table}
+% \vspace{-5mm}
+% \par
+% 本研究では埋め込み次数$k=2$について, Miller Algorithm, Signed Miller Algorithm, DBCを用いたMiller Algorithmの計算量を算出する. そして提案手法である$k=2$に加えて既存研究である$k=4,\ 6$の場合をMAGMAで実装し, 計算時間を比較した.
+% \vspace{-2mm}
+% \section{実行結果}
+
+
+
+%理論値, 速度比較
+% \subsection{実装条件}
+%\begin{enumerate}
+%\item 部分群の位数$n$をランダムな素数を選ぶ. \\
+%\item 計測は演算部分だけに対して1000回行い, その平均をとる. \\
+%\item 楕円曲線は埋め込み次数$k=2,\ 4,\ 6$でOrdinary Curveを使用した. \\
+%\end{enumerate}
+% \noindent 1. 部分群の素位数$n$をランダムに選んだ. \\
+% 2. 計測は演算部分だけに対して1000回行い, その平均を取った. \\
+% 3. 楕円曲線は埋め込み次数$k=2,\ 4,\ 6$でordinary curveを使用した. \\
+% \vspace{-4mm}
+% \subsection{結果}
+% 従来手法と提案手法の計算量と計算時間を表に示した. 従来手法に比べて表3, 4から$k=2$のとき,31\%, 16\%と25\%, 22\%の高速化を実現した. 表5, 6から$k=4$のとき, 12\%, 8\%, $k=6$のとき, 21\%, 20\%の高速化を実現した.
+% \newpage
+% \begin{table}[htbp]
+% \begin{center}
+% \scalebox{.8}{
+%   \begin{tabular}{|l|c|c|}
+%   \hline
+%   $b_{max} = 97,\ t_{max} = 39,\ m = 18$ & 計算量& 計算時間\\
+%   \hline
+%   Miller Algorithm & 6481M & 32.9ms \\
+%   \hline
+%   Signed Miller Algorithm & 5614M & 29.2ms \\
+%   \hline
+%   Miller Algorithm with DBC & 4565M & 25.1ms \\
+%   \hline
+%   \end{tabular}
+%   }
+%  \caption{$k=2,\ l \approx 160$}
+%  \end{center}
+% \end{table}
+% \vspace{-5mm}
+% \begin{table}[htbp]
+%  \begin{center}
+%  \scalebox{.8}{
+%   \begin{tabular}{|l|c|c|}
+%   \hline
+%   $b_{max} = 72,\ t_{max} = 56,\ m = 24$ & 計算量& 計算時間\\
+%   \hline
+%   Miller Algorithm & 6563M & 43.8ms \\
+%   \hline
+%   Signed Miller Algorithm & 5684M & 42.5ms \\
+%   \hline
+%   Miller Algorithm with DBC & 4697M & 34.9ms \\
+%   \hline
+%   \end{tabular}
+%   }
+%  \end{center}
+%  \caption{$k=2,\ l \approx 160$}
+% \end{table}
+% \vspace{-5mm}
+% \begin{table}[htbp]
+%  \begin{center}
+%  \scalebox{.8}{
+%   \begin{tabular}{|l|c|c|}
+%   \hline
+%   $b_{max} = 113,\ t_{max} = 31,\ m = 45$ & 計算量& 計算時間\\
+%   \hline
+%   Miller Algorithm & 12623M & 66.2ms \\
+%   \hline
+%   Signed Miller Algorithm & 9273M & 64.0ms \\
+%   \hline
+%   Miller Algorithm with DBC & 8796M & 59.0ms \\
+%   \hline
+%   \end{tabular}
+%   }
+%  \end{center}
+%  \caption{$k=4,\ l \approx 160$}
+% \end{table}
+% \vspace{-5mm}
+% \begin{table}[htbp]
+%  \begin{center}
+%  \scalebox{.8}{
+%   \begin{tabular}{|l|c|c|}
+%   \hline
+%   $b_{max} = 80,\ t_{max} = 49,\ m = 35$ & 計算量& 計算時間\\
+%   \hline
+%   Miller Algorithm & 19795M & 78.4ms \\
+%   \hline
+%   Signed Miller Algorithm & 13289M & 77.8ms \\
+%   \hline
+%   Miller Algorithm with DBC & 12205M & 64.8ms \\
+%   \hline
+%   \end{tabular}
+%   }
+%  \end{center}
+% \caption{$k=6,\ l \approx 160$}
+% \end{table}
+
+
+
+\section{結論}
+%-------------------------------------------------------------------------------
+% 謝辞
+%-------------------------------------------------------------------------------
+\section*{謝辞}
+本研究において, あらゆる面でご指導していただいた趙晋輝教授並びに相賀氏, 山岸氏を始めとする諸先輩方, 趙研究室の皆様にも深く感謝いたします.
+%-------------------------------------------------------------------------------
+% 参考文献 : 本論とは違い, 主なものだけでもOK.
+%-------------------------------------------------------------------------------
+
+\begin{thebibliography}{99}
+\bibitem{DBNS} V. S. Dimitrov, L. Imbert, and P.K.Mishra: {\em Efficient and secure elliptic curve point multiplication using double-base chains}. LNCS 3788, 2005.
+\bibitem{DBCT} C. Zhao, F. Zhang and J. Huang: {\em Efficient Tate Pairing Computation Using Double-Base Chains}. Science in China Series F: Information Sciences, 2008, vol. 51, no. 8.
+\bibitem{OTA} S. Matsuda, N. Kanayama, F. Hess, and E. Okamoto. {\em Optimised versions of the Ate and twisted Ate pairings}. Appear to the 11th IMA International Conference on Cryptography and Coding.
+\end{thebibliography}
+
+%-------------------------------------------------------------------------------
+\end{document}
+%-------------------------------------------------------------------------------

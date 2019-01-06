@@ -1,5 +1,5 @@
 \chapter{ペアリング演算の高速化}
-%Miller Algorithmの発展, BKLS,window Algorithmについて書く.
+%Miller Algorithmの発展, BKLS,window  Algorithmについて書く.
 \section{Signed Miller Algorithm}
 第4章で述べたMiller Algorithmでは部分群の位数$n$を2進展開していた. Signed Miller Algorithmは符号付き2進展開を用いる手法である. 次にそのアルゴリズムを示す.
 \par
@@ -122,13 +122,15 @@ y_3 = - (y^3)^3
 \section{Window Miller Algorithm}
 window Miller アルゴリズムは、オンライン事前演算 を用いる方法である。
 
+$i=1,\ldots,2w-1$
+
 まず、$i=1,\ldots,2w-1$ に対して2w 個の楕円曲線上の点 $P_i = iP$ を求め、各 $P_i$ において
 $i(P) − i(O) = (P _i) − (O) + div(f _i)$ が成り立つような有理式 $f _i$ に対し、
-$f' _i  = f' _i(Q + S) /f _i(S)$ と
+$f' _i  = f' _i(Q + S) /f _i(S)$
 なる $f' _i ∈ \mathbb{F}_{q^k}$ を求める。
-この $P_i, f' _i$ を用いることで、楕円加算および直線 $l _{P, -P_i}$, 垂線 $v _{P_i}$
+この $P_i, f' _i$ を用いることで、楕円加算および直線 $l _1, l _2$
 に関係する演算を削減する。上記アルゴリズムの説明では、簡単にするために w|n を仮定している。
- Miller のアルゴリズムでは m のハミング重み $wH (m)$ 回の楕円加算を行っていたが、window Millerアルゴリズムでは、$n/w$ 回行うことになるため、適切なwを用いれば、楕円加算および直線 $l _{P, -P_i}$, 垂線 $v _{P_i}$ の計算を削減することができる。
+ Miller のアルゴリズムでは m のハミング重み $wH (m)$ 回の楕円加算を行っていたが、window Millerアルゴリズムでは、$n/w$ 回行うことになるため、適切なwを用いれば、楕円加算および直線 $l _1, l _2$ の計算を削減することができる。
 \par
 
 \begin{table}[htbp]
@@ -142,17 +144,14 @@ $f' _i  = f' _i(Q + S) /f _i(S)$ と
      1: \quad $P_1 = P, f'_1=1 $\\
      2: \quad for $i \gets i$ up to do $2^w -1$\\
      3: \quad $P_i \gets iP_i $\\
-     4: \quad \quad $f \gets f \cdot \frac{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}$\\
-
+     4: \quad \quad $f \gets f \cdot \frac{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}$ \\
      (main computation) \\
      5: \quad $T \gets P_i, f \gets 1 $\\
      6: \quad $n=\sum^{l - 1}_{i=0} n_i 2^i, \ n_i \in \{0,1\},\ n_0 = 1$\\
-
      7: \quad for $ n-1 \gets i$ down to 0 step w\\
      8: \quad step 8-1 から 8-2 をw回繰り返す\\
-     8-1: \quad\quad $T \gets 2T $\\
+     8-1: \quad \quad $T \gets 2T $\\
      8-2: \quad \quad $f \gets f^2 \cdot \frac{g_{T,-2T}(Q+S)g_{\mathcal{O},2T}(S)}{g_{T,-2T}(Q+S)g_{\mathcal{O},2T}(S)}$\\
-
      9: \quad $m' \gets =\sum^{j=i-w+1}_{i} m[j]2^{j-i+w-1} $\\
      10: \quad if $m' \neq 0$ then\\
      10-1: \quad \quad $T \gets T + P_{m'} $\\

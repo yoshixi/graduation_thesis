@@ -1,7 +1,7 @@
 % \usepackage[utf8]{inputenc}
 \chapter*{概論}
 \pagenumbering{roman}
-暗号で有用な双線形写像に, 楕円曲線上, または超楕円曲線上の Weil ペアリング, Tate ペアリングなどがある. 楕円曲線におけるペアリング演算では, Miller Algorithm や BKLS Algorithm, Duursma and Lee Algorithm が知ら れている. 本研究では 2 進展開,3進展開を用いたDouble-Base Chainsに Miller Algorithm を適用した埋め込み次 数 k = 4, 6, 8 のときの計算コストを求めた既存研究 [7] に対して, 埋め込み次数 k = 2 のときに適用した. また,既 存研究では計算コストまでしか求められていなかったが, 提案手法では k = 2, 4, 6 の楕円曲線に対して MAGMA を 用いて実装し, 計算時間を求め,計算コストと比較した.
+暗号で有用な双線形写像に, 楕円曲線上, または超楕円曲線上の Weil ペアリング, Tate ペアリングなどがある. 楕円曲線におけるペアリング演算では, Miller Algorithm や BKLS Algorithmが知られている. 本研究では BKLS AlgorihtmにWindow法を適用し, Tateペアリングの高速化を行った. またMAGMAを用いて実装し, 計算時間を求め,計算コストと比較した.
 
 \bigskip
 
