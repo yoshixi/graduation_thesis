@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  7 JAN 2019 01:09
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  7 JAN 2019 17:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -174,88 +174,88 @@ LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Checking defaults for JT2/mc/m/n on input line 13.
 LaTeX Font Info:    ... okay on input line 13.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 18.
+(Font)              scaled to size 13.31541pt on input line 17.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 18.
+(Font)              scaled to size 13.31541pt on input line 17.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 18.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 17.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 18.
+(Font)              scaled to size 13.31541pt on input line 17.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 18.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 17.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 13.31541pt on input line 18.
+(Font)              scaled to size 13.31541pt on input line 17.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 18.
+(Font)              scaled to size 9.24683pt on input line 17.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 18.
+(Font)              scaled to size 9.24683pt on input line 17.
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 18.
+(Font)              scaled to size 11.09619pt on input line 17.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 18.
+(Font)              scaled to size 11.09619pt on input line 17.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 24.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 24.
+(Font)              scaled to size 9.24683pt on input line 23.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 24.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 23.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 9.24683pt on input line 24.
+(Font)              scaled to size 9.24683pt on input line 23.
 LaTeX Font Info:    Font shape `JT2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 35.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 35.
+(Font)              scaled to size 11.09619pt on input line 34.
 LaTeX Font Info:    Font shape `JY2/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 35.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 34.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 11.09619pt on input line 35.
+(Font)              scaled to size 11.09619pt on input line 34.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 6.47278pt on input line 50.
+(Font)              scaled to size 6.47278pt on input line 52.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 4.62341pt on input line 50.
-LaTeX Font Info:    Try loading font information for U+msa on input line 50.
+(Font)              scaled to size 4.62341pt on input line 52.
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 50.
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (5.73868pt too wide) detected at line 58
+Overfull \hbox (5.73868pt too wide) detected at line 60
 \OML/cmm/m/it/10 e\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P; Q\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Q\OT1/cmr/m/n/10 )[] = (\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Q \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 S\OT1/cmr/m/n/10 ))[]
  []
 
 
-Underfull \hbox (badness 2828) in paragraph at lines 60--62
+Underfull \hbox (badness 2828) in paragraph at lines 62--64
 []\OT1/cmr/m/n/10 Tate \JY2/mc/m/n/10 ペアリングの値は剰余類全体の集合
  []
 
 
-LaTeX Warning: Citation `BKLS02' on page 1 undefined on input line 86.
+LaTeX Warning: Citation `BKLS02' on page 1 undefined on input line 88.
 
 [1
 
 
 ]
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 299.
+(Font)              scaled to size 8.32214pt on input line 301.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 299.
+(Font)              scaled to size 8.32214pt on input line 301.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 300.
+(Font)              scaled to size 8.32214pt on input line 302.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 300.
+(Font)              scaled to size 8.32214pt on input line 302.
 LaTeX Font Info:    Font shape `JT2/gt/m/it' in size <9> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 300.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 302.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 300.
+(Font)              scaled to size 8.32214pt on input line 302.
 LaTeX Font Info:    Font shape `JY2/gt/m/it' in size <9> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 300.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 302.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 300.
+(Font)              scaled to size 8.32214pt on input line 302.
 
-Underfull \hbox (badness 2142) in paragraph at lines 302--303
+Underfull \hbox (badness 2142) in paragraph at lines 304--305
 []\OT1/cmr/m/n/9 S. Mat-suda, N. Kanayama, F. Hess, and E.
  []
 
@@ -275,4 +275,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  27i,4n,27p,855b,230s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on abstract.dvi (2 pages, 11692 bytes).
+Output written on abstract.dvi (2 pages, 11684 bytes).
