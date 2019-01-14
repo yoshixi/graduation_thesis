@@ -34,7 +34,6 @@ def original_miller(P, Q, n):
           count += 1
           V = S
       i = i-1
-  print(count)
   if n_is_negative:
       vee = V._line_(-V, Q)
       t = 1/(t*vee)
@@ -51,13 +50,12 @@ def window_miller(P, Q, n, pi, fi, w):
       n_is_negative = True
   one = P.curve().base_field().one()
   t = one ##1が入っている
-  print(t)
   V = P
   S = 2*V
   nbin = n.bits()
   i = n.nbits() - 2
   count = 1
-  while i > -1  :
+  while i > -1:
       j = w
       while j > 0:
           S = 2*V
@@ -68,18 +66,12 @@ def window_miller(P, Q, n, pi, fi, w):
           V = S
           j -= 1
 
-    #  j = i-w+1
-    #  m = 0
-    #  while j <= i:
-    #      m += nbin[j]*2^(j-i+w-1)
-    #      j+=1
+      j = i-w+1
+      m = 0
+      while j <= i:
+          m += nbin[j]*2^(j-i+w-1)
+          j+=1
 
-      if i+1 < n.nbits():
-          n_2 = nbin[i+1]
-      else:
-          n_2 = 0
-      m = nbin[i] + n_2*2
-      print('m: ', m)
       if m != 0:
           S = V+pi[m]
           ell = V._line_(pi[m], Q)
@@ -91,7 +83,6 @@ def window_miller(P, Q, n, pi, fi, w):
   if n_is_negative:
       vee = V._line_(-V, Q)
       t = 1/(t*vee)
-  print(count)
   return t
 
 def precomptation_scalar(P, w):
@@ -140,11 +131,13 @@ Qx = Ex(b^19 + b^18 + b^16 + b^12 + b^10 + b^9 + b^8 + b^5 + b^3 + 1, b^18 + b^1
 #print(Qx._miller_(Px,41) == b^13 + b^10 + b^8 + b^7 + b^6 + b^5)
 
 # precomptation_funcがちゃんと計算できているか
-n = 41
+n = 17
 miller = original_miller(Px,Qx, n)
 
 w = 2
 pi = precomptation_scalar(Px, w)
 fi = precomptation_func(Px,Qx, w)
 w_miller = window_miller(Px,Qx, n, pi, fi, w)
+
+# bit列が2n+1桁の場合にtrueになる ex(3,5, 17)
 print(miller==w_miller)

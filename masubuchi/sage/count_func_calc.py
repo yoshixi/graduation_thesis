@@ -162,6 +162,8 @@ def binary_window_method_while_loop():
   j = l-2
   while j > -1:
     # q = (m)*q
+    print('j: ', j)
+    print('q: ', q)
     k = w
     while k > 0:
         q = 2*q
@@ -179,12 +181,14 @@ def binary_window_method_while_loop():
 
 
 def binary_scalar_add_method():
-  num = base_10_to_n(95, 2)
+  num = base_10_to_n(41, 2)
   arr_num = num.split(',')
   n = list(map(lambda x: int(x), arr_num))
   q = 0
   l = len(n)
   for j in reversed(range(l)):
+    print('j: ', j)
+    print('q: ', q)
     q = 2 * q
     if n[j] == 1:
       q = q + 1
@@ -200,7 +204,7 @@ if __name__ == "__main__":
   # window_miller()
   # window_method()
   binary_scalar_add_method()
-  binary_window_method()
+  # binary_window_method()
   binary_window_method_while_loop()
   # binary_method()
   # proposed_window_miller()
