@@ -18,7 +18,6 @@ def original_miller(P, Q, n):
   S = 2*V
   nbin = n.bits()
   i = n.nbits() - 2
-  print('o-miller:i ', i)
   count = 1
   while i > -1  :
       S = 2*V
@@ -35,10 +34,10 @@ def original_miller(P, Q, n):
           count += 1
           V = S
       i = i-1
+  print(count)
   if n_is_negative:
       vee = V._line_(-V, Q)
       t = 1/(t*vee)
-  print('o-miller:count ', count)
   return t
 
 def window_miller(P, Q, n, pi, fi, w):
@@ -52,6 +51,7 @@ def window_miller(P, Q, n, pi, fi, w):
       n_is_negative = True
   one = P.curve().base_field().one()
   t = one ##1が入っている
+  print(t)
   V = P
   S = 2*V
   nbin = n.bits()
@@ -65,29 +65,33 @@ def window_miller(P, Q, n, pi, fi, w):
           vee = S._line_(-S, Q)
           t = (t**2)*(ell/vee)
           count = 2*count
-          print('w-miller:count ', count)
-          print('w-miller:i ', i)
           V = S
           j -= 1
 
-      j = i-w+1
-      m = 0
-      while j <= i:
-          m += nbin[j]*2^(j-i+w-1)
-          j+=1
+    #  j = i-w+1
+    #  m = 0
+    #  while j <= i:
+    #      m += nbin[j]*2^(j-i+w-1)
+    #      j+=1
+
+      if i+1 < n.nbits():
+          n_2 = nbin[i+1]
+      else:
+          n_2 = 0
+      m = nbin[i] + n_2*2
+      print('m: ', m)
       if m != 0:
           S = V+pi[m]
           ell = V._line_(pi[m], Q)
           vee = S._line_(-S, Q)
           t = t*fi[m]*(ell/vee)
           count += m
-          print('w-miller:count ', count)
           V = V + pi[m]
       i = i-w
   if n_is_negative:
       vee = V._line_(-V, Q)
       t = 1/(t*vee)
-  print('w  -miller:count ', count)
+  print(count)
   return t
 
 def precomptation_scalar(P, w):
@@ -136,16 +140,11 @@ Qx = Ex(b^19 + b^18 + b^16 + b^12 + b^10 + b^9 + b^8 + b^5 + b^3 + 1, b^18 + b^1
 #print(Qx._miller_(Px,41) == b^13 + b^10 + b^8 + b^7 + b^6 + b^5)
 
 # precomptation_funcがちゃんと計算できているか
-n = 12
+n = 41
 miller = original_miller(Px,Qx, n)
 
 w = 2
 pi = precomptation_scalar(Px, w)
-print('aaaa:', len(pi))
-print(miller == Px._miller_(Qx,n))
 fi = precomptation_func(Px,Qx, w)
 w_miller = window_miller(Px,Qx, n, pi, fi, w)
-
-print('last=======================')
-print(w_miller)
-print(miller)
+print(miller==w_miller)

@@ -135,55 +135,60 @@ def binary_window_method():
   arr_num = num.split(',')
   n = list(map(lambda x: int(x), arr_num))
   l = len(n)
-  q = 1
+  q = 0
   print('n: ', n)
   for j in reversed(range(0,l,w)):
-    print('j: ', j)
     q = (m)*q
     if j+1 < l:
         n_2 = n[j+1]
     else:
         n_2 = 0
     q = q + n[j] + n_2*2
-  print(q)
+  print('binary_window_msthod', q)
 
 
-def binary_window_method():
+def binary_window_method_while_loop():
   # d: bit列
   # for
-
   # 95 = (1011111)_2
 
-  m = 4
   w = 2
+  m = 2**w
   num = base_10_to_n(41, 2)
   arr_num = num.split(',')
   n = list(map(lambda x: int(x), arr_num))
   l = len(n)
-  q = 1
-  print('n: ', n)
-  for j in reversed(range(0,l,w)):
-    print('j: ', j)
-    q = (m)*q
+  q = 0
+  j = l-2
+  while j > -1:
+    # q = (m)*q
+    k = w
+    while k > 0:
+        q = 2*q
+        k -= 1
+
     if j+1 < l:
         n_2 = n[j+1]
     else:
         n_2 = 0
-    q = q + n[j] + n_2*2
-  print(q)
+    m = n[j] + n_2*2
+    print('m: ', m)
+    q = q + m
+    j -= w
+  print('while loop q:', q)
 
 
 def binary_scalar_add_method():
-  num = base_10_to_n(41, 2)
+  num = base_10_to_n(95, 2)
   arr_num = num.split(',')
   n = list(map(lambda x: int(x), arr_num))
-  q = 1
+  q = 0
   l = len(n)
   for j in reversed(range(l)):
     q = 2 * q
     if n[j] == 1:
       q = q + 1
-  print(q)
+  print('binary_scalar_add_method', q)
 
 def base_10_to_n(X, n):
     if (int(X/n)):
@@ -194,8 +199,9 @@ if __name__ == "__main__":
   # default_miller()
   # window_miller()
   # window_method()
-  binary_window_method()
   binary_scalar_add_method()
+  binary_window_method()
+  binary_window_method_while_loop()
   # binary_method()
   # proposed_window_miller()
   # num = base_10_to_n(95, 2)
