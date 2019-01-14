@@ -1,2 +1,6 @@
-print("Hello World")
-print(2^3)
+k=GF(4)
+print(len(k))
+print(k.list())
+k2.<x>=GF(2^2)
+print(len(k2))
+print(k2.list())
