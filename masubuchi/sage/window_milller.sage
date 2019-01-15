@@ -20,20 +20,17 @@ def original_miller(P, Q, n):
   S = 2*V
   nbin = n.bits()
   i = n.nbits() - 2
-  count = 1
   while i > -1  :
       S = 2*V
       ell = V._line_(V, Q)
       vee = S._line_(-S, Q)
       t = (t**2)*(ell/vee)
-      count = 2*count
       V = S
       if nbin[i] == 1:
           S = V+P
           ell = V._line_(P, Q)
           vee = S._line_(-S, Q)
           t = t*(ell/vee)
-          count += 1
           V = S
       i = i-1
   if n_is_negative:
@@ -56,7 +53,6 @@ def window_miller(P, Q, n, pi, fi, w):
   S = 2*V
   nbin = n.bits()
   i = n.nbits() - 2
-  count = 1
   while i > -1:
       j = w
       while j > 0:
@@ -64,7 +60,6 @@ def window_miller(P, Q, n, pi, fi, w):
           ell = V._line_(V, Q)
           vee = S._line_(-S, Q)
           t = (t**2)*(ell/vee)
-          count = 2*count
           V = S
           j -= 1
 
@@ -79,7 +74,6 @@ def window_miller(P, Q, n, pi, fi, w):
           ell = V._line_(pi[m], Q)
           vee = S._line_(-S, Q)
           t = t*fi[m]*(ell/vee)
-          count += m
           V = V + pi[m]
       i = i-w
   if n_is_negative:
@@ -147,21 +141,21 @@ def precomptation_func(P, Q, w):
 
   return t
 
-F.<a>=GF(2^5)
-E=EllipticCurve(F,[0,0,1,1,1])
-P = E(a^4 + 1, a^3)
-Fx.<b>=GF(2^(4*5))
-Ex=EllipticCurve(Fx,[0,0,1,1,1])
+# example
+# https://github.com/sagemath/sage/blob/934b744f653268515ee55d19cf499f16d4f4766d/src/sage/schemes/elliptic_curves/ell_point.py
+
+F.<a>=GF(2^5) # 体を定義
+E=EllipticCurve(F,[0,0,1,1,1]) #楕円曲線を定義
+P = E(a^4 + 1, a^3) # 楕円曲線上の点Pを定義
+Q = E.points()[1]
+Fx.<b>=GF(2^(4*5))  # Fの拡大を定義
+Ex=EllipticCurve(Fx,[0,0,1,1,1]) # 拡大体上の楕円曲線を定義
 phi=Hom(F,Fx)(F.gen().minpoly().roots(Fx)[0][0])
-# print('phi: ',phi)
-# print('F:',F)
-# print('F.gen:',F.gen())
-# print('F.minipoly:',F.gen().minpoly())
-# print('F.roots:',F.gen().minpoly().roots(Fx))
-# print('F:',F.gen().minpoly().roots(Fx)[0][0])
+
 Px=Ex(phi(P.xy()[0]),phi(P.xy()[1]))
-# print('Px: ',Px.xy()[0])
-# print('Px: ',Px.xy()[1])
+print('E: ', E)
+print('P: ',P)
+print('P.xy: ',Px.xy())
 Qx = Ex(b^19 + b^18 + b^16 + b^12 + b^10 + b^9 + b^8 + b^5 + b^3 + 1, b^18 + b^13 + b^10 + b^8 + b^5 + b^4 + b^3 + b)
 #print('Px-miller: ', Px._miller_(Qx,41))
 #print('Qx-miller: ', Qx._miller_(Px,41))
@@ -169,7 +163,7 @@ Qx = Ex(b^19 + b^18 + b^16 + b^12 + b^10 + b^9 + b^8 + b^5 + b^3 + 1, b^18 + b^1
 #print(Qx._miller_(Px,41) == b^13 + b^10 + b^8 + b^7 + b^6 + b^5)
 
 # precomptation_funcがちゃんと計算できているか
-n = 2^160 +1
+n = 27481
 
 start = time.time()
 miller = original_miller(Px,Qx, n)
@@ -177,7 +171,7 @@ process_time = time.time() - start
 print(process_time)
 
 
-w = 8
+w = 7
 pi = precomptation_scalar(Px, w)
 fi = precomptation_func(Px,Qx, w)
 
@@ -186,5 +180,5 @@ w_miller = window_miller(Px,Qx, n, pi, fi, w)
 process_time2 = time.time() - start2
 print(process_time2)
 
-# bit列が2n+1桁の場合にtrueになる ex(3,5, 17)
+# bit列がw*n+1桁の場合にtrueになる ex(3,5, 17)
 print(miller==w_miller)
