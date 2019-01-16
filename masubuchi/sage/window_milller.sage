@@ -163,7 +163,7 @@ Qx = Ex(b^19 + b^18 + b^16 + b^12 + b^10 + b^9 + b^8 + b^5 + b^3 + 1, b^18 + b^1
 #print(Qx._miller_(Px,41) == b^13 + b^10 + b^8 + b^7 + b^6 + b^5)
 
 # precomptation_funcがちゃんと計算できているか
-n = 27481
+n = 6
 
 start = time.time()
 miller = original_miller(Px,Qx, n)
@@ -171,7 +171,7 @@ process_time = time.time() - start
 print(process_time)
 
 
-w = 7
+w = 2
 pi = precomptation_scalar(Px, w)
 fi = precomptation_func(Px,Qx, w)
 
