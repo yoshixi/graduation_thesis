@@ -98,19 +98,19 @@ def bkls_miller(P, Q, n):
   V = P
   nbin = n.bits()
   i = n.nbits() - 2
-  count = 1
+  # count = 1
   # print('count, t', [count, t])
   Q = Ex(phi(Q.xy()[0]),phi(Q.xy()[1]))
-  while i > -1  :
+  while i > -1:
       ell = V._line_(V, Q)
       t = (t**2)*ell
-      count = 2*count
+      # count = 2*count
       # print('count, t', [count, t])
       V = 2*V
       if nbin[i] == 1:
           ell = V._line_(P, Q)
           t = t*ell
-          count += 1
+          # count += 1
           # print('count, t', [count, t])
           V = V+P
       i = i-1
@@ -136,7 +136,7 @@ def window_bkls_miller(P, Q, n, Pi, fi, w):
   V = P
   nbin = n.bits()
   i = n.nbits() - 2
-  count = 1
+  # count = 1
   Q = Ex(phi(Q.xy()[0]),phi(Q.xy()[1]))
   # print('count, t', [count, t])
   while i > -1:
@@ -146,7 +146,7 @@ def window_bkls_miller(P, Q, n, Pi, fi, w):
           t = (t**2)*ell
           V = 2*V
           j -= 1
-          count = 2*count
+          # count = 2*count
           # print('count, t', [count, t])
 
       j = i-w+1
@@ -159,14 +159,14 @@ def window_bkls_miller(P, Q, n, Pi, fi, w):
           ell = V._line_(Pi[m], Q)
           t = t*fi[m]*ell
           V = V + Pi[m]
-          count = count + m
+          # count = count + m
           # print('count, t', [count, t])
 
       i = i-w
   if n_is_negative:
       vee = V._line_(-V, Q)
       t = 1/(t*vee)
-  print(count)
+  # print(count)
   return t
 
 def precomptation_scalar(P, w):
@@ -212,7 +212,7 @@ def precomptation_bkls_func(P, Q, w):
 # 超楕円
 # http://doc.sagemath.org/html/en/reference/curves/sage/schemes/hyperelliptic_curves/hyperelliptic_generic.html
 
-
+r"""
 k=12  #埋め込み次数
 z=5
 p = 36*(z^4) + 36*(z^3) + 24*(z^2) + 6*(z) + 1
@@ -220,8 +220,6 @@ n = 36*(z^4) + 36*(z^3) + 18*(z^2) + 6*(z) + 1
 print('n: ', n)
 # p=23
 # n=24
-
-
 F.<a>=GF(p) # Finite Field of size 27631
 E=EllipticCurve(F,[0,0,0,0,6]) # 楕円曲線を定義
 Fx.<b>=GF(p^(k))  # Fの拡大を定義
@@ -232,8 +230,23 @@ P = E.random_point() # 6 torsion points
 Q = E.random_point()
 Px=Ex(phi(P.xy()[0]),phi(P.xy()[1]))
 Qx = Ex.random_point()
-
 w = 7
+"""
+
+p=23
+n=24
+w=4
+F.<a>=GF(p) # Finite Field of size 27631
+E=EllipticCurve(F,[0,0,0,0,1]) #楕円曲線を定義
+Fx.<b>=GF(p^(k))  # Fの拡大を定義
+Ex=EllipticCurve(Fx,[0,0,0,0,1]) # 拡大体上の楕円曲線を定義
+phi=Hom(F,Fx)(F.gen().minpoly().roots(Fx)[0][0])
+
+P = E(19,11) # 6 torsion points
+Q = E(14,13)
+Px=Ex(phi(P.xy()[0]),phi(P.xy()[1]))
+Qx=Ex.random_point()
+
 pi = precomptation_scalar(Px, w)
 fi = precomptation_func(Px,Qx, w)
 
