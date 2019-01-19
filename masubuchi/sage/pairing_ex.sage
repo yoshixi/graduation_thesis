@@ -41,7 +41,7 @@
 # Px.weil_pairing(O,41) == Fx(1)
 # print(cputime(t))
 
-def miller(P, Q, n):
+def miller(P, Q, n)
   if Q.is_zero():
       raise ValueError("Q must be nonzero.")
   if n.is_zero():

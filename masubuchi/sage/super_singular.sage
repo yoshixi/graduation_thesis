@@ -198,15 +198,12 @@ def precomptation_bkls_func(P, Q, w):
   p.insert(1, P)
   t = [0]
   t.insert(1,1)
-  count = 1
   # print('count, t', [count, t])
-  Q = Ex(phi(Q.xy()[0]),phi(Q.xy()[1]))
+  Q = distortion_map(Q)
   for i in range(2, (2^w)):
     p.insert(i, p[i-1] + p[1])
     ell = p[1]._line_(p[i-1], Q)
     t.insert(i, t[i-1]*ell)
-    count += 1
-    # print('count, t', [count, t])
 
   return t
 # 超楕円
