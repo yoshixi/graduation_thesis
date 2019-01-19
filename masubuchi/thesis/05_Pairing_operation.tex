@@ -79,45 +79,6 @@ f^{(q^k - 1) / n} = (f^{(q^k - 1) / \Phi _k(q)})^{(\Phi _k(q) / n)}
 \end{table}
 \vspace{-0.5cm}
 \par
-さらに, $\mathbb{F}_{3^m}$の有限体上で定義されるsupersingular curve $y^2 = x^3 - x + b,\ b \in \{-1,1\} $上の3 倍算は，$P = (x, y),\ 3P = (x_3, y_3) $とすれば,
-\vspace{-3mm}
-\[
-x_3 = (x^3)^3 - b
-\]
-\vspace{-5mm}
-\[
-y_3 = - (y^3)^3
-\]
-\vspace{-3mm}
-で計算可能である．標数3 の有限体における3 乗算の計算コストは乗算と比較して小さく，効
-率よく3 倍算を求めることができる．部分群の位数$n$ を3 進展開し，3 倍算に対しMiller fomula を求めることにより, Miller Algorithm の計算が可能となる．またdistortion map $\psi$ により, 分母消去の手法が適用可能である. 次にそのアルゴリズムを示す.
-\begin{table}[htbp]
- \begin{center}
-  \begin{tabular}{|l|}
-     \hline
-     Input: $P,\ Q \in E(\mathbb{F}_{3^m})[n]$\\
-     Output: $f \in \mathbb{F}_{3^{6m}}$\\
-     \hline
-     1: \quad $f \gets 1,\ V \gets P$\\
-     2: \quad $n=\sum_{l-1}^{i=0} n_i 3^i, \ n_i \in \{-1,0,1\}$\\
-     3: \quad for $j \gets l-1$ down 0 do 0\\
-     4: \quad \quad $f \gets f^3 \cdot g_{V,\ -3V}(\psi (Q))$\\
-     5: \quad \quad $V \gets 3V$\\
-     6: \quad if $n_j = 1$ then\\
-     7: \quad \quad $f \gets f \cdot g_{V,\ P}(\psi (Q))$\\
-     8: \quad \quad $V \gets V+P$\\
-     9: \quad if $n_j = -1$ then\\
-     10: \quad \quad $f \gets f \cdot g_{V,\ -P}(\psi (Q))$\\
-     11: \quad \quad $V \gets V-P$\\
-     12: \quad return $f$\\
-     \hline
-   \end{tabular}
- \end{center}
- \caption{BKLS Algorithm supersingular curve on $\mathbb{F}_{3^m}$}
-\end{table}
-\par
-\clearpage
-
 
 \section{Window Miller Algorithm}
 window Miller アルゴリズムは、オンライン事前演算 を用いる方法である。
@@ -140,23 +101,23 @@ $f' _i  = f' _i(Q + S) /f _i(S)$ と
      \hline
      (online computation) \\
      1: \quad $P_1 = P, f'_1=1 $\\
-     2: \quad for $i \gets i$ up to do $2^w -1$\\
-     3: \quad $P_i \gets iP_i $\\
-     4: \quad \quad $f \gets f \cdot \frac{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}$\\
+     2: \quad for $i \gets 2$ up to do $2^w -1$\\
+     3: \quad \quad $P_i \gets P + P_{i-1} $\\
+     4: \quad \quad $f'_i \gets f'_{i-1} \cdot \frac{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}$\\
 
      (main computation) \\
-     5: \quad $T \gets P_i, f \gets 1 $\\
+     5: \quad $V \gets P, f \gets 1 $\\
      6: \quad $n=\sum^{l - 1}_{i=0} n_i 2^i, \ n_i \in \{0,1\},\ n_0 = 1$\\
 
      7: \quad for $ n-1 \gets i$ down to 0 step w\\
      8: \quad step 8-1 から 8-2 をw回繰り返す\\
-     8-1: \quad\quad $T \gets 2T $\\
-     8-2: \quad \quad $f \gets f^2 \cdot \frac{g_{T,-2T}(Q+S)g_{\mathcal{O},2T}(S)}{g_{T,-2T}(Q+S)g_{\mathcal{O},2T}(S)}$\\
+     8-1: \quad\quad $V \gets 2V $\\
+     8-2: \quad \quad $f \gets f^2 \cdot \frac{g_{V,-2V}(Q+S)g_{\mathcal{O},2V}(S)}{g_{V,-2V}(Q+S)g_{\mathcal{O},2V}(S)}$\\
 
      9: \quad $m' \gets =\sum^{j=i-w+1}_{i} m[j]2^{j-i+w-1} $\\
      10: \quad if $m' \neq 0$ then\\
-     10-1: \quad \quad $T \gets T + P_{m'} $\\
-     10-2: \quad \quad $f \gets f^2 \cdot \frac{g_{T,-2T}(Q+S)g_{\mathcal{O},2T}(S)}{g_{T,-2T}(Q+Sg_{\mathcal{O},2T}(S)}$ \\
+     10-1: \quad \quad $f \gets ff'_m \cdot \frac{g_{V,P_m}(Q+S)g_{\mathcal{O},V+P_m}(S)}{g_{V,P_m}(Q+S)g_{\mathcal{O},V+P_m}(S)}$ \\
+     10-2: \quad \quad $V \gets V + P_{m'} $\\
      11: \quad return $f$\\
      \hline
    \end{tabular}

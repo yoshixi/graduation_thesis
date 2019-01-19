@@ -38,12 +38,14 @@
 \contentsline {subsection}{\numberline {5.2.4}群位数のHamming Weight}{17}% 
 \contentsline {subsection}{\numberline {5.2.5}最終べき乗の高速化}{17}% 
 \contentsline {section}{\numberline {5.3}BKLS Algorithm}{18}% 
-\contentsline {section}{\numberline {5.4}Window Miller Algorithm}{19}% 
+\contentsline {section}{\numberline {5.4}Window Miller Algorithm}{18}% 
 \contentsline {chapter}{\numberline {第6章}既存研究と提案手法}{20}% 
-\contentsline {section}{\numberline {6.1}Double-Base Chains}{20}% 
-\contentsline {chapter}{\numberline {第7章}実行結果}{21}% 
-\contentsline {section}{\numberline {7.1}実行結果}{21}% 
-\contentsline {subsection}{\numberline {7.1.1}実装環境}{21}% 
-\contentsline {subsection}{\numberline {7.1.2}実装条件}{21}% 
-\contentsline {chapter}{謝辞}{22}% 
-\contentsline {chapter}{参考文献}{23}% 
+\contentsline {section}{\numberline {6.1}提案手法のアルゴリズム}{20}% 
+\contentsline {section}{\numberline {6.2}提案手法の計算量}{21}% 
+\contentsline {section}{\numberline {6.3}提案手法}{22}% 
+\contentsline {chapter}{\numberline {第7章}実行結果}{23}% 
+\contentsline {section}{\numberline {7.1}実行結果}{23}% 
+\contentsline {subsection}{\numberline {7.1.1}実装環境}{23}% 
+\contentsline {subsection}{\numberline {7.1.2}実装条件}{23}% 
+\contentsline {chapter}{謝辞}{24}% 
+\contentsline {chapter}{参考文献}{25}% 

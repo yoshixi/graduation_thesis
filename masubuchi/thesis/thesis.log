@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  7 JAN 2019 01:09
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  18 JAN 2019 14:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -239,13 +239,13 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Try loading font information for U+msb on input line 3.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-))
+) [2
+
+])
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
- [2
-
-] (./01_intro.tex
+ [3] (./01_intro.tex
 第1章
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
 (Font)              scaled to size 19.17792pt on input line 1.
@@ -332,19 +332,60 @@ LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 
 ] [17
 
-] [18
+]) (./06_method.tex [18
 
-]) (./06_method.tex [19
+] [19]
+第6章
+[20
+
+] [21
 
 ]
-第6章
-) (./10_include.tex [20
+./06_method.tex:88: Missing $ inserted.
+<inserted text> 
+                $
+l.88   Window Miller Algorithm & lTDBL+ (n/w +2^
+                                                w-2)TADD \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./06_method.tex:89: Extra }, or forgotten $.
+<template> \unskip \removejfmglue \hfil }
+                                         \hskip \tabcolsep \hskip -.5\arrayr...
+l.89   \hline
+             
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./06_method.tex:89: Missing $ inserted.
+<inserted text> 
+                $
+l.89   \hline
+             
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./06_method.tex:89: Missing } inserted.
+<inserted text> 
+                }
+l.89   \hline
+             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+) (./10_include.tex [22
 
 ]
 第7章
-) [21
+) [23
 
-] [22
+] [24
 
 ]
 LaTeX Font Info:    Font shape `JT2/gt/m/it' in size <10> not available
@@ -355,7 +396,7 @@ LaTeX Font Info:    Font shape `JY2/gt/m/it' in size <10> not available
 (Font)              Font shape `JY2/gt/m/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 9.24683pt on input line 50.
- [23
+ [25
 
 ] (./thesis.aux)
 
@@ -363,12 +404,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 1924 strings out of 493215
- 22758 string characters out of 6144073
- 96078 words of memory out of 5000000
- 5880 multiletter control sequences out of 15000+600000
+ 1925 strings out of 493215
+ 22764 string characters out of 6144073
+ 97078 words of memory out of 5000000
+ 5881 multiletter control sequences out of 15000+600000
  21618 words of font info for 101 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  27i,11n,27p,1477b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (26 pages, 91692 bytes).
+Output written on thesis.dvi (29 pages, 96392 bytes).
