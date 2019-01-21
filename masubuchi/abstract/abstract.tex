@@ -14,13 +14,13 @@
 %-------------------------------------------------------------------------------
 % タイトル
 %-------------------------------------------------------------------------------
-\title{BKLS AlgorithmにWindow法を用いた \\ Tateペアリングの高速化に関する考察}{Fast Computation of Tate Pairing with BKLS Algorithm and Window Method}{15D8101012B}{増渕 佳輝}{趙}{2019}
+\title{Distorsion Mapのn-進展開を用いた \\ Miller Algorithm の高速化に関する研究}{Fast Computation of Miller Algorithm with N-ary expansion of Distortion maps}{15D8101012B}{増渕 佳輝}{趙}{2019}
 %-------------------------------------------------------------------------------
 % 要約 : 本論の内容を要約して書きます.
 %-------------------------------------------------------------------------------
 \vspace{-5cm}
 \paragraph{要約}
-本研究ではペアリング暗号の演算で使用するMiller Algorithmを改良したBKLS AlgorihtmにWindow法を適用し, Tateペアリングの高速化を行った.
+本研究ではペアリング暗号の演算で使用するMiller Algorithmにdistortion mapを用いたBKLS AlgorihtmにWindow法を適用し,高速化を行った.
 %-------------------------------------------------------------------------------
 % キーワード : 論文に関係するキーワードを書きます. 例）楕円曲線暗号, ペアリング
 %-------------------------------------------------------------------------------
@@ -37,11 +37,10 @@
 楕円曲線暗号とは有限体上の楕円曲線を用いた暗号で, これに対する攻撃方法としてペアリングが用いられた. その後, ペアリングを用いた暗号であるIDベース暗号への応用などに使われ,
 近年では，ペアリングを用いたプロトコルが数多く提案されている．
 楕円曲線上のペアリングとして,
-Weil ペアリングやTate ペアリングがあるが, 通常の楕円演算に比べて演算量が多いことが問題となっている.
-したがって, ペアリングの高速化が課題となっている.
+Weil ペアリングやTate ペアリングがあるが, 通常の楕円演算に比べて演算量が多く, ペアリング計算の高速化が課題となっている.
 \par
 
-本研究ではペアリング暗号の演算で使用するMiller Algorithmを改良したBKLS Algorihtmに, にWindow法を適用しのTate ペアリングの高速化を行い,  計算コストと計算時間の比較を行った.
+本研究ではペアリング暗号の演算で使用するMiller Algorithmにdistortion mapを用いることで改良したBKLS Algorihtmに,Window法を適用しのTateペアリングの高速化を行い,計算コストと計算時間の比較を行った.
 
 %-------------------------------------------------------------------------------
 % 節 楕円曲線の定義, Miller's Algorithm, Double-Base Chain
@@ -49,17 +48,46 @@ Weil ペアリングやTate ペアリングがあるが, 通常の楕円演算�
 \section{楕円曲線の定義}
 楕円曲線とは,一般的に
 \vspace{-2mm}
-\[E:y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6\]
-で与えられる.素数$m$,有限体$\mathbb {F}_q$ $(q=p^m)$上の楕円曲線とは,この方程式を満たす有理点$(x,y)$に無限遠点$\mathcal{O}$を加えた集合のことであり, $E(\mathbb {F}_q)$と表す. また,定義体$\mathbb {F}_q$の標数が3より大きい場合は変数変換により, $y^2=x^3+ax+b$と一般化できる.
+\[
+E:y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6
+\]
+
+で与えられる.素数$p$,有限体$\mthbb {F}_q$ $(q=p^m)$上の楕円曲線とは,この方程式を満たす有理点$(x,y)$に無限遠点$\mathcal{O}$を加えた集合のことであり, $E(\mathbb {F}_q)$と表す. また,定義体$\mathbb {F}_q$の標数が3より大きい場合は変数変換により, $y^2=x^3+ax+b$と一般化できる.
 \section{ペアリング}
+
+\subsection{ペアリングの定義}
+$n$を整数とする．$G_1,G_2$を単位元0の加法アーベル群とする．$G_1,G_2$は位数$n$を持つ．$G_3$は単位元1の乗法に関する位数$n$の巡回群とする．ペアリングというのは以下の関数である．
+
+\[
+e:G_1\times G_2\longrightarrow G_3
+\]
+全てのペアリングは以下の2つの性質を満たす．\\
+
+\item ・双線形性 \\
+全ての$P,P' \in G_{1}$と$Q,Q' \in G_{2}$に対して，
+
+\[
+e(P+P',Q) = e(P,Q) + e(P',Q)
+\]
+\[
+e(P,Q+Q') = e(P,Q) + e(P,Q') \\
+\]
+が成り立つ．\\
+
+\item ・非退縮性 \\
+
+全ての$P \in G_{1} \ (P \not= 0)$に対して $e(P,Q) \not= 1$となるような$Q \in G_{2}$が存在する．\\
+　全ての$Q \in G_{2} \ (P \not= 0)$に対して $e(P,Q) \not= 1$となるような$P \in G_{1}$が存在する．
 \subsection{Tate ペアリング}
 有限体\ $\mathbb{F}_q$上の楕円曲線を$y^2=x^3+ax+b$とし, 素数\ $n$, 埋め込み次数\ $k$を$n|q^k-1$を満たす最小の整数とする. 楕円曲線上の点$P,Q$を$P\in E(\mathbb{F}_q)[n]$,\ $Q\in E(\mathbb{F}_{q^k})$と定め, Tateペアリングを次に定義する.
-\vspace{-2mm}
-\[E(\mathbb{F}_q)[n]\times E(\mathbb{F}_{q^k})/nE(\mathbb{F}_{q^k})\rightarrow \mathbb{F}_{q^k}^{*}/(\mathbb{F}_{q^k}^{*})^n\]
-\vspace{-8mm}
+\vspace{2mm}
+\[
+E(\mathbb{F}_q)[n]\times E(\mathbb{F}_{q^k})/nE(\mathbb{F}_{q^k})\rightarrow \mathbb{F}_{q^k}^{*}/(\mathbb{F}_{q^k}^{*})^n
+\]
+\vspace{-6mm}
 \[e(P,Q)=f_{n}(Q)^{{(q^k-1)/n}}=(f_P(Q+S)/f_P(S))^{(q^k-1)/n}\]
 \subsection{Reduced Tate ペアリング}
-Tate ペアリングの値は剰余類全体の集合$\mathbb{F}_{q^k}^\ast/(\mathbb{F}_{q^k}^\ast)^n$に属しており, 一意に定まらないので, $(q^k - 1) / n$乗することで, 一意な値を得られる. 最終べき乗したReduced Tate ペアリングを次に定義する.
+Tate ペアリングの値は剰余類全体の集合$\mathbb{F}_{q^k}^\ast/(\mathbb{F}_{q^k}^\ast)^n$に属しており, $(q^k - 1) / n$乗することで, 一意な値を得られる. Reduced Tate ペアリングを次に定義する.
 \vspace{-2mm}
 \[P \in E(\mathbb{F}_q)[n],\ Q \in E(\mathbb{F}_{q^k}),\ \mu_n = \left\{ x \in \mathbb{F}_{q^k}^\ast | x^n = 1 \right\}\]
 \vspace{-4mm}
@@ -71,23 +99,39 @@ Tate ペアリングの値は剰余類全体の集合$\mathbb{F}_{q^k}^\ast/(\ma
 \[
 \tau(P,Q) = \langle P,Q \rangle _n^{(q^k - 1) / n}
 \]
-\vspace{-7mm}
+\vspace{-5mm}
 \subsection{Miller Algorithm}
-ペアリングの計算手法としてMiller Algorithmがある. $\mathbb{F}_q$上の楕円曲線のReduced Tate ペアリングにおけるMiller Algorithmを次に示す. \\\\
-\noindent Algorithm 1: Miller Algorithm\\
-Input: $n, \ l=\log n, \ P \in E(\mathbb{F}_q)[n], \ Q \in E(\mathbb{F}_{q^k})$ \\
-Output: $f \in \mathbb{F}_{q^k}$  \\
-1: \quad $V \gets P, \ f \gets 1,\ n=\sum^{l-1}_{i=0} n_i 2^i, \ n_i \in \{0,1\}$\\
-2: \quad for $j \gets l-1$ down do 0\\
-3: \quad \quad $f \gets f^2 \cdot \frac{g_{V,V}(Q)}{g_{2V}(Q)}.\ V \gets 2V$\\
-4: \quad if $n_j = 1$ then\\
-5: \quad \quad $f \gets f \cdot \frac{g_{V,P}(Q)}{g_{V+P}(Q)},\ V \gets V+P$\\
-6: \quad return $f$\\
+ペアリングの計算手法としてMiller Algorithmがある. $\mathbb{F}_q$上の楕円曲線のReduced Tate ペアリングにおけるMiller Algorithmを次に示す. 点$U$, $V ∈ E(F_{q^k})$ を通る直線 $g_{U,V}$ とする。\\
+\begin{table}
+ \begin{center}
+  \begin{tabular}{|l|}
+     \hline
+    Input: $n, \ l=\log n, \ P \in E(\mathbb{F}_q)[n], \ Q \in E(\mathbb{F}_{q^k})$ \\
+    Output: $f \in \mathbb{F}_{q^k}$  \\
+     \hline
+    1: \quad $V \gets P, \ f \gets 1,\ n=\sum^{l-1}_{i=0} n_i 2^i, \ n_i \in \{0,1\}$\\
+    2: \quad for $j \gets l-1$ down do 0\\
+    3: \quad \quad $f \gets f^2 \cdot \frac{g_{V,V}(Q)}{g_{2V}(Q)}.\ V \gets 2V$\\
+    4: \quad if $n_j = 1$ then\\
+    5: \quad \quad $f \gets f \cdot \frac{g_{V,P}(Q)}{g_{V+P}(Q)},\ V \gets V+P$\\
+    6: \quad return $f$\\
+     \hline
+   \end{tabular}
+ \end{center}
+ \caption{Miller Algorithm}
+\end{table}
 
+\vspace{-5mm}
 \subsection{BKLS Algorithm}
  supersingular curveのdistortion map $\psi$ を利用して分母消去の手法を適用したBKLS Algorithm \cite{BKLS02}を次に示す. ordinary curveの場合, $Q' \in E'(K)$として, distortion mapではなくtwistの同型写像 $\psi _d$を用いる. \\\\
- Input: $P,\ Q \in E(K_0)[n]$\\
- Output: $f \in K$\\
+
+\begin{table}[h]
+ \begin{center}
+  \begin{tabular}{|l|}
+     \hline
+ Input: $P,\ Q \in E(\mathbb{F}_q)[n]$\\
+ Output: $f \in \mathbb{F}_{q^k} $\\
+     \hline
  1: \quad $f \gets 1,\ V \gets P$\\
  2: \quad $n=\sum_{l-1}^{i=0} n_i 2^i, \ n_i \in \{0,1\}$\\
  3: \quad for $j \gets l-1$ down 0 do 0\\
@@ -97,15 +141,29 @@ Output: $f \in \mathbb{F}_{q^k}$  \\
  7: \quad \quad $f \gets f \cdot g_{V,\ P}(\psi (Q))$\\
  8: \quad \quad $V \gets V+P$\\
  9: \quad return $f$\\
+     \hline
+   \end{tabular}
+ \end{center}
+ \caption{BKLS Algorithm}
+\end{table}
 \par
+
 \subsection{Window Miller Algorithm}
 
-Input: $n, \ P \in E(\mathbb{F}_q)[n], \ Q \in E(\mathbb{F}_{q^k}) \ S \in E(\mathbb{F}_{q^k})$ \\
+window Miller アルゴリズムは、オンライン事前演算 を用いる方法である。このアルゴリズムでは、$n/w$ 回行うことになるため、適切なwを用いれば、楕円加算および直線 $l _{P, -P_i}$, 垂線 $v _{P_i}$ の計算を削減することができる。
+\par
+
+\begin{longtable}
+ \begin{center}
+  \begin{tabular}{|l|}
+     \hline
+Input: $n, \ P \in E(\mathbb{F}_q)[n], \ Q \in E(\mathbb{F}_{q^k})$ \\
 Output: $f \in \mathbb{F}_{q^k}$  \\
+     \hline
 (online computation) \\
 1: \quad $P_1 = P, f'_1=1 $\\
 2: \quad for $i \gets i$ up to do $2^w -1$\\
-3: \quad $P_i \gets iP_i $\\
+3: \quad \quad $P_i \gets iP_i $\\
 4: \quad \quad $f \gets f \cdot \frac{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}$ \\
 (main computation) \\
 5: \quad $T \gets P_i, f \gets 1 $\\
@@ -119,7 +177,46 @@ Output: $f \in \mathbb{F}_{q^k}$  \\
 10-1: \quad \quad $T \gets T + P_{m'} $\\
 10-2: \quad \quad $f \gets f^2 \cdot \frac{g_{T,-2T}(Q+S)g_{\mathcal{O},2T}(S)}{g_{T,-2T}(Q+Sg_{\mathcal{O},2T}(S)}$ \\
 11: \quad return $f$\\
+     \hline
+   \end{tabular}
+ \end{center}
+\end{longtable}
+
 \section{提案手法}
+BKLS Algorithm, Window Miller Algorithmを組みわせることで新しい高速化手法を提案する。
+
+\begin{table}[htbp]
+ \begin{center}
+  \begin{tabular}{|l|}
+     \hline
+     Input: $n, \ P, Q \in E(\mathbb{F}_q)[n]$ \\
+     Output: $f \in \mathbb{F}_{q^k}$  \\
+     \hline
+     (online computation) \\
+     1: \quad $P_1 = P, f'_1=1 $\\
+     2: \quad for $i \gets 2$ up to do $2^w -1$\\
+     3: \quad \quad $P_i \gets P + P_{i-1} $\\
+     4: \quad \quad $f'_i \gets f'_{i-1} \cdot g_{P_i,\ P}(\psi (Q))$\\
+
+     (main computation) \\
+     5: \quad $V \gets P, f \gets 1 $\\
+     6: \quad $n=\sum^{l - 1}_{i=0} n_i 2^i, \ n_i \in \{0,1\},\ n_0 = 1$\\
+
+     7: \quad for $ n-1 \gets i$ down to 0 step w\\
+     8: \quad step 8-1 から 8-2 をw回繰り返す\\
+     8-1: \quad \quad $V \gets 2V $\\
+     8-2: \quad \quad $f \gets f^2 \cdot g_{V,\ V}(\psi (Q))$\\
+
+     9: \quad $m' \gets =\sum^{j=i-w+1}_{i} m[j]2^{j-i+w-1} $\\
+     10: \quad if $m' \neq 0$ then\\
+     10-1: \quad \quad $f \gets ff'_m \cdot g_{V,\ P_m}(\psi (Q))$ \\
+     10-2: \quad \quad $V \gets V + P_{m'} $\\
+     11: \quad return $f$\\
+     \hline
+  \end{tabular}
+ \end{center}
+ \caption{Window方を用いたBKLS Algorithm}
+\end{table}
 
 % \subsection{Double-Base Chains}
 % Double-Base Number System(DBNS)はV. S. Dimitrovらによって提案された手法で, 整数$k$は2, 3のべき乗を使って次のように表すことができる.
@@ -293,15 +390,13 @@ Output: $f \in \mathbb{F}_{q^k}$  \\
 % 謝辞
 %-------------------------------------------------------------------------------
 \section*{謝辞}
-本研究において, あらゆる面でご指導していただいた趙晋輝教授並びに相賀氏, 山岸氏を始めとする諸先輩方, 趙研究室の皆様にも深く感謝いたします.
+本研究において, あらゆる面でご指導していただいた趙晋輝教授並びに諸先輩方, 趙研究室の皆様にも深く感謝いたします.
 %-------------------------------------------------------------------------------
 % 参考文献 : 本論とは違い, 主なものだけでもOK.
 %-------------------------------------------------------------------------------
 
 \begin{thebibliography}{99}
-\bibitem{DBNS} V. S. Dimitrov, L. Imbert, and P.K.Mishra: {\em Efficient and secure elliptic curve point multiplication using double-base chains}. LNCS 3788, 2005.
-\bibitem{DBCT} C. Zhao, F. Zhang and J. Huang: {\em Efficient Tate Pairing Computation Using Double-Base Chains}. Science in China Series F: Information Sciences, 2008, vol. 51, no. 8.
-\bibitem{OTA} S. Matsuda, N. Kanayama, F. Hess, and E. Okamoto. {\em Optimised versions of the Ate and twisted Ate pairings}. Appear to the 11th IMA International Conference on Cryptography and Coding.
+\bibitem{BKLS02} P.S.L.M. Barreto, H.Y. Kim, B. Lynn, and M. Scott: {\em Efficient implementation of pairing-based cryptosystem}, Journal of Cryptology, 17(4):321-334, 2004.
 \end{thebibliography}
 
 %-------------------------------------------------------------------------------

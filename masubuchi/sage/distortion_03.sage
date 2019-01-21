@@ -14,8 +14,8 @@ def bkls_miller(P, Q, n):
   nbin = n.bits()
   i = n.nbits() - 2
   count = 1
-  print('count, t', [count, t])
   Q= distortion_map(Q)
+  print('count, t', [count, t])
   while i > -1:
       ell = V._line_(V, Q)
       t = (t**2)*ell
@@ -111,26 +111,27 @@ def distortion_map(P):
   global t
   global Ex
   global Fx
-  x = Fx(P.xy()[0])
-  y = Fx(P.xy()[1])
+  global phi
+  x = phi(P.xy()[0])
+  y = phi(P.xy()[1])
   x_2 = x+ s^2
   y_2 = y+s*x+t
   # 2^m 拡大体だと、errorが出てしまった
   return Ex(x_2,y_2)
 
-m=5
-k=4 # 埋め込み字数
+m=2
 F.<a>=GF(2^m) # dunderlying field
 E = EllipticCurve(F,[0, 0, 1, 1, 1])
-Fx.<b>=GF(2^(4*m))  # sの条件式を考える体
-Ex = EllipticCurve(Fx,[0, 0, 1, 1, 1])
+Fx.<b>=GF(2^(4*m))
+Ex = E.base_extend(Fx)
 s=Fx(0)
 t=Fx(1)
+phi=Hom(F,Fx)(F.gen().minpoly().roots(Fx)[0][0])
 
-P = E(a^4 + 1, a^3)
-Q = E(a^2 + 1 , a^4 + a)
-n = 41
-w = 1
+P=E(0 , a)
+Q=E(0, a+1)
+n=5
+w=2
 print('bkls miller')
 bkls_miller=bkls_miller(P, Q, n)
 
