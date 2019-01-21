@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  21 JAN 2019 14:45
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  21 JAN 2019 14:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -279,26 +279,26 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ]
 
-./abstract.tex:156: LaTeX Error: Environment longtable undefined.
+./abstract.tex:157: LaTeX Error: Environment longtable undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.156 \begin{longtable}
+l.157 \begin{longtable}
                        
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-./abstract.tex:183: LaTeX Error: \begin{document} ended by \end{longtable}.
+./abstract.tex:184: LaTeX Error: \begin{document} ended by \end{longtable}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.183 \end{longtable}
+l.184 \end{longtable}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -308,17 +308,17 @@ or  <return>  to continue without it.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 399.
+(Font)              scaled to size 8.32214pt on input line 400.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 399.
+(Font)              scaled to size 8.32214pt on input line 400.
 LaTeX Font Info:    Font shape `JT2/gt/m/it' in size <9> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 399.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 400.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 399.
+(Font)              scaled to size 8.32214pt on input line 400.
 LaTeX Font Info:    Font shape `JY2/gt/m/it' in size <9> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 399.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 400.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 399.
+(Font)              scaled to size 8.32214pt on input line 400.
  [2] (./abstract.aux) ) 
 Here is how much of TeX's memory you used:
  1791 strings out of 493215
