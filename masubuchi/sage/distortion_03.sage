@@ -1,3 +1,5 @@
+import math
+
 def bkls_miller(P, Q, n):
 
   if Q.is_zero():
@@ -119,18 +121,23 @@ def distortion_map(P):
   # 2^m 拡大体だと、errorが出てしまった
   return Ex(x_2,y_2)
 
-m=2
+# ペアリング演算の高速化に関する研究（定義などの参考).pdf を参考にパラメータを選定
+
+m=5
+q=2^m
 F.<a>=GF(2^m) # dunderlying field
-E = EllipticCurve(F,[0, 0, 1, 1, 1])
+E = EllipticCurve(F,[0, 0, 1, 1, 0])
 Fx.<b>=GF(2^(4*m))
-Ex = E.base_extend(Fx)
-s=Fx(0)
-t=Fx(1)
+Ex = EllipticCurve(Fx,[0, 0, 1, 1, 0])
+t=Fx(math.sqrt(q))
+s=Fx(-(t^2 + t))
+print(t)
+print(s)
 phi=Hom(F,Fx)(F.gen().minpoly().roots(Fx)[0][0])
 
-P=E(0 , a)
-Q=E(0, a+1)
-n=5
+P=E(a^3, a^2 + a)
+Q=E(a^3 + 1, a^3 + a^2 + a)
+n=25
 w=2
 print('bkls miller')
 bkls_miller=bkls_miller(P, Q, n)

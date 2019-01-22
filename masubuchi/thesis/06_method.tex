@@ -40,9 +40,9 @@ BKLS Algorithm, Window Miller Algorithmを組みわせることで新しい高�
 \clearpage
 
 \section{提案手法の計算量}
-Miller Algorithm, Window Miller Algorithm, BKLS Algorithm,提案したアルゴリズムの計算量を比較する。
+Miller Algorithm, BKLS Algorithm, Window Miller Algorithm, 提案手法のアルゴリズムの計算量を比較する。
 \par
-Millerのアルゴリズムにおける演算部分のステップを加算(TADD), 減算(TSUB), 2倍算(TDBL)に分ける. \cite{TATE}によると、それぞれの計算コストは次のようになっている.
+Millerのアルゴリズムにおける演算部分のステップを加算(TADD), 2倍算(TDBL)に分ける. \cite{TATE}によると、それぞれの計算コストは次のようになっている.
 \begin{table}[htbp]
  \begin{center}
   \begin{tabular}{|l|c|}
@@ -72,24 +72,48 @@ Millerのアルゴリズムにおける演算部分のステップを加算(TADD
  \hline
 \end{tabular}
 \end{center}
-\caption{計算コスト}
+\caption{計算量(近似)}
 \end{table}
-\clearpage
 
-$n$を$l$ビットのランダムな数とし,これらを用いて Miller Algorithm, Signed Miller Algorithm, Double-Base Chainsを用いたMiller Algorithm の計算量は次のように表される.
+$n$を$l$ビットのランダムな数とし,これらを用いて Miller Algorithm, BKLS Algorithm, Window Miller Algorithm, 提案手法のアルゴリズムの計算量は次のように表される.
 \begin{table}[htbp]
  \begin{center}
   \begin{tabular}{|l|c|c|c|}
   \hline
   Algorithm & 計算コスト \\
   \hline
-  Miller Algorihtm & lTDBL+ (l/2)TADD \\
+  Miller Algorihtm & l \times TDBL+ (l/2)TADD \\
   \hline
-  Window Miller Algorithm & lTDBL+ (n/w +2^w-2)TADD \\
+  Window Miller Algorithm & l \times TDBL+ (n/w +2^w-2)TADD \\
+  \hline
+  BKLS Algorithm & l \times TDBL+ (l/2)TADD  \\
+  \hline
+  提案手法 & l \times TDBL+ (n/w +2^w-2)TADD \\
   \hline
   \end{tabular}
  \end{center}
- \caption{$k=4,\ 6,\ 8$における各手法の計算コスト}
+ \caption{各手法の計算コスト}
 \end{table}
-\section{提案手法}
-埋め込み次数$k=2$について, Miller Algorithm, Signed Miller Algorithm, Double-Base Chainsを用いたMiller Algorithmの計算コストを算出する. そして提案手法である$k=2$に加えて既存研究である$k=4,\ 6$の場合をMAGMAで実装し, 計算時間を比較した. さらに考察では結果を踏まえた上で, Double-Base Chainsを用いたMiller Algorithmの新たな高速化手法をいくつか提案する.
+
+\par
+
+例として, $k=6$,$n=170$, $w=4$の場合を考えると
+
+\begin{table}[htbp]
+ \begin{center}
+  \begin{tabular}{|l|c|c|c|}
+  \hline
+  Algorithm & 計算コスト \\
+  \hline
+  Miller Algorihtm & 55590M \\
+  \hline
+  Window Miller Algorithm & 48009M \\
+  \hline
+  BKLS Algorithm &   \\
+  \hline
+  提案手法 &  \\
+  \hline
+  \end{tabular}
+ \end{center}
+ \caption{各手法の計算コスト}
+\end{table}

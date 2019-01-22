@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  21 JAN 2019 15:22
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  22 JAN 2019 04:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -4976,6 +4976,21 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+\citation{WML}
+./05_Pairing_operation.tex:84: Undefined control sequence.
+<write> ...: Citation `\@citeb ' on page \thepage 
+                                                  \space undefined\on@line .^^J
+l.84 ... を用いる方法である。\cite{WML}
+                                                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Citation `WML' on page  undefined on input line 84.
+
 
 Overfull \hbox (56.11119pt too wide) in paragraph at lines 83--85
 []\OT1/cmr/m/n/10 Window
@@ -5138,7 +5153,12 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 83--85
 
 
 Overfull \hbox (13.93329pt too wide) in paragraph at lines 83--85
-\JY2/mc/m/n/10 る 。 
+\JY2/mc/m/n/10 る 。
+ []
+
+
+Overfull \hbox (10.9861pt too wide) in paragraph at lines 83--85
+\OT1/cmr/m/n/10 [[]] 
  []
 
 ./05_Pairing_operation.tex:87: Not two-byte family.

@@ -138,13 +138,10 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmssbx10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmti10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm
 INPUT 05_Pairing_operation.tex
 INPUT 05_Pairing_operation.tex
 INPUT 06_method.tex
 INPUT 06_method.tex
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmti9.tfm
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmti7.tfm
 INPUT 10_include.tex
 INPUT 10_include.tex
 INPUT thesis.aux

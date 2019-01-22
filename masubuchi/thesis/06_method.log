@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  18 JAN 2019 13:07
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  22 JAN 2019 04:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -587,6 +587,26 @@ Overfull \hbox (27.25008pt too wide) in paragraph at lines 42--44
  []
 
 
+Overfull \hbox (26.66675pt too wide) in paragraph at lines 42--44
+\OT1/cmr/m/n/10 BKLS
+ []
+
+
+Overfull \hbox (13.61113pt too wide) in paragraph at lines 42--44
+\OT1/cmr/m/n/10 Al-
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 42--44
+\OT1/cmr/m/n/10 go-
+ []
+
+
+Overfull \hbox (27.25008pt too wide) in paragraph at lines 42--44
+\OT1/cmr/m/n/10 rithm,
+ []
+
+
 Overfull \hbox (21.94449pt too wide) in paragraph at lines 42--44
 \OT1/cmr/m/n/10 Win-
  []
@@ -617,26 +637,6 @@ Overfull \hbox (27.25008pt too wide) in paragraph at lines 42--44
  []
 
 
-Overfull \hbox (26.66675pt too wide) in paragraph at lines 42--44
-\OT1/cmr/m/n/10 BKLS
- []
-
-
-Overfull \hbox (13.61113pt too wide) in paragraph at lines 42--44
-\OT1/cmr/m/n/10 Al-
- []
-
-
-Overfull \hbox (13.33336pt too wide) in paragraph at lines 42--44
-\OT1/cmr/m/n/10 go-
- []
-
-
-Overfull \hbox (27.25008pt too wide) in paragraph at lines 42--44
-\OT1/cmr/m/n/10 rithm,
- []
-
-
 Overfull \hbox (9.6222pt too wide) in paragraph at lines 42--44
 \JY2/mc/m/n/10 提
  []
@@ -648,12 +648,17 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 42--44
 
 
 Overfull \hbox (9.6222pt too wide) in paragraph at lines 42--44
-\JY2/mc/m/n/10 し
+\JY2/mc/m/n/10 手
  []
 
 
 Overfull \hbox (9.6222pt too wide) in paragraph at lines 42--44
-\JY2/mc/m/n/10 た
+\JY2/mc/m/n/10 法
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 42--44
+\JY2/mc/m/n/10 の
  []
 
 
@@ -743,7 +748,7 @@ LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 ./06_method.tex:45: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.45 ...B), 2倍算(TDBL)に分ける. \cite{TATE}
+l.45 ...D), 2倍算(TDBL)に分ける. \cite{TATE}
                                                   によると、それぞ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -890,21 +895,6 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 45--47
 
 Overfull \hbox (39.72229pt too wide) in paragraph at lines 45--47
 \OT1/cmr/m/n/10 (TADD),
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 45--47
-\JY2/mc/m/n/10 減
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 45--47
-\JY2/mc/m/n/10 算
- []
-
-
-Overfull \hbox (37.91676pt too wide) in paragraph at lines 45--47
-\OT1/cmr/m/n/10 (TSUB),
  []
 
 
@@ -1648,7 +1638,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.75 \caption
-             {計算コスト}
+             {計算量(近似)}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -1677,346 +1667,354 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 75--77
 
 
 Overfull \hbox (9.6222pt too wide) in paragraph at lines 75--77
-\JY2/mc/m/n/10 コ
+\JY2/mc/m/n/10 量
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 75--77
-\JY2/mc/m/n/10 ス
+Overfull \hbox (13.5111pt too wide) in paragraph at lines 75--77
+\OT1/cmr/m/n/10 (\JY2/mc/m/n/10 近
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 75--77
-\JY2/mc/m/n/10 ト 
+Overfull \hbox (13.5111pt too wide) in paragraph at lines 75--77
+\JY2/mc/m/n/10 似\OT1/cmr/m/n/10 )
  []
 
 
-./06_method.tex:77: LaTeX Error: The font size command \normalsize is not defined:
-               there is probably something wrong with the class file.
+./06_method.tex:79: LaTeX Error: Environment table undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.77 \clearpage
-               
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[2
-
-]
-
-./06_method.tex:80: LaTeX Error: Environment table undefined.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.80 \begin{table}
+l.79 \begin{table}
                   [htbp]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (26.00235pt too wide) in paragraph at lines 79--81
+Overfull \hbox (26.00235pt too wide) in paragraph at lines 78--80
 []$\OML/cmm/m/it/10 n$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 を
  []
 
 
-Overfull \hbox (3.18057pt too wide) in paragraph at lines 79--81
+Overfull \hbox (3.18057pt too wide) in paragraph at lines 78--80
 \OML/cmm/m/it/10 l$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 ビ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 ッ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 ト
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 の
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 ラ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 ン
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 ダ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 ム
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 な
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 数
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 と
  []
 
 
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 79--81
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 し\OT1/cmr/m/n/10 ,
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 こ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 れ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 ら
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 を
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 用
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 い
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 て
  []
 
 
-Overfull \hbox (25.86116pt too wide) in paragraph at lines 79--81
+Overfull \hbox (25.86116pt too wide) in paragraph at lines 78--80
 \OT1/cmr/m/n/10 Miller
  []
 
 
-Overfull \hbox (13.61113pt too wide) in paragraph at lines 79--81
+Overfull \hbox (13.61113pt too wide) in paragraph at lines 78--80
 \OT1/cmr/m/n/10 Al-
  []
 
 
-Overfull \hbox (13.33336pt too wide) in paragraph at lines 79--81
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 78--80
 \OT1/cmr/m/n/10 go-
  []
 
 
-Overfull \hbox (27.25008pt too wide) in paragraph at lines 79--81
+Overfull \hbox (27.25008pt too wide) in paragraph at lines 78--80
 \OT1/cmr/m/n/10 rithm,
  []
 
 
-Overfull \hbox (28.88896pt too wide) in paragraph at lines 79--81
-\OT1/cmr/m/n/10 Signed
+Overfull \hbox (26.66675pt too wide) in paragraph at lines 78--80
+\OT1/cmr/m/n/10 BKLS
  []
 
 
-Overfull \hbox (25.86116pt too wide) in paragraph at lines 79--81
-\OT1/cmr/m/n/10 Miller
- []
-
-
-Overfull \hbox (13.61113pt too wide) in paragraph at lines 79--81
+Overfull \hbox (13.61113pt too wide) in paragraph at lines 78--80
 \OT1/cmr/m/n/10 Al-
  []
 
 
-Overfull \hbox (13.33336pt too wide) in paragraph at lines 79--81
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 78--80
 \OT1/cmr/m/n/10 go-
  []
 
 
-Overfull \hbox (27.25008pt too wide) in paragraph at lines 79--81
+Overfull \hbox (27.25008pt too wide) in paragraph at lines 78--80
 \OT1/cmr/m/n/10 rithm,
  []
 
 
-Overfull \hbox (34.30562pt too wide) in paragraph at lines 79--81
-\OT1/cmr/m/n/10 Double-
+Overfull \hbox (21.94449pt too wide) in paragraph at lines 78--80
+\OT1/cmr/m/n/10 Win-
  []
 
 
-Overfull \hbox (20.47226pt too wide) in paragraph at lines 79--81
-\OT1/cmr/m/n/10 Base
+Overfull \hbox (17.50003pt too wide) in paragraph at lines 78--80
+\OT1/cmr/m/n/10 dow
  []
 
 
-Overfull \hbox (30.05562pt too wide) in paragraph at lines 79--81
-\OT1/cmr/m/n/10 Chains
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
-\JY2/mc/m/n/10 を
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
-\JY2/mc/m/n/10 用
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
-\JY2/mc/m/n/10 い
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
-\JY2/mc/m/n/10 た
- []
-
-
-Overfull \hbox (25.86116pt too wide) in paragraph at lines 79--81
+Overfull \hbox (25.86116pt too wide) in paragraph at lines 78--80
 \OT1/cmr/m/n/10 Miller
  []
 
 
-Overfull \hbox (13.61113pt too wide) in paragraph at lines 79--81
+Overfull \hbox (13.61113pt too wide) in paragraph at lines 78--80
 \OT1/cmr/m/n/10 Al-
  []
 
 
-Overfull \hbox (13.33336pt too wide) in paragraph at lines 79--81
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 78--80
 \OT1/cmr/m/n/10 go-
  []
 
 
-Overfull \hbox (24.47229pt too wide) in paragraph at lines 79--81
-\OT1/cmr/m/n/10 rithm
+Overfull \hbox (27.25008pt too wide) in paragraph at lines 78--80
+\OT1/cmr/m/n/10 rithm,
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
+\JY2/mc/m/n/10 提
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
+\JY2/mc/m/n/10 案
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
+\JY2/mc/m/n/10 手
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
+\JY2/mc/m/n/10 法
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 の
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
+\JY2/mc/m/n/10 ア
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
+\JY2/mc/m/n/10 ル
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
+\JY2/mc/m/n/10 ゴ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
+\JY2/mc/m/n/10 リ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
+\JY2/mc/m/n/10 ズ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
+\JY2/mc/m/n/10 ム
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 計
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 算
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 量
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 は
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 次
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 の
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 よ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 う
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 に
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 表
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 さ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 79--81
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 れ
  []
 
 
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 79--81
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 78--80
 \JY2/mc/m/n/10 る\OT1/cmr/m/n/10 .
  []
 
 
-Overfull \hbox (25.8334pt too wide) in paragraph at lines 79--81
+Overfull \hbox (25.8334pt too wide) in paragraph at lines 78--80
 \OT1/cmr/m/n/10 [htbp] 
  []
 
-./06_method.tex:88: Missing $ inserted.
+./06_method.tex:85: Missing $ inserted.
 <inserted text> 
                 $
-l.88   Window Miller Algorithm & lTDBL+ (n/w +2^
-                                                w-2)TADD \\
+l.85   Miller Algorihtm & l \times
+                                   TDBL+ (l/2)TADD \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./06_method.tex:89: Extra }, or forgotten $.
+./06_method.tex:86: Extra }, or forgotten $.
 <template> \unskip \removejfmglue \hfil }
                                          \hskip \tabcolsep \hskip -.5\arrayr...
-l.89   \hline
+l.86   \hline
              
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -2024,18 +2022,132 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./06_method.tex:89: Missing $ inserted.
+./06_method.tex:86: Missing $ inserted.
 <inserted text> 
                 $
-l.89   \hline
+l.86   \hline
              
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./06_method.tex:89: Missing } inserted.
+./06_method.tex:86: Missing } inserted.
 <inserted text> 
                 }
-l.89   \hline
+l.86   \hline
+             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./06_method.tex:87: Missing $ inserted.
+<inserted text> 
+                $
+l.87   Window Miller Algorithm & l \times
+                                          TDBL+ (n/w +2^w-2)TADD \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./06_method.tex:88: Extra }, or forgotten $.
+<template> \unskip \removejfmglue \hfil }
+                                         \hskip \tabcolsep \hskip -.5\arrayr...
+l.88   \hline
+             
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./06_method.tex:88: Missing $ inserted.
+<inserted text> 
+                $
+l.88   \hline
+             
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./06_method.tex:88: Missing } inserted.
+<inserted text> 
+                }
+l.88   \hline
+             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./06_method.tex:89: Missing $ inserted.
+<inserted text> 
+                $
+l.89   BKLS Algorithm & l \times
+                                 TDBL+ (l/2)TADD  \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./06_method.tex:90: Extra }, or forgotten $.
+<template> \unskip \removejfmglue \hfil }
+                                         \hskip \tabcolsep \hskip -.5\arrayr...
+l.90   \hline
+             
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./06_method.tex:90: Missing $ inserted.
+<inserted text> 
+                $
+l.90   \hline
+             
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./06_method.tex:90: Missing } inserted.
+<inserted text> 
+                }
+l.90   \hline
+             
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+./06_method.tex:91: Missing $ inserted.
+<inserted text> 
+                $
+l.91   提案手法 & l \times
+                               TDBL+ (n/w +2^w-2)TADD \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./06_method.tex:92: Extra }, or forgotten $.
+<template> \unskip \removejfmglue \hfil }
+                                         \hskip \tabcolsep \hskip -.5\arrayr...
+l.92   \hline
+             
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./06_method.tex:92: Missing $ inserted.
+<inserted text> 
+                $
+l.92   \hline
+             
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./06_method.tex:92: Missing } inserted.
+<inserted text> 
+                }
+l.92   \hline
              
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -2044,43 +2156,212 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (252.68144pt too wide) in paragraph at lines 82--91
+Overfull \hbox (269.15486pt too wide) in paragraph at lines 81--94
  [][][] 
  []
 
 
-./06_method.tex:92: LaTeX Error: \caption outside float.
+./06_method.tex:95: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.92  \caption
-              {$k=4,\ 6,\ 8$における各手法の計算コスト}
+l.95  \caption
+              {各手法の計算コスト}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./06_method.tex:93: LaTeX Error: \begin{document} ended by \end{table}.
+./06_method.tex:96: LaTeX Error: \begin{document} ended by \end{table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.93 \end{table}
+l.96 \end{table}
                 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./06_method.tex:94: Undefined control sequence.
-l.94 \section
-             {提案手法}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 95--97
+\JY2/mc/m/n/10 各
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 95--97
+\JY2/mc/m/n/10 手
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 95--97
+\JY2/mc/m/n/10 法
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 95--97
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 95--97
+\JY2/mc/m/n/10 計
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 95--97
+\JY2/mc/m/n/10 算
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 95--97
+\JY2/mc/m/n/10 コ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 95--97
+\JY2/mc/m/n/10 ス
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 95--97
+\JY2/mc/m/n/10 ト 
+ []
+
+
+Overfull \hbox (29.6222pt too wide) in paragraph at lines 100--101
+[]\JY2/mc/m/n/10 例
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 100--101
+\JY2/mc/m/n/10 と
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 100--101
+\JY2/mc/m/n/10 し
+ []
+
+
+Overfull \hbox (12.39998pt too wide) in paragraph at lines 100--101
+\JY2/mc/m/n/10 て\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (16.07635pt too wide) in paragraph at lines 100--101
+\OML/cmm/m/it/10 k \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (24.33566pt too wide) in paragraph at lines 100--101
+\OT1/cmr/m/n/10 6$,$\OML/cmm/m/it/10 n \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (17.77783pt too wide) in paragraph at lines 100--101
+\OT1/cmr/m/n/10 170$,
+ []
+
+
+Overfull \hbox (17.98376pt too wide) in paragraph at lines 100--101
+\OML/cmm/m/it/10 w \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 100--101
+\OT1/cmr/m/n/10 4$
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 100--101
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 100--101
+\JY2/mc/m/n/10 場
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 100--101
+\JY2/mc/m/n/10 合
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 100--101
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 100--101
+\JY2/mc/m/n/10 考
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 100--101
+\JY2/mc/m/n/10 え
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 100--101
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 100--101
+\JY2/mc/m/n/10 と 
+ []
+
+
+./06_method.tex:102: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 \begin{table}
+                   [htbp]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (45.8334pt too wide) in paragraph at lines 102--103
+[]\OT1/cmr/m/n/10 [htbp] 
+ []
+
+
+Overfull \hbox (161.5001pt too wide) in paragraph at lines 104--117
+ [][][] 
+ []
+
+
+./06_method.tex:118: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.118  \caption
+               {各手法の計算コスト}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./06_method.tex:119: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 )
 ! Emergency stop.
@@ -2092,9 +2373,9 @@ and I'll forget about whatever was undefined.
 Here is how much of TeX's memory you used:
  12 strings out of 493215
  148 string characters out of 6144073
- 71206 words of memory out of 5000000
+ 75408 words of memory out of 5000000
  4102 multiletter control sequences out of 15000+600000
  6589 words of font info for 33 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 23i,9n,23p,465b,148s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on 06_method.dvi (2 pages, 4508 bytes).
+ 23i,9n,23p,363b,148s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on 06_method.dvi (1 page, 2460 bytes).

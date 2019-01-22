@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  7 JAN 2019 01:03
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  22 JAN 2019 04:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -373,6 +373,46 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 2--5
  []
 
 
+Overfull \hbox (15.61113pt too wide) in paragraph at lines 2--5
+\OT1/cmr/m/n/10 dis-
+ []
+
+
+Overfull \hbox (16.13892pt too wide) in paragraph at lines 2--5
+\OT1/cmr/m/n/10 tor-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 2--5
+\OT1/cmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (18.88895pt too wide) in paragraph at lines 2--5
+\OT1/cmr/m/n/10 map
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 2--5
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 2--5
+\JY2/mc/m/n/10 用
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 2--5
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 2--5
+\JY2/mc/m/n/10 た
+ []
+
+
 Overfull \hbox (26.66675pt too wide) in paragraph at lines 2--5
 \OT1/cmr/m/n/10 BKLS
  []
@@ -598,8 +638,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 2--5
  []
 
 
-Overfull \hbox (40.90285pt too wide) in paragraph at lines 2--5
-\OT1/cmr/m/n/10 MAGMA
+Overfull \hbox (18.38892pt too wide) in paragraph at lines 2--5
+\OT1/cmr/m/n/10 sage
  []
 
 
@@ -916,9 +956,9 @@ Overfull \hbox (24.47229pt too wide) in paragraph at lines 14--15
 Here is how much of TeX's memory you used:
  7 strings out of 493215
  79 string characters out of 6144073
- 65853 words of memory out of 5000000
+ 66875 words of memory out of 5000000
  4098 multiletter control sequences out of 15000+600000
  6281 words of font info for 32 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 18i,4n,8p,460b,118s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on 00_survey.dvi (1 page, 900 bytes).
+ 18i,4n,8p,486b,118s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on 00_survey.dvi (1 page, 892 bytes).

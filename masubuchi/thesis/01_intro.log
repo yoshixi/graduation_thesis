@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  6 JAN 2019 12:39
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  22 JAN 2019 04:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -488,8 +488,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--4
  []
 
 
-Overfull \hbox (62.33897pt too wide) in paragraph at lines 1--4
-\JY2/mc/m/n/10 「\OT1/cmr/m/n/10 IOT(Internet
+Overfull \hbox (59.56119pt too wide) in paragraph at lines 1--4
+\JY2/mc/m/n/10 「\OT1/cmr/m/n/10 IoT(Internet
  []
 
 
@@ -3530,6 +3530,86 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
  []
 
 
+Overfull \hbox (15.61113pt too wide) in paragraph at lines 12--15
+\OT1/cmr/m/n/10 dis-
+ []
+
+
+Overfull \hbox (16.13892pt too wide) in paragraph at lines 12--15
+\OT1/cmr/m/n/10 tor-
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 12--15
+\OT1/cmr/m/n/10 tion
+ []
+
+
+Overfull \hbox (18.88895pt too wide) in paragraph at lines 12--15
+\OT1/cmr/m/n/10 map
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 用
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 こ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 と
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 効
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 率
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 化
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 し
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 た
+ []
+
+
 Overfull \hbox (26.66675pt too wide) in paragraph at lines 12--15
 \OT1/cmr/m/n/10 BKLS
  []
@@ -3800,13 +3880,8 @@ Overfull \hbox (17.50003pt too wide) in paragraph at lines 12--15
  []
 
 
-Overfull \hbox (30.67226pt too wide) in paragraph at lines 12--15
-\OT1/cmr/m/n/10 Miller\JY2/mc/m/n/10 ’
- []
-
-
-Overfull \hbox (3.94444pt too wide) in paragraph at lines 12--15
-\OT1/cmr/m/n/10 s
+Overfull \hbox (32.58339pt too wide) in paragraph at lines 12--15
+\OT1/cmr/m/n/10 Miller's
  []
 
 
@@ -3865,750 +3940,100 @@ Overfull \hbox (13.93329pt too wide) in paragraph at lines 12--15
  []
 
 
-./01_intro.tex:18: LaTeX Error: Missing \begin{document}.
+./01_intro.tex:16: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.18 本
-        研究では,BKLSAlgorithmにwindow法を適用した。以下に本...
+l.16 本
+        研究では,BKLS Algorithmにwindow法を適用した。
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (29.6222pt too wide) in paragraph at lines 18--19
+Overfull \hbox (29.6222pt too wide) in paragraph at lines 16--17
 []\JY2/mc/m/n/10 本
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
 \JY2/mc/m/n/10 研
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
 \JY2/mc/m/n/10 究
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
 \JY2/mc/m/n/10 で
  []
 
 
-Overfull \hbox (83.81685pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 は\OT1/cmr/m/n/10 ,BKLSAlgorithm
+Overfull \hbox (39.06673pt too wide) in paragraph at lines 16--17
+\JY2/mc/m/n/10 は\OT1/cmr/m/n/10 ,BKLS
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
+Overfull \hbox (13.61113pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/n/10 Al-
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/n/10 go-
+ []
+
+
+Overfull \hbox (24.47229pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/n/10 rithm
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
 \JY2/mc/m/n/10 に
  []
 
 
-Overfull \hbox (18.88892pt too wide) in paragraph at lines 18--19
+Overfull \hbox (18.88892pt too wide) in paragraph at lines 16--17
 \OT1/cmr/m/n/10 win-
  []
 
 
-Overfull \hbox (17.50003pt too wide) in paragraph at lines 18--19
+Overfull \hbox (17.50003pt too wide) in paragraph at lines 16--17
 \OT1/cmr/m/n/10 dow
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
 \JY2/mc/m/n/10 法
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
 \JY2/mc/m/n/10 を
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
 \JY2/mc/m/n/10 適
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
 \JY2/mc/m/n/10 用
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
 \JY2/mc/m/n/10 し
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 た 。
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 以
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 下
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 に
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 本
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 論
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 文
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 の
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 構
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 成
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 を
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 示
- []
-
-
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 す\OT1/cmr/m/n/10 .
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 第
- []
-
-
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--19
-\OT1/cmr/m/n/10 2
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 章
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 で
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 数
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 学
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 的
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 準
- []
-
-
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 備\OT1/cmr/m/n/10 ,
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 第
- []
-
-
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--19
-\OT1/cmr/m/n/10 3
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 章
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 で
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 は
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 楕
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 円
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 曲
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 線
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 に
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 つ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 い
- []
-
-
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 て\OT1/cmr/m/n/10 ,
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 点
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 の
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 加
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 算
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 法
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 や
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 楕
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 円
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 離
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 散
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 対
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 数
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 問
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 題
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 に
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 つ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 い
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 て
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 述
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 べ
- []
-
-
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 る\OT1/cmr/m/n/10 .
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 第
- []
-
-
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--19
-\OT1/cmr/m/n/10 4
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 章
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 で
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 ペ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 ア
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 リ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 ン
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 グ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 に
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 つ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 い
- []
-
-
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 て\OT1/cmr/m/n/10 ,
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 第
- []
-
-
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--19
-\OT1/cmr/m/n/10 5
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 章
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 で
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 ぺ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 ア
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 リ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 ン
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 グ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 の
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 計
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 算
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 方
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 法
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 に
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 つ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 い
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 て
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 述
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 べ
- []
-
-
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 る\OT1/cmr/m/n/10 .
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 第
- []
-
-
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--19
-\OT1/cmr/m/n/10 6
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 章
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 で
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 従
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 来
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 手
- []
-
-
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 法\OT1/cmr/m/n/10 ,
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 既
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 存
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 研
- []
-
-
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 究\OT1/cmr/m/n/10 ,
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 提
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 案
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 手
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 法
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 に
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 つ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 い
- []
-
-
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 て\OT1/cmr/m/n/10 ,
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 第
- []
-
-
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--19
-\OT1/cmr/m/n/10 7
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 章
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 で
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 実
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 行
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 結
- []
-
-
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 果\OT1/cmr/m/n/10 ,
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 第
- []
-
-
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 18--19
-\OT1/cmr/m/n/10 8
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 章
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 で
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 考
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 察
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 と
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 今
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 後
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 の
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 課
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 題
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 を
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 述
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 べ
- []
-
-
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 18--19
-\JY2/mc/m/n/10 る\OT1/cmr/m/n/10 . 
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 16--17
+\JY2/mc/m/n/10 た 。 
  []
 
 )
@@ -4621,7 +4046,7 @@ Overfull \hbox (12.39998pt too wide) in paragraph at lines 18--19
 Here is how much of TeX's memory you used:
  5 strings out of 493215
  58 string characters out of 6144073
- 81604 words of memory out of 5000000
+ 79642 words of memory out of 5000000
  4096 multiletter control sequences out of 15000+600000
  6281 words of font info for 32 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191

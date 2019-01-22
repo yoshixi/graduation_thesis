@@ -1,5 +1,5 @@
 \chapter{ペアリング}
-%Pairing, divisor, 埋め込み次数の定義, Weil Pairing, Tate Pairing, Miller's Algorithmについて書く. 
+%Pairing, divisor, 埋め込み次数の定義, Weil Pairing, Tate Pairing, Miller's Algorithmについて書く.
 \par
 \section{ペアリングの定義}
 \par
@@ -9,7 +9,7 @@ e:G_1\times G_2\longrightarrow G_3
 \]
 全てのペアリングは以下の2つの性質を満たす．\\
 \begin{description}
-\item[\textbf{・双線形性}] 
+\item[\textbf{・双線形性}]
 全ての$P,P' \in G_{1}$と$Q,Q' \in G_{2}$に対して，
 
 e(P+P',Q) = e(P,Q) + e(P',Q),
@@ -127,7 +127,7 @@ Weil ペアリングは以下の特性を満たす．
 \end{enumerate}
 \section{Tate ペアリング}
 \par
-$P \in E(\mathbb{F}_q)[n]$に対してdiv($f_{n, P})=n(P)-n(\mathcal{O})$となる有理関数$f_{n,P} \in E(\mathbb{F}_q)$が存在する. すべての点を$n$倍して得られることなる点の集合を$nE(\mathbb{F}_{q^k})$とすると, その剰余類全体の集合を$E(\mathbb{F}_{q^k})/nE(\mathbb{F}_{q^k})$と表現する. 剰余類の代表元を$Q$として, $D \sim (Q) - (\mathcal{O})$となる因子$D \in \mbox{Div}^0(E)$を選択する. supp(div($f_{n, P})) \cap \mbox{supp} (D) = \not 0$を満足するようにランダムに選んだ点$R \in E(\mathbb{F}_{q^k})$を利用して$D=(Q + R) - (R)とおくと,\ f_{n,P}(D)$を計算可能である. Tate ペアリングは次のように定義可能である. 
+$P \in E(\mathbb{F}_q)[n]$に対してdiv($f_{n, P})=n(P)-n(\mathcal{O})$となる有理関数$f_{n,P} \in E(\mathbb{F}_q)$が存在する. すべての点を$n$倍して得られることなる点の集合を$nE(\mathbb{F}_{q^k})$とすると, その剰余類全体の集合を$E(\mathbb{F}_{q^k})/nE(\mathbb{F}_{q^k})$と表現する. 剰余類の代表元を$Q$として, $D \sim (Q) - (\mathcal{O})$となる因子$D \in \mbox{Div}^0(E)$を選択する. supp(div($f_{n, P})) \cap \mbox{supp} (D) = \not 0$を満足するようにランダムに選んだ点$R \in E(\mathbb{F}_{q^k})$を利用して$D=(Q + R) - (R)とおくと,\ f_{n,P}(D)$を計算可能である. Tate ペアリングは次のように定義可能である.
 \par
 \[
 \langle \cdot,\cdot\rangle_n:
@@ -139,7 +139,7 @@ E(\mathbb{F}_q)[n] \times E(\mathbb{F}_{q^k})/nE(\mathbb{F}_{q^k}) \to \mathbb{F
 \right.
 \]
 \par
-Tate ペアリングの値は剰余類全体の集合$\mathbb{F}_{q^k}^\ast/(\mathbb{F}_{q^k}^\ast)^n$に属しており, 一意に定まらない. すなわち, 二つの元$a,\ b \in \mathbb{F}_{q^k}^\ast が元c \in \mathbb{F}_{q^k}を用いてa = bc^n$と表現可能なとき, $a,\ b$は合同となる.ペアリングを利用する方式では$\mathbb{F}_{q^k}^\ast$における一意に定まる値が必要がため, $c^n$を消去する必要がある. $a^{q^k - 1} = 1,\ a \in \mathbb{F}_{q^k}^\ast$の性質を利用して, Tate ペアリングの値に最終べき乗$(q^k - 1) / n$を行うことにより, 一意な値を得ることが可能である. Tate ペアリングの値を最終べき乗したReduced Tate ペアリングを次のように定義する. 
+Tate ペアリングの値は剰余類全体の集合$\mathbb{F}_{q^k}^\ast/(\mathbb{F}_{q^k}^\ast)^n$に属しており, 一意に定まらない. すなわち, 二つの元$a,\ b \in \mathbb{F}_{q^k}^\ast が元c \in \mathbb{F}_{q^k}を用いてa = bc^n$と表現可能なとき, $a,\ b$は合同となる.ペアリングを利用する方式では$\mathbb{F}_{q^k}^\ast$における一意に定まる値が必要がため, $c^n$を消去する必要がある. $a^{q^k - 1} = 1,\ a \in \mathbb{F}_{q^k}^\ast$の性質を利用して, Tate ペアリングの値に最終べき乗$(q^k - 1) / n$を行うことにより, 一意な値を得ることが可能である. Tate ペアリングの値を最終べき乗したReduced Tate ペアリングを次のように定義する.
 \par
 \[
 P \in E(\mathbb{F}_q)[n],\ Q \in E(\mathbb{F}_{q^k}),\ \mu_n = \left\{ x \in \mathbb{F}_{q^k}^\ast | x^n = 1 \right\}
@@ -149,13 +149,13 @@ P \in E(\mathbb{F}_q)[n],\ Q \in E(\mathbb{F}_{q^k}),\ \mu_n = \left\{ x \in \ma
 \tau \langle P,Q \rangle = \langle P,Q \rangle _n^{(q^k - 1) / n} = f_{n,P}(Q)^{(q^k - 1) / n} \in \mu_n
 \]
 \par
-さらに, Reduced Tate ペアリングの重要な性質として$N = hn$に対して次の式が成立する. 
+さらに, Reduced Tate ペアリングの重要な性質として$N = hn$に対して次の式が成立する.
 \par
 \[
 \tau(P,Q) = \langle P,Q \rangle _n^{(q^k - 1) / n}
 \]
 \par
-これにより, $n$をHamming Weightが小さい$N = hn \in \mathbb{N}$に変更することにより, Miller Algorithmにおけるループ回数は部分群の位数$n$を用いる場合に比べ増加するが, アルゴリズムの総計算量の低減が期待できる. 
+これにより, $n$をHamming Weightが小さい$N = hn \in \mathbb{N}$に変更することにより, Miller Algorithmにおけるループ回数は部分群の位数$n$を用いる場合に比べ増加するが, アルゴリズムの総計算量の低減が期待できる.
 Tateペアリングは以下のような性質を持つ．
 \begin{enumerate}
   \item (双線形性) 全ての$P, P', Q, Q' \in E[n]$に対して，
@@ -221,7 +221,7 @@ f_P(D_Q)^{{(q^k-1)}/n}
 f_{i+j}=\Bigl(f_if_j\frac{l_{iP,jP}}{v_{(i+j)P}}\Bigr)
 \]が得られた．
 \end{proof}
-これを用いてMiller Algorithmは，$(f) = n(P) - n(\mathcal{O})$となるような関数$f$を構成している．次にMiller Algorithmを示す. 
+これを用いてMiller Algorithmは，$(f) = n(P) - n(\mathcal{O})$となるような関数$f$を構成している．次にMiller Algorithmを示す.点$U$, $V ∈ E(F_{q^k})$ を通る直線 $g_{U,V}$ とする.\\ 
 \par
 \begin{table}[htbp]
  \begin{center}
@@ -285,7 +285,7 @@ $\hat{e} : G _1 \times G _1 \to G _3$を
 上記のdistortion mapを持つような$\mathbb{F} _q$上の楕円曲線$E$はsupersingularとなる．
 Supersingularとは，以下の条件を1つでも満たす場合をいう．
 \begin{enumerate}
-  \item $\# E(\mathbb{F} _q) \equiv 1 \ (\bmod p)$ 
+  \item $\# E(\mathbb{F} _q) \equiv 1 \ (\bmod p)$
         ($p \mid t$で$\# E(\mathbb{F} _q) = q + 1 - t$と等価)
   \item $E$が$\overline{\mathbb{F}} _q$上で位数$p$の点を取らない．
   \item $\overline{\mathbb{F}} _q$上の$E$の準同型環が非可換である．
