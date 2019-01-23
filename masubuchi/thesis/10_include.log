@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  6 JAN 2019 12:58
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  24 JAN 2019 03:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,9 +6,9 @@ entering extended mode
 **10_include.tex
 (./10_include.tex
 pLaTeX2e <2018-12-01u02> (based on LaTeX2e <2018-12-01>)
-./10_include.tex:1: Undefined control sequence.
-l.1 \chapter
-            {実行結果}
+./10_include.tex:127: Undefined control sequence.
+l.127 \chapter
+              {評価と考察}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -16,29 +16,878 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-./10_include.tex:1: LaTeX Error: Missing \begin{document}.
+./10_include.tex:127: LaTeX Error: Missing \begin{document}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1 \chapter{実
-                行結果}
+l.127 \chapter{評
+                  価と考察}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-./10_include.tex:2: Undefined control sequence.
-l.2 \section
-            {実行結果}
+./10_include.tex:128: Undefined control sequence.
+l.128 \section
+              {評価}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./10_include.tex:3: Undefined control sequence.
-l.3 \subsection
-               {実装環境}
+./10_include.tex:129: Missing $ inserted.
+<inserted text> 
+                $
+l.129 l \approx
+                $80,120,160$ , $k=2, 4$ それぞれの場合に応じて,...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 129.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 129.
+./10_include.tex:129: Not two-byte family.
+l.129 l \approx $80,120,160$ , $k=2, 4$ そ
+                                           れぞれの場合に応じて,...
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 l \approx $80,120,160$ , $k=2, 4$ それ
+                                              ぞれの場合に応じて,...
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 l \approx $80,120,160$ , $k=2, 4$ それぞ
+                                                 れの場合に応じて,...
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...prox $80,120,160$ , $k=2, 4$ それぞれ
+                                                  の場合に応じて,従...
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...x $80,120,160$ , $k=2, 4$ それぞれの
+                                                  場合に応じて,従来...
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...80,120,160$ , $k=2, 4$ それぞれの場
+                                                  合に応じて,従来手...
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...120,160$ , $k=2, 4$ それぞれの場合
+                                                  に応じて,従来手法...
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...,160$ , $k=2, 4$ それぞれの場合に
+                                                  応じて,従来手法と...
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...0$ , $k=2, 4$ それぞれの場合に応
+                                                  じて,従来手法と提...
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ..., $k=2, 4$ それぞれの場合に応じ
+                                                  て,従来手法と提案...
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...k=2, 4$ それぞれの場合に応じて
+                                                  ,従来手法と提案手...
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ... 4$ それぞれの場合に応じて,従
+                                                  来手法と提案手法...
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ... それぞれの場合に応じて,従来
+                                                  手法と提案手法の...
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...れぞれの場合に応じて,従来手
+                                                 法と提案手法の計算コ
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...ぞれの場合に応じて,従来手法
+                                                 と提案手法の計算コス
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...れの場合に応じて,従来手法と
+                                                 提案手法の計算コスト
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...の場合に応じて,従来手法と提
+                                                 案手法の計算コストと
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...場合に応じて,従来手法と提案
+                                                 手法の計算コストと計
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...合に応じて,従来手法と提案手
+                                                 法の計算コストと計算
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...に応じて,従来手法と提案手法
+                                                 の計算コストと計算時
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...応じて,従来手法と提案手法の
+                                                 計算コストと計算時間
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...じて,従来手法と提案手法の計
+                                                 算コストと計算時間を
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...て,従来手法と提案手法の計算
+                                                 コストと計算時間を次
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...,従来手法と提案手法の計算コ
+                                                 ストと計算時間を次の
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...来手法と提案手法の計算コス
+                                                トと計算時間を次の表
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...手法と提案手法の計算コスト
+                                                と計算時間を次の表に
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...法と提案手法の計算コストと
+                                                計算時間を次の表に示
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...と提案手法の計算コストと計
+                                                算時間を次の表に示す
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...提案手法の計算コストと計算
+                                                時間を次の表に示す.
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...案手法の計算コストと計算時
+                                                間を次の表に示す.
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...手法の計算コストと計算時間
+                                                を次の表に示す.
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...法の計算コストと計算時間を
+                                                次の表に示す.
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...の計算コストと計算時間を次
+                                                の表に示す.
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...計算コストと計算時間を次の
+                                                表に示す.
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...算コストと計算時間を次の表
+                                                に示す.
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...コストと計算時間を次の表に
+                                                示す.
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...ストと計算時間を次の表に示
+                                                す.
+IGNORE.
+
+./10_include.tex:129: Not two-byte family.
+l.129 ...トと計算時間を次の表に示す
+                                                .
+IGNORE.
+
+./10_include.tex:130: Missing $ inserted.
+<inserted text> 
+                $
+l.130 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (29.6222pt too wide) in paragraph at lines 127--130
+[]\JY2/mc/m/n/10 評
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 127--130
+\JY2/mc/m/n/10 価
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 127--130
+\JY2/mc/m/n/10 と
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 127--130
+\JY2/mc/m/n/10 考
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 127--130
+\JY2/mc/m/n/10 察
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 127--130
+\JY2/mc/m/n/10 評
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 127--130
+\JY2/mc/m/n/10 価
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 127--130
+\OT1/cmr/m/n/10 l
+ []
+
+
+Overfull \hbox (76.94469pt too wide) in paragraph at lines 127--130
+\OMS/cmsy/m/n/10 ^^Y$\OT1/cmr/m/n/10 80,120,160$\OML/cmm/m/it/10 ;$\OT1/cmr/m/n/10 k=2,
+ []
+
+
+Overfull \hbox (249.7228pt too wide) in paragraph at lines 127--130
+\OT1/cmr/m/n/10 4$^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 ^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@^^@\OML/cmm/m/it/10 :$ 
+ []
+
+
+./10_include.tex:131: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 \begin{table}
+                   [htbp]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./10_include.tex:131: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 \begin{table}[
+                    htbp]
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (45.8334pt too wide) in paragraph at lines 131--132
+[]\OT1/cmr/m/n/10 [htbp] 
+ []
+
+
+Overfull \hbox (161.5001pt too wide) in paragraph at lines 133--146
+ [][][] 
+ []
+
+
+./10_include.tex:147: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147  \caption
+               {各手法の計算コスト}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./10_include.tex:148: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.148 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 147--149
+\JY2/mc/m/n/10 各
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 147--149
+\JY2/mc/m/n/10 手
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 147--149
+\JY2/mc/m/n/10 法
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 147--149
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 147--149
+\JY2/mc/m/n/10 計
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 147--149
+\JY2/mc/m/n/10 算
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 147--149
+\JY2/mc/m/n/10 コ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 147--149
+\JY2/mc/m/n/10 ス
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 147--149
+\JY2/mc/m/n/10 ト 
+ []
+
+
+./10_include.tex:150: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.150 \begin{table}
+                   [htbp]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (45.8334pt too wide) in paragraph at lines 150--151
+[]\OT1/cmr/m/n/10 [htbp] 
+ []
+
+
+Overfull \hbox (161.5001pt too wide) in paragraph at lines 152--166
+ [][][] 
+ []
+
+
+./10_include.tex:167: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.167  \caption
+               {各手法の計算コスト}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./10_include.tex:168: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.168 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 167--169
+\JY2/mc/m/n/10 各
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 167--169
+\JY2/mc/m/n/10 手
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 167--169
+\JY2/mc/m/n/10 法
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 167--169
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 167--169
+\JY2/mc/m/n/10 計
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 167--169
+\JY2/mc/m/n/10 算
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 167--169
+\JY2/mc/m/n/10 コ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 167--169
+\JY2/mc/m/n/10 ス
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 167--169
+\JY2/mc/m/n/10 ト 
+ []
+
+
+./10_include.tex:170: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 \begin{table}
+                   [htbp]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (45.8334pt too wide) in paragraph at lines 170--171
+[]\OT1/cmr/m/n/10 [htbp] 
+ []
+
+
+Overfull \hbox (161.5001pt too wide) in paragraph at lines 172--185
+ [][][] 
+ []
+
+
+./10_include.tex:186: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.186  \caption
+               {各手法の計算コスト}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./10_include.tex:187: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.187 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 186--188
+\JY2/mc/m/n/10 各
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 186--188
+\JY2/mc/m/n/10 手
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 186--188
+\JY2/mc/m/n/10 法
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 186--188
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 186--188
+\JY2/mc/m/n/10 計
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 186--188
+\JY2/mc/m/n/10 算
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 186--188
+\JY2/mc/m/n/10 コ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 186--188
+\JY2/mc/m/n/10 ス
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 186--188
+\JY2/mc/m/n/10 ト 
+ []
+
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 189.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 9.6222pt on input line 189.
+
+./10_include.tex:189: LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.189 \clearpage
+                
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1]
+
+./10_include.tex:191: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.191 \begin{table}
+                   [htbp]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (45.8334pt too wide) in paragraph at lines 191--192
+[]\OT1/cmr/m/n/10 [htbp] 
+ []
+
+
+Overfull \hbox (161.5001pt too wide) in paragraph at lines 193--206
+ [][][] 
+ []
+
+
+./10_include.tex:207: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.207  \caption
+               {各手法の計算コスト}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./10_include.tex:208: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.208 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 207--209
+\JY2/mc/m/n/10 各
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 207--209
+\JY2/mc/m/n/10 手
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 207--209
+\JY2/mc/m/n/10 法
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 207--209
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 207--209
+\JY2/mc/m/n/10 計
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 207--209
+\JY2/mc/m/n/10 算
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 207--209
+\JY2/mc/m/n/10 コ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 207--209
+\JY2/mc/m/n/10 ス
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 207--209
+\JY2/mc/m/n/10 ト 
+ []
+
+
+./10_include.tex:210: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.210 \begin{table}
+                   [htbp]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (45.8334pt too wide) in paragraph at lines 210--211
+[]\OT1/cmr/m/n/10 [htbp] 
+ []
+
+
+Overfull \hbox (161.5001pt too wide) in paragraph at lines 212--225
+ [][][] 
+ []
+
+
+./10_include.tex:226: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.226  \caption
+               {各手法の計算コスト}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./10_include.tex:227: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.227 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 226--228
+\JY2/mc/m/n/10 各
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 226--228
+\JY2/mc/m/n/10 手
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 226--228
+\JY2/mc/m/n/10 法
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 226--228
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 226--228
+\JY2/mc/m/n/10 計
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 226--228
+\JY2/mc/m/n/10 算
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 226--228
+\JY2/mc/m/n/10 コ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 226--228
+\JY2/mc/m/n/10 ス
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 226--228
+\JY2/mc/m/n/10 ト 
+ []
+
+
+./10_include.tex:229: LaTeX Error: Environment table undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.229 \begin{table}
+                   [htbp]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (45.8334pt too wide) in paragraph at lines 229--230
+[]\OT1/cmr/m/n/10 [htbp] 
+ []
+
+
+Overfull \hbox (161.5001pt too wide) in paragraph at lines 231--244
+ [][][] 
+ []
+
+
+./10_include.tex:245: LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.245  \caption
+               {各手法の計算コスト}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./10_include.tex:246: LaTeX Error: \begin{document} ended by \end{table}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.246 \end{table}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 245--247
+\JY2/mc/m/n/10 各
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 245--247
+\JY2/mc/m/n/10 手
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 245--247
+\JY2/mc/m/n/10 法
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 245--247
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 245--247
+\JY2/mc/m/n/10 計
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 245--247
+\JY2/mc/m/n/10 算
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 245--247
+\JY2/mc/m/n/10 コ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 245--247
+\JY2/mc/m/n/10 ス
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 245--247
+\JY2/mc/m/n/10 ト 
+ []
+
+./10_include.tex:250: Undefined control sequence.
+l.250 \section
+              {考察}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -46,265 +895,1263 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (29.6222pt too wide) in paragraph at lines 1--8
-[]\JY2/mc/m/n/10 実
+Overfull \hbox (29.6222pt too wide) in paragraph at lines 250--251
+[]\JY2/mc/m/n/10 考
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 行
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 250--251
+\JY2/mc/m/n/10 察 
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 結
+Overfull \hbox (29.6222pt too wide) in paragraph at lines 252--254
+[]\JY2/mc/m/n/10 提
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 果
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 案
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 手
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 法
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 は
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 従
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 来
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (26.66675pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 BKLS
+ []
+
+
+Overfull \hbox (13.61113pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 Al-
+ []
+
+
+Overfull \hbox (13.33336pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 go-
+ []
+
+
+Overfull \hbox (24.47229pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 rithm
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 比
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 べ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 て
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 表
+ []
+
+
+Overfull \hbox (15.5556pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 7.1,
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 表
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 7.2
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 か
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 ら
+ []
+
+
+Overfull \hbox (22.22229pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 80bit
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 は
+ []
+
+
+Overfull \hbox (23.88896pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 4.5%,
+ []
+
+
+Overfull \hbox (23.88896pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 3.7%,
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 表
+ []
+
+
+Overfull \hbox (15.5556pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 7.3,
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 表
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 7.4
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 か
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 ら
+ []
+
+
+Overfull \hbox (27.2223pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 120bit
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 は
+ []
+
+
+Overfull \hbox (23.88896pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 8.0%,
+ []
+
+
+Overfull \hbox (23.88896pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 6.5%,
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 表
+ []
+
+
+Overfull \hbox (15.5556pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 7.5,
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 表
+ []
+
+
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 7.6
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 か
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 ら
+ []
+
+
+Overfull \hbox (27.2223pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 160bit
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 は
+ []
+
+
+Overfull \hbox (23.88896pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 9.7%,
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 8%
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 高
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 速
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 化
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
 \JY2/mc/m/n/10 実
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 行
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 現
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 結
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 で
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 果
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 き
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 実
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 る 。
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 装
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 ペ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 環
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 ア
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 境
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 リ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 プ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 ロ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 セ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 ッ
- []
-
-
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 サ\OT1/cmr/m/n/10 :
- []
-
-
-Overfull \hbox (12.50002pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 In-
- []
-
-
-Overfull \hbox (26.25005pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 tel(R)
- []
-
-
-Overfull \hbox (46.66676pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 Xeon(TM)
- []
-
-
-Overfull \hbox (21.52782pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 CPU
- []
-
-
-Overfull \hbox (37.56952pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 3.40GHz 
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 メ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 モ
- []
-
-
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 リ\OT1/cmr/m/n/10 :
- []
-
-
-Overfull \hbox (36.2501pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 2046MB
- []
-
-
-Overfull \hbox (24.02782pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 RAM 
- []
-
-
-Overfull \hbox (16.11116pt too wide) in paragraph at lines 1--8
-[]\OT1/cmr/m/n/10 OS:
- []
-
-
-Overfull \hbox (15.2778pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 Mi-
- []
-
-
-Overfull \hbox (29.25006pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 crosoft
- []
-
-
-Overfull \hbox (21.94449pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 Win-
- []
-
-
-Overfull \hbox (21.44447pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 dows
- []
-
-
-Overfull \hbox (14.30559pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 XP
- []
-
-
-Overfull \hbox (19.05559pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 Pro-
- []
-
-
-Overfull \hbox (14.77779pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 fes-
- []
-
-
-Overfull \hbox (25.05562pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 sional 
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 プ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 ロ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 グ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 ラ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 ミ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
 \JY2/mc/m/n/10 ン
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
 \JY2/mc/m/n/10 グ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 言
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 で
  []
 
 
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 1--8
-\JY2/mc/m/n/10 語\OT1/cmr/m/n/10 :
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 使
  []
 
 
-Overfull \hbox (32.50009pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 Magma
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 用
  []
 
 
-Overfull \hbox (37.25008pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 ver.2.14-
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 す
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 1--8
-\OT1/cmr/m/n/10 6 
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 る
  []
 
-./10_include.tex:9: Undefined control sequence.
-l.9 \subsection
-               {実装条件}
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 2
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 つ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 点
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 位
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 数
+ []
+
+
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 252--254
+\OML/cmm/m/it/10 n$
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 大
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 き
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 ほ
+ []
+
+
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 ど 、
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 高
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 速
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 化
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 き
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 割
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 合
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 は
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 大
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 き
+ []
+
+
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 く 、
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 埋
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 め
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 込
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 み
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 次
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 数
+ []
+
+
+Overfull \hbox (5.52084pt too wide) in paragraph at lines 252--254
+\OML/cmm/m/it/10 k$
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 大
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 き
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 ほ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 ど
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 高
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 速
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 化
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 き
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 割
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 合
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 は
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 小
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 さ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 く
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 な
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 こ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 と
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 分
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 か
+ []
+
+
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 る 。
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 ま
+ []
+
+
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 た 、
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 今
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 回
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 は
+ []
+
+
+Overfull \hbox (7.22223pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 w
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 値
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 動
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 か
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 さ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 な
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 か
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 っ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 た
+ []
+
+
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 が 、
+ []
+
+
+Overfull \hbox (7.22223pt too wide) in paragraph at lines 252--254
+\OT1/cmr/m/n/10 w
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 値
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 設
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 定
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 よ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 っ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 て
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 異
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 な
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 結
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 果
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 出
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 こ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 と
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 予
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 想
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 さ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 れ
+ []
+
+
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 252--254
+\JY2/mc/m/n/10 る 。 
+ []
+
+
+Overfull \hbox (29.6222pt too wide) in paragraph at lines 255--256
+[]\JY2/mc/m/n/10 位
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 数
+ []
+
+
+Overfull \hbox (6.00235pt too wide) in paragraph at lines 255--256
+\OML/cmm/m/it/10 n$
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 小
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 さ
+ []
+
+
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 く 、
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 埋
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 め
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 込
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 み
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 字
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 数
+ []
+
+
+Overfull \hbox (5.52084pt too wide) in paragraph at lines 255--256
+\OML/cmm/m/it/10 k$
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 大
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 き
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 ほ
+ []
+
+
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 ど 、
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 今
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 回
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 提
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 案
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 し
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 た
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 手
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 法
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 メ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 リ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 ッ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 ト
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 享
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 受
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 で
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 き
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 な
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 く
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 な
+ []
+
+
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 る 。
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 提
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 案
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 し
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 た
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 手
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 法
+ []
+
+
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 は 、
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 事
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 前
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 演
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 算
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 必
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 要
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 と
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 す
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 た
+ []
+
+
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 め 、
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 場
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 合
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 よ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 っ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 て
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 使
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 い
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 分
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 け
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 必
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 要
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 が
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 あ
+ []
+
+
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 255--256
+\JY2/mc/m/n/10 る 。 
+ []
+
+./10_include.tex:257: Undefined control sequence.
+l.257 \section
+              {今後の課題}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
-
-
-./10_include.tex:9: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.9 \subsection{実
-                   装条件}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
 
 )
 ! Emergency stop.
@@ -314,11 +2161,11 @@ If that doesn't work, type  X <return>  to quit.
 
  
 Here is how much of TeX's memory you used:
- 4 strings out of 493215
- 54 string characters out of 6144073
- 63322 words of memory out of 5000000
- 4096 multiletter control sequences out of 15000+600000
+ 8 strings out of 493215
+ 104 string characters out of 6144073
+ 73005 words of memory out of 5000000
+ 4099 multiletter control sequences out of 15000+600000
  6281 words of font info for 32 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 5i,1n,4p,1462b,16s stack positions out of 5000i,500n,10000p,200000b,80000s
-No pages of output.
+ 20i,7n,12p,446b,143s stack positions out of 5000i,500n,10000p,200000b,80000s
+Output written on 10_include.dvi (1 page, 1400 bytes).

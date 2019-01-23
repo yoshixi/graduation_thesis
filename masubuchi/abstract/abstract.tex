@@ -101,8 +101,9 @@ Tate ペアリングの値は剰余類全体の集合$\mathbb{F}_{q^k}^\ast/(\ma
 \]
 \vspace{-5mm}
 \subsection{Miller Algorithm}
-ペアリングの計算手法としてMiller Algorithmがある. $\mathbb{F}_q$上の楕円曲線のReduced Tate ペアリングにおけるMiller Algorithmを次に示す. 点$U$, $V ∈ E(F_{q^k})$ を通る直線 $g_{U,V}$ とする。\\
-\begin{table}
+ペアリングの計算手法としてMiller Algorithmがある. $\mathbb{F}_q$上の楕円曲線のReduced Tate ペアリングにおけるMiller Algorithmを次に示す. 点$U$, $V ∈ E(F_{q^k})$ を通る直線の方程式を $g_{U,V}$ とする。$U=V$の場合$V$を通る$E$の接戦を表す。 \\
+\vspace{1zh}
+\begin{longtable}
  \begin{center}
   \begin{tabular}{|l|}
      \hline
@@ -111,19 +112,17 @@ Tate ペアリングの値は剰余類全体の集合$\mathbb{F}_{q^k}^\ast/(\ma
      \hline
     1: \quad $V \gets P, \ f \gets 1,\ n=\sum^{l-1}_{i=0} n_i 2^i, \ n_i \in \{0,1\}$\\
     2: \quad for $j \gets l-1$ down do 0\\
-    3: \quad \quad $f \gets f^2 \cdot \frac{g_{V,V}(Q)}{g_{2V}(Q)}.\ V \gets 2V$\\
+    3: \quad \quad $f \gets f^2 \cdot \frac{g_{V,V}(Q)}{g_{\mathcal{O}, 2V}(Q)}.\ V \gets 2V$\\
     4: \quad if $n_j = 1$ then\\
     5: \quad \quad $f \gets f \cdot \frac{g_{V,P}(Q)}{g_{V+P}(Q)},\ V \gets V+P$\\
     6: \quad return $f$\\
      \hline
    \end{tabular}
  \end{center}
- \caption{Miller Algorithm}
-\end{table}
+\end{longtable}
 
-\vspace{-5mm}
 \subsection{BKLS Algorithm}
- supersingular curveのdistortion map $\psi$ を利用して分母消去の手法を適用したBKLS Algorithm \cite{BKLS02}を次に示す. ordinary curveの場合, $Q' \in E'(K)$として, distortion mapではなくtwistの同型写像 $\psi _d$を用いる. \\\\
+ supersingular curveのdistortion map $\psi$ を利用して分母消去の手法を適用したBKLS Algorithm \cite{BKLS02}を次に示す. ordinary curveの場合, $Q' \in E'(K)$として, distortion mapではなくtwistの同型写像 $\psi _d$を用いる.
 
 \begin{table}[h]
  \begin{center}
@@ -144,7 +143,6 @@ Tate ペアリングの値は剰余類全体の集合$\mathbb{F}_{q^k}^\ast/(\ma
      \hline
    \end{tabular}
  \end{center}
- \caption{BKLS Algorithm}
 \end{table}
 \vspace{-8mm}
 \par
@@ -168,14 +166,14 @@ Output: $f \in \mathbb{F}_{q^k}$  \\
 4: \quad \quad $f \gets f \cdot \frac{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}$ \\
 (main computation) \\
 5: \quad $T \gets P_i, f \gets 1 $\\
-6: \quad $n=\sum^{l - 1}_{i=0} n_i 2^i, \ n_i \in \{0,1\},\ n_0 = 1$\\
+6: \quad $n=\sum^{l - 1}_{i=0} n_i 2^i, \ n_i \in \{0,1\}$\\
 7: \quad for $ n-1 \gets i$ down to 0 step w\\
 8: \quad step 8-1 から 8-2 をw回繰り返す\\
 8-1: \quad \quad $T \gets 2T $\\
 8-2: \quad \quad $f \gets f^2 \cdot \frac{g_{T,-2T}(Q+S)g_{\mathcal{O},2T}(S)}{g_{T,-2T}(Q+S)g_{\mathcal{O},2T}(S)}$\\
-9: \quad $m' \gets =\sum^{j=i-w+1}_{i} m[j]2^{j-i+w-1} $\\
-10: \quad if $m' \neq 0$ then\\
-10-1: \quad \quad $T \gets T + P_{m'} $\\
+9: \quad $n' \gets =\sum^{j=i-w+1}_{i} n_{j}2^{j-i+w-1} $\\
+10: \quad if $n' \neq 0$ then\\
+10-1: \quad \quad $T \gets T + P_{n'} $\\
 10-2: \quad \quad $f \gets f^2 \cdot \frac{g_{T,-2T}(Q+S)g_{\mathcal{O},2T}(S)}{g_{T,-2T}(Q+Sg_{\mathcal{O},2T}(S)}$ \\
 11: \quad return $f$\\
      \hline
@@ -201,17 +199,17 @@ BKLS Algorithm, Window Miller Algorithmを組みわせることで新しい高�
 
      (main computation) \\
      5: \quad $V \gets P, f \gets 1 $\\
-     6: \quad $n=\sum^{l - 1}_{i=0} n_i 2^i, \ n_i \in \{0,1\},\ n_0 = 1$\\
+     6: \quad $n=\sum^{l - 1}_{i=0} n_i 2^i, \ n_i \in \{0,1\}$\\
 
      7: \quad for $ n-1 \gets i$ down to 0 step w\\
      8: \quad step 8-1 から 8-2 をw回繰り返す\\
      8-1: \quad \quad $V \gets 2V $\\
      8-2: \quad \quad $f \gets f^2 \cdot g_{V,\ V}(\psi (Q))$\\
 
-     9: \quad $m' \gets =\sum^{j=i-w+1}_{i} m[j]2^{j-i+w-1} $\\
-     10: \quad if $m' \neq 0$ then\\
+     9: \quad $n' \gets =\sum^{j=i-w+1}_{i} n_{j}2^{j-i+w-1} $\\
+     10: \quad if $n' \neq 0$ then\\
      10-1: \quad \quad $f \gets ff'_m \cdot g_{V,\ P_m}(\psi (Q))$ \\
-     10-2: \quad \quad $V \gets V + P_{m'} $\\
+     10-2: \quad \quad $V \gets V + P_{n'} $\\
      11: \quad return $f$\\
      \hline
   \end{tabular}
@@ -219,7 +217,11 @@ BKLS Algorithm, Window Miller Algorithmを組みわせることで新しい高�
  \caption{Window方を用いたBKLS Algorithm}
 \end{table}
 
-\section{結論}
+\section{評価}
+ペアリングで使用する2つの点の位数$n$が大きいほど、高速化できる割合は大きく、埋め込み次数$k$が大きいほど高速化できる割合は小さくなることが分かった。つまり$n$が小さく, $k$が大きいほど、今回提案した手法のメリットを享受できなくなる。提案した手法は、事前演算を必要とするため、場合によって使い分ける必要がある。
+
+\section{今後の課題}
+今後の課題としては,既存のSigned Miller Algorithmや, 3倍算の計算コストが乗算よりも小さいことを利用した標数3の有限体におけるMiller Algorithmにdistortion mapを適用した手法に今回の提案に使用したWindow Miller Algorithmを組み合わせるなどが考えられる。また、今回の手法を適用するのに適した楕円曲線を探すなどが挙げられる。
 %-------------------------------------------------------------------------------
 % 謝辞
 %-------------------------------------------------------------------------------
@@ -231,6 +233,9 @@ BKLS Algorithm, Window Miller Algorithmを組みわせることで新しい高�
 
 \begin{thebibliography}{99}
 \bibitem{BKLS02} P.S.L.M. Barreto, H.Y. Kim, B. Lynn, and M. Scott: {\em Efficient implementation of pairing-based cryptosystem}, Journal of Cryptology, 17(4):321-334, 2004.
+\bibitem{WML} 小林 鉄太郎, 斉藤 泰一, 今井 秀樹: "Pairing 演算の高速化 Fast Computation of Pairing" The 2004 Symposium on Cryptography and Information Security Sendai, Japan, Jan.27-30, 2004
+\bibitem{DBCO}大川一樹 :Double-Base Chains を用いたペアリング 暗号における Tate ペアリングの高速化に関する考察
+
 \end{thebibliography}
 
 %-------------------------------------------------------------------------------

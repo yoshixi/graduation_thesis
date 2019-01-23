@@ -83,13 +83,13 @@ f^{(q^k - 1) / n} = (f^{(q^k - 1) / \Phi _k(q)})^{(\Phi _k(q) / n)}
 \section{Window Miller Algorithm}
 window Miller アルゴリズムは、オンライン事前演算 を用いる方法である。\cite{WML}
 
-まず、$i=1,\ldots,2w-1$ に対して2w 個の楕円曲線上の点 $P_i = iP$ を求め、各 $P_i$ において
+まず、$i=1,\ldots,2w-1$ に対して2$w$ 個の楕円曲線上の点 $P_i = iP$ を求め、各 $P_i$ において
 $i(P) − i(O) = (P _i) − (O) + div(f _i)$ が成り立つような有理式 $f _i$ に対し、
 $f' _i  = f' _i(Q + S) /f _i(S)$ と
 なる $f' _i ∈ \mathbb{F}_{q^k}$ を求める。
-この $P_i, f' _i$ を用いることで、楕円加算および直線 $l _{P, -P_i}$, 垂線 $v _{P_i}$
-に関係する演算を削減する。上記アルゴリズムの説明では、簡単にするために w|n を仮定している。
- Miller のアルゴリズムでは m のハミング重み $wH (m)$ 回の楕円加算を行っていたが、window Millerアルゴリズムでは、$n/w$ 回行うことになるため、適切なwを用いれば、楕円加算および直線 $l _{P, -P_i}$, 垂線 $v _{P_i}$ の計算を削減することができる。
+この $P_i, f' _i$ を用いることで、楕円加算および直線 $g _{P, -P_i}$, 垂線 $g _{P_i , \mathcal{O}}$
+に関係する演算を削減する。上記アルゴリズムの説明では、簡単にするために $w|l$ を仮定している。
+ Miller のアルゴリズムでは n のハミング重み $wH (n)$ 回の楕円加算を行っていたが、window Millerアルゴリズムでは、$l/w$ 回行うことになるため、適切な$w$を用いれば、楕円加算および直線 $g _{P, -P_i}$, 垂線 $g _{P_i, \mathcal{O}}$ の計算を削減することができる。
 \par
 
 \begin{table}[htbp]
@@ -114,10 +114,10 @@ $f' _i  = f' _i(Q + S) /f _i(S)$ と
      8-1: \quad\quad $V \gets 2V $\\
      8-2: \quad \quad $f \gets f^2 \cdot \frac{g_{V,-2V}(Q+S)g_{\mathcal{O},2V}(S)}{g_{V,-2V}(Q+S)g_{\mathcal{O},2V}(S)}$\\
 
-     9: \quad $m' \gets =\sum^{j=i-w+1}_{i} m[j]2^{j-i+w-1} $\\
-     10: \quad if $m' \neq 0$ then\\
+     9: \quad $n' \gets =\sum^{j=i-w+1}_{i} n_{j}2^{j-i+w-1} $\\
+     10: \quad if $n' \neq 0$ then\\
      10-1: \quad \quad $f \gets ff'_m \cdot \frac{g_{V,P_m}(Q+S)g_{\mathcal{O},V+P_m}(S)}{g_{V,P_m}(Q+S)g_{\mathcal{O},V+P_m}(S)}$ \\
-     10-2: \quad \quad $V \gets V + P_{m'} $\\
+     10-2: \quad \quad $V \gets V + P_{n'} $\\
      11: \quad return $f$\\
      \hline
    \end{tabular}

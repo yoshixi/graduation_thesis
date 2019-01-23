@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  22 JAN 2019 04:44
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  24 JAN 2019 03:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -5231,8 +5231,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
  []
 
 
-Overfull \hbox (12.22224pt too wide) in paragraph at lines 86--93
-\OT1/cmr/m/n/10 2w
+Overfull \hbox (12.42827pt too wide) in paragraph at lines 86--93
+\OT1/cmr/m/n/10 2$\OML/cmm/m/it/10 w$
  []
 
 
@@ -5576,8 +5576,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
  []
 
 
-Overfull \hbox (28.45236pt too wide) in paragraph at lines 86--93
-\OML/cmm/m/it/10 l[]$\OT1/cmr/m/n/10 ,
+Overfull \hbox (30.23825pt too wide) in paragraph at lines 86--93
+\OML/cmm/m/it/10 g[]$\OT1/cmr/m/n/10 ,
  []
 
 
@@ -5591,8 +5591,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
  []
 
 
-Overfull \hbox (13.6064pt too wide) in paragraph at lines 86--93
-\OML/cmm/m/it/10 v[]$
+Overfull \hbox (22.45999pt too wide) in paragraph at lines 86--93
+\OML/cmm/m/it/10 g[]$
  []
 
 
@@ -5761,8 +5761,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
  []
 
 
-Overfull \hbox (22.77782pt too wide) in paragraph at lines 86--93
-\OT1/cmr/m/n/10 w|n
+Overfull \hbox (13.38661pt too wide) in paragraph at lines 86--93
+\OML/cmm/m/it/10 w\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 l$
  []
 
 
@@ -5851,8 +5851,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
  []
 
 
-Overfull \hbox (8.33336pt too wide) in paragraph at lines 86--93
-\OT1/cmr/m/n/10 m
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 86--93
+\OT1/cmr/m/n/10 n
  []
 
 
@@ -5891,8 +5891,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
  []
 
 
-Overfull \hbox (33.11116pt too wide) in paragraph at lines 86--93
-\OML/cmm/m/it/10 wH\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 m\OT1/cmr/m/n/10 )$
+Overfull \hbox (30.33337pt too wide) in paragraph at lines 86--93
+\OML/cmm/m/it/10 wH\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 )$
  []
 
 
@@ -6016,8 +6016,8 @@ Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--93
  []
 
 
-Overfull \hbox (18.43062pt too wide) in paragraph at lines 86--93
-\OML/cmm/m/it/10 n=w$
+Overfull \hbox (15.60884pt too wide) in paragraph at lines 86--93
+\OML/cmm/m/it/10 l=w$
  []
 
 
@@ -6086,8 +6086,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
  []
 
 
-Overfull \hbox (7.22223pt too wide) in paragraph at lines 86--93
-\OT1/cmr/m/n/10 w
+Overfull \hbox (7.42825pt too wide) in paragraph at lines 86--93
+\OML/cmm/m/it/10 w$
  []
 
 
@@ -6161,8 +6161,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
  []
 
 
-Overfull \hbox (28.45236pt too wide) in paragraph at lines 86--93
-\OML/cmm/m/it/10 l[]$\OT1/cmr/m/n/10 ,
+Overfull \hbox (30.23825pt too wide) in paragraph at lines 86--93
+\OML/cmm/m/it/10 g[]$\OT1/cmr/m/n/10 ,
  []
 
 
@@ -6176,8 +6176,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
  []
 
 
-Overfull \hbox (13.6064pt too wide) in paragraph at lines 86--93
-\OML/cmm/m/it/10 v[]$
+Overfull \hbox (22.45999pt too wide) in paragraph at lines 86--93
+\OML/cmm/m/it/10 g[]$
  []
 
 

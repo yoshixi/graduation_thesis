@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  21 JAN 2019 17:36
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  24 JAN 2019 03:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -13293,7 +13293,7 @@ or  <return>  to continue without it.
 
 ./04_Pairing.tex:224: Not two-byte family.
 l.224 ...Miller Algorithmを示す.点$U$, $V ∈
-                                                  E(F_{q^k})$ を通る直線 $
+                                                  E(F_{q^k})$ を通る直線
 IGNORE.
 
 
@@ -13557,6 +13557,31 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
  []
 
 
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 方
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 程
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 式
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 を
+ []
+
+
 Overfull \hbox (19.42624pt too wide) in paragraph at lines 222--225
 \OML/cmm/m/it/10 g[]$
  []
@@ -13572,8 +13597,88 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
  []
 
 
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 る 。
+ []
+
+
+Overfull \hbox (18.47354pt too wide) in paragraph at lines 222--225
+\OML/cmm/m/it/10 U \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (8.05556pt too wide) in paragraph at lines 222--225
+\OML/cmm/m/it/10 V$
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 場
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 合
+ []
+
+
+Overfull \hbox (8.05556pt too wide) in paragraph at lines 222--225
+\OML/cmm/m/it/10 V$
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 通
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 る
+ []
+
+
+Overfull \hbox (7.95831pt too wide) in paragraph at lines 222--225
+\OML/cmm/m/it/10 E$
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 接
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 戦
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 222--225
+\JY2/mc/m/n/10 表
+ []
+
+
 Overfull \hbox (12.39998pt too wide) in paragraph at lines 222--225
-\JY2/mc/m/n/10 る\OT1/cmr/m/n/10 . 
+\JY2/mc/m/n/10 す\OT1/cmr/m/n/10 . 
  []
 
 
@@ -17021,7 +17126,7 @@ Overfull \hbox (13.93329pt too wide) in paragraph at lines 291--292
 Here is how much of TeX's memory you used:
  17 strings out of 493215
  197 string characters out of 6144073
- 94213 words of memory out of 5000000
+ 95254 words of memory out of 5000000
  4107 multiletter control sequences out of 15000+600000
  6589 words of font info for 33 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191

@@ -1,16 +1,16 @@
 # Fdb version 3
-["dvipdf"] 1548158813 "06_method.dvi" "06_method.pdf" "06_method" 1548158813
-  "06_method.dvi" 1548158813 5680 acfb4442fade276764e814760a2d8747 "latex"
+["dvipdf"] 1548268572 "06_method.dvi" "06_method.pdf" "06_method" 1548268572
+  "06_method.dvi" 1548268572 5776 32df4528fe76953d3f1b0578ed004657 "latex"
   (generated)
   "06_method.pdf"
-["latex"] 1548158812 "06_method.tex" "06_method.dvi" "06_method" 1548158813
+["latex"] 1548268571 "06_method.tex" "06_method.dvi" "06_method" 1548268572
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1136768653 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "/usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf" 1544742277 35176 ce7fee66be1fb01dfc6b702a7dbfa0ea ""
   "/usr/local/texlive/2018/texmf-var/web2c/euptex/uplatex.fmt" 1546729829 4480922 3cee28bbb6974c7b005c930359208ca1 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
   "06_method.aux" 1546747100 8 a94a2480d3289e625eea47cd1b285758 ""
-  "06_method.tex" 1548158812 4277 a2d8ba3081d811f7077d7383580db745 ""
+  "06_method.tex" 1548268571 3928 e732c33cee544cd13fa95d8183a9d311 ""
   (generated)
-  "06_method.dvi"
   "06_method.log"
+  "06_method.dvi"

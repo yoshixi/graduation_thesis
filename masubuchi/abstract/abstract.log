@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  21 JAN 2019 15:12
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  24 JAN 2019 03:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -267,66 +267,86 @@ Underfull \hbox (badness 2828) in paragraph at lines 90--92
 []\OT1/cmr/m/n/10 Tate \JY2/mc/m/n/10 ペアリングの値は剰余類全体の集合
  []
 
-LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 121.
-LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 121.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
+./abstract.tex:106: LaTeX Error: Environment longtable undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.106 \begin{longtable}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 [1
 
 
 ]
 
-./abstract.tex:157: LaTeX Error: Environment longtable undefined.
+./abstract.tex:122: LaTeX Error: \begin{document} ended by \end{longtable}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.157 \begin{longtable}
-                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-./abstract.tex:184: LaTeX Error: \begin{document} ended by \end{longtable}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.184 \end{longtable}
+l.122 \end{longtable}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+./abstract.tex:155: LaTeX Error: Environment longtable undefined.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 \begin{longtable}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./abstract.tex:182: LaTeX Error: \begin{document} ended by \end{longtable}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 \end{longtable}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
+(Font)              scaled to size 8.32214pt on input line 217.
+LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
+(Font)              scaled to size 8.32214pt on input line 217.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 400.
+(Font)              scaled to size 8.32214pt on input line 235.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 400.
+(Font)              scaled to size 8.32214pt on input line 235.
 LaTeX Font Info:    Font shape `JT2/gt/m/it' in size <9> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 400.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 235.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 400.
+(Font)              scaled to size 8.32214pt on input line 235.
 LaTeX Font Info:    Font shape `JY2/gt/m/it' in size <9> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 400.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 235.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 400.
- [2] (./abstract.aux) ) 
+(Font)              scaled to size 8.32214pt on input line 235.
+[2] (./abstract.aux) ) 
 Here is how much of TeX's memory you used:
- 1791 strings out of 493215
- 20842 string characters out of 6144073
- 108571 words of memory out of 5000000
- 5795 multiletter control sequences out of 15000+600000
+ 1793 strings out of 493215
+ 20853 string characters out of 6144073
+ 109571 words of memory out of 5000000
+ 5797 multiletter control sequences out of 15000+600000
  13685 words of font info for 69 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,11n,27p,855b,284s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,10n,27p,465b,284s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on abstract.dvi (2 pages, 16948 bytes).
+Output written on abstract.dvi (2 pages, 18876 bytes).

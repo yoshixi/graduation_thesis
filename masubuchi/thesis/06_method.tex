@@ -1,4 +1,4 @@
-\chapter{既存研究と提案手法}
+\chapter{提案手法}
 %既存手法であるwindow法, NAF, left-to-right, double-base chains(k=4, 6, 8)について書く.\\
 %提案手法であるdouble-base chains(k=2)について, 実装法などを書く.
 \section{提案手法のアルゴリズム}
@@ -26,10 +26,10 @@ BKLS Algorithm, Window Miller Algorithmを組みわせることで新しい高�
      8-1: \quad \quad $V \gets 2V $\\
      8-2: \quad \quad $f \gets f^2 \cdot g_{V,\ V}(\psi (Q))$\\
 
-     9: \quad $m' \gets =\sum^{j=i-w+1}_{i} m[j]2^{j-i+w-1} $\\
-     10: \quad if $m' \neq 0$ then\\
+     9: \quad $n' \gets =\sum^{j=i-w+1}_{i} n_{j}2^{j-i+w-1} $\\
+     10: \quad if $n' \neq 0$ then\\
      10-1: \quad \quad $f \gets ff'_m \cdot g_{V,\ P_m}(\psi (Q))$ \\
-     10-2: \quad \quad $V \gets V + P_{m'} $\\
+     10-2: \quad \quad $V \gets V + P_{n'} $\\
      11: \quad return $f$\\
      \hline
   \end{tabular}
@@ -53,9 +53,9 @@ Miller Algorithmにおける演算部分のステップを加算(TADD), 2倍算(
   \hline
   TDBL & $4M_k + 2S_k + (6k+7)M + 7S$ \\
   \hline
-  BKLS-TADD & $18M + 3S$ \\
+  BKLS-TADD & $M_k + (3k+10)M + 3S$ \\
   \hline
-  BKLS-TDBL & $16M + 6S$ \\
+  BKLS-TDBL & $M_k + S_k + (3k+7)M + 6S$ \\
   \hline
   \end{tabular}
  \end{center}
@@ -74,9 +74,9 @@ Miller Algorithmにおける演算部分のステップを加算(TADD), 2倍算(
  \hline
  TDBL & $(6k^2 + 6k + 14)M$ \\
  \hline
-  BKLS-TADD & $21M$ \\
+  BKLS-TADD & $(k^2 + 3k + 13)M$ \\
   \hline
-  BKLS-TDBL & $22M$ \\
+  BKLS-TDBL & $(2k^2 + 3k + 13)M$ \\
   \hline
 \end{tabular}
 \end{center}
@@ -90,13 +90,13 @@ $n$を$l$ビットのランダムな数とし,これらを用いて Miller Algor
   \hline
   Algorithm & 計算コスト \\
   \hline
-  Miller Algorihtm & $l$ \times $TDBL$ + $(l/2)TADD$ \\
+  Miller Algorihtm & $l$ \times $TDBL$ + $(l/2)$ \times $TADD$ \\
   \hline
-  Window Miller Algorithm & $l$ \times $TDBL$ + $(n/w +2^w-2)TADD$ \\
+  Window Miller Algorithm & $l$ \times $TDBL$ + $(l/w +2^w-2)$ \times $TADD$ \\
   \hline
-  BKLS Algorithm & $l$ \times $BKLS-TDBL$ + $(l/2)BKLS-TADD$  \\
+  BKLS Algorithm & $l$ \times $BKLS-TDBL$ + $(l/2)$ \times $BKLS-TADD$  \\
   \hline
-  提案手法 & $l$ \times $BKLS-TDBL$ + $(n/w +2^w-2)BKLS-TADD$ \\
+  提案手法 & $l$ \times $BKLS-TDBL$ + $(l/w +2^w-2)$ \times $BKLS-TADD$ \\
   \hline
   \end{tabular}
  \end{center}
@@ -105,24 +105,3 @@ $n$を$l$ビットのランダムな数とし,これらを用いて Miller Algor
 
 \par
 \newpage
-
-例として, $k=6$,$l=170$, $w=4$の場合を考えると
-
-\begin{table}[htbp]
- \begin{center}
-  \begin{tabular}{|l|c|c|c|}
-  \hline
-  Algorithm & 計算コスト \\
-  \hline
-  Miller Algorihtm & 55590M \\
-  \hline
-  Window Miller Algorithm & 48009M \\
-  \hline
-  BKLS Algorithm &   \\
-  \hline
-  提案手法 &  \\
-  \hline
-  \end{tabular}
- \end{center}
- \caption{各手法の計算コスト}
-\end{table}

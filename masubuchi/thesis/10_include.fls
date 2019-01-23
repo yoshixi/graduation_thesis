@@ -1,7 +1,8 @@
-PWD /Users/yoshikimasubuchi/.ghq/github.com/yoshixj/graduation_thesis/masubuchi/themes
+PWD /Users/yoshikimasubuchi/.ghq/github.com/yoshixj/graduation_thesis/masubuchi/thesis
 INPUT /usr/local/texlive/2018/texmf.cnf
 INPUT /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2018/texmf.cnf
 INPUT /usr/local/texlive/2018/texmf-var/web2c/euptex/uplatex.fmt
 INPUT 10_include.tex
 OUTPUT 10_include.log
+OUTPUT 10_include.dvi
