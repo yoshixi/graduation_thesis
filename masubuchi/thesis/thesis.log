@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  22 JAN 2019 04:59
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  22 JAN 2019 21:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -327,18 +327,18 @@ LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
 [20
 
 ]
-./06_method.tex:85: Missing $ inserted.
+./06_method.tex:93: Missing $ inserted.
 <inserted text> 
                 $
-l.85   Miller Algorihtm & l \times
-                                   TDBL+ (l/2)TADD \\
+l.93   Miller Algorihtm & $l$ \times
+                                     $TDBL$ + $(l/2)TADD$ \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./06_method.tex:86: Extra }, or forgotten $.
+./06_method.tex:94: Extra }, or forgotten $.
 <template> \unskip \removejfmglue \hfil }
                                          \hskip \tabcolsep \hskip -.5\arrayr...
-l.86   \hline
+l.94   \hline
              
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -346,18 +346,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./06_method.tex:86: Missing $ inserted.
+./06_method.tex:94: Missing $ inserted.
 <inserted text> 
                 $
-l.86   \hline
+l.94   \hline
              
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./06_method.tex:86: Missing } inserted.
+./06_method.tex:94: Missing } inserted.
 <inserted text> 
                 }
-l.86   \hline
+l.94   \hline
              
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -365,18 +365,34 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./06_method.tex:87: Missing $ inserted.
+./06_method.tex:95: Missing $ inserted.
 <inserted text> 
                 $
-l.87   Window Miller Algorithm & l \times
-                                          TDBL+ (n/w +2^w-2)TADD \\
+l.95   Window Miller Algorithm & $l$ \times
+                                            $TDBL$ + $(n/w +2^w-2)TADD$ \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./06_method.tex:88: Extra }, or forgotten $.
+./06_method.tex:95: Missing $ inserted.
+<inserted text> 
+                $
+l.95 ... Algorithm & $l$ \times $TDBL$ + $(n/w +2^
+                                                  w-2)TADD$ \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./06_method.tex:97: Missing $ inserted.
+<inserted text> 
+                $
+l.97   BKLS Algorithm & $l$ \times
+                                   $BKLS-TDBL$ + $(l/2)BKLS-TADD$  \\
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./06_method.tex:98: Extra }, or forgotten $.
 <template> \unskip \removejfmglue \hfil }
                                          \hskip \tabcolsep \hskip -.5\arrayr...
-l.88   \hline
+l.98   \hline
              
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -384,18 +400,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./06_method.tex:88: Missing $ inserted.
+./06_method.tex:98: Missing $ inserted.
 <inserted text> 
                 $
-l.88   \hline
+l.98   \hline
              
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./06_method.tex:88: Missing } inserted.
+./06_method.tex:98: Missing } inserted.
 <inserted text> 
                 }
-l.88   \hline
+l.98   \hline
              
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -403,89 +419,29 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./06_method.tex:89: Missing $ inserted.
+./06_method.tex:99: Missing $ inserted.
 <inserted text> 
                 $
-l.89   BKLS Algorithm & l \times
-                                 TDBL+ (l/2)TADD  \\
+l.99   提案手法 & $l$ \times
+                                 $BKLS-TDBL$ + $(n/w +2^w-2)BKLS-TADD$ \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./06_method.tex:90: Extra }, or forgotten $.
-<template> \unskip \removejfmglue \hfil }
-                                         \hskip \tabcolsep \hskip -.5\arrayr...
-l.90   \hline
-             
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./06_method.tex:90: Missing $ inserted.
+./06_method.tex:99: Missing $ inserted.
 <inserted text> 
                 $
-l.90   \hline
-             
+l.99 ...法 & $l$ \times $BKLS-TDBL$ + $(n/w +2^
+                                                w-2)BKLS-TADD$ \\
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./06_method.tex:90: Missing } inserted.
-<inserted text> 
-                }
-l.90   \hline
-             
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+[21
 
-./06_method.tex:91: Missing $ inserted.
-<inserted text> 
-                $
-l.91   提案手法 & l \times
-                               TDBL+ (n/w +2^w-2)TADD \\
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./06_method.tex:92: Extra }, or forgotten $.
-<template> \unskip \removejfmglue \hfil }
-                                         \hskip \tabcolsep \hskip -.5\arrayr...
-l.92   \hline
-             
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-./06_method.tex:92: Missing $ inserted.
-<inserted text> 
-                $
-l.92   \hline
-             
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-./06_method.tex:92: Missing } inserted.
-<inserted text> 
-                }
-l.92   \hline
-             
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-) (./10_include.tex [21
-
-]
+]) (./10_include.tex [22]
 第7章
-) [22
+) [23
 
-] [23
+] [24
 
 ]
 LaTeX Font Info:    Font shape `JT2/gt/m/it' in size <10> not available
@@ -496,7 +452,7 @@ LaTeX Font Info:    Font shape `JY2/gt/m/it' in size <10> not available
 (Font)              Font shape `JY2/gt/m/n' tried instead on input line 50.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
 (Font)              scaled to size 9.24683pt on input line 50.
- [24
+ [25
 
 ] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
@@ -508,4 +464,4 @@ Here is how much of TeX's memory you used:
  934 hyphenation exceptions out of 8191
  27i,11n,27p,1477b,393s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on thesis.dvi (28 pages, 95932 bytes).
+Output written on thesis.dvi (29 pages, 96516 bytes).

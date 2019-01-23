@@ -42,7 +42,7 @@ BKLS Algorithm, Window Miller Algorithmを組みわせることで新しい高�
 \section{提案手法の計算量}
 Miller Algorithm, BKLS Algorithm, Window Miller Algorithm, 提案手法のアルゴリズムの計算量を比較する。
 \par
-Millerのアルゴリズムにおける演算部分のステップを加算(TADD), 2倍算(TDBL)に分ける. \cite{TATE}によると、それぞれの計算コストは次のようになっている.
+Miller Algorithmにおける演算部分のステップを加算(TADD), 2倍算(TDBL), BKLS Algoritmにおけるに演算部分のステップを加算(BKLS-TADD), 2倍算(BKLS-TDBL)に分ける. \cite{TATE}によると、それぞれの計算コストは次のようになっている.
 \begin{table}[htbp]
  \begin{center}
   \begin{tabular}{|l|c|}
@@ -52,6 +52,10 @@ Millerのアルゴリズムにおける演算部分のステップを加算(TADD
   TADD & $4M_k + (6k+10)M + 4S$ \\
   \hline
   TDBL & $4M_k + 2S_k + (6k+7)M + 7S$ \\
+  \hline
+  BKLS-TADD & $18M + 3S$ \\
+  \hline
+  BKLS-TDBL & $16M + 6S$ \\
   \hline
   \end{tabular}
  \end{center}
@@ -70,6 +74,10 @@ Millerのアルゴリズムにおける演算部分のステップを加算(TADD
  \hline
  TDBL & $(6k^2 + 6k + 14)M$ \\
  \hline
+  BKLS-TADD & $21M$ \\
+  \hline
+  BKLS-TDBL & $22M$ \\
+  \hline
 \end{tabular}
 \end{center}
 \caption{計算量(近似)}
@@ -82,13 +90,13 @@ $n$を$l$ビットのランダムな数とし,これらを用いて Miller Algor
   \hline
   Algorithm & 計算コスト \\
   \hline
-  Miller Algorihtm & l \times TDBL+ (l/2)TADD \\
+  Miller Algorihtm & $l$ \times $TDBL$ + $(l/2)TADD$ \\
   \hline
-  Window Miller Algorithm & l \times TDBL+ (n/w +2^w-2)TADD \\
+  Window Miller Algorithm & $l$ \times $TDBL$ + $(n/w +2^w-2)TADD$ \\
   \hline
-  BKLS Algorithm & l \times TDBL+ (l/2)TADD  \\
+  BKLS Algorithm & $l$ \times $BKLS-TDBL$ + $(l/2)BKLS-TADD$  \\
   \hline
-  提案手法 & l \times TDBL+ (n/w +2^w-2)TADD \\
+  提案手法 & $l$ \times $BKLS-TDBL$ + $(n/w +2^w-2)BKLS-TADD$ \\
   \hline
   \end{tabular}
  \end{center}
@@ -96,8 +104,9 @@ $n$を$l$ビットのランダムな数とし,これらを用いて Miller Algor
 \end{table}
 
 \par
+\newpage
 
-例として, $k=6$,$n=170$, $w=4$の場合を考えると
+例として, $k=6$,$l=170$, $w=4$の場合を考えると
 
 \begin{table}[htbp]
  \begin{center}
