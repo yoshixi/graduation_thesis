@@ -111,7 +111,7 @@ $f_{i+j}=\Bigl(f_if_j\frac{g_{iP,jP}}{g_{\mathcal{O},(i+j)P}}\Bigr)$
     Output: $f \in \mathbb{F}_{q^k}$  \\
      \hline
     1: \quad $V \gets P, \ f \gets 1,\ n=\sum^{l-1}_{i=0} n_i 2^i, \ n_i \in \{0,1\}$\\
-    2: \quad for $j \gets l-1$ down do 0\\
+    2: \quad for $j \gets l-1$ down to 0 do \\
     3: \quad \quad $f \gets f^2 \cdot \frac{g_{V,V}(Q)}{g_{\mathcal{O}, 2V}(Q)}．\ V \gets 2V$\\
     4: \quad if $n_j = 1$ then\\
     5: \quad \quad $f \gets f \cdot \frac{g_{V,P}(Q)}{g_{V+P}(Q)},\ V \gets V+P$\\
@@ -133,7 +133,7 @@ $f_{i+j}=\Bigl(f_if_j\frac{g_{iP,jP}}{g_{\mathcal{O},(i+j)P}}\Bigr)$
      \hline
  1: \quad $f \gets 1,\ V \gets P$\\
  2: \quad $n=\sum_{l-1}^{i=0} n_i 2^i, \ n_i \in \{0,1\}$\\
- 3: \quad for $j \gets l-1$ down 0 do 0\\
+ 3: \quad for $j \gets l-1$ down to 0 do\\
  4: \quad \quad $f \gets f^2 \cdot g_{V,\ V}(\psi (Q))$\\
  5: \quad \quad $V \gets 2V$\\
  6: \quad if $n_j = 1$ then\\
@@ -194,7 +194,7 @@ BKLS Algorithm, Window Miller Algorithmを組みわせることで新しい高�
      \hline
      (online computation) \\
      1: \quad $P_1 = P, f'_1=1 $\\
-     2: \quad for $i \gets 2$ up to do $2^w -1$\\
+     2: \quad for $i \gets 2$ up to $2^w -1$ do\\
      3: \quad \quad $P_i \gets P + P_{i-1} $\\
      4: \quad \quad $f'_i \gets f'_{i-1} \cdot g_{P_i,\ P}(\psi (Q))$\\
 
