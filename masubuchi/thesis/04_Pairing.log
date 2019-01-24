@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  24 JAN 2019 16:52
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  25 JAN 2019 00:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -15997,7 +15997,7 @@ Overfull \hbox (13.93329pt too wide) in paragraph at lines 271--273
 
 
 Overfull \hbox (10.21176pt too wide) in paragraph at lines 271--273
-[] \OT1/cmr/m/n/10 :
+\OML/cmm/m/it/10 e \OT1/cmr/m/n/10 :
  []
 
 
@@ -16022,7 +16022,7 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 271--273
 
 
 Overfull \hbox (90.94759pt too wide) detected at line 275
-[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P; Q\OT1/cmr/m/n/10 ) = [](\OML/cmm/m/it/10 P;  \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Q\OT1/cmr/m/n/10 ))
+\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P; Q\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 e\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P;  \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Q\OT1/cmr/m/n/10 ))
  []
 
 
@@ -16157,7 +16157,7 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 275--277
 
 
 Overfull \hbox (109.0878pt too wide) detected at line 279
-[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P; P\OT1/cmr/m/n/10 ) = [](\OML/cmm/m/it/10 P;  \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 )) \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 = 1
+\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P; P\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 e\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P;  \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 )) \OMS/cmsy/m/n/10 6\OT1/cmr/m/n/10 = 1
  []
 
 
@@ -16832,16 +16832,16 @@ Overfull \hbox (13.93329pt too wide) in paragraph at lines 286--288
 
 ./04_Pairing.tex:289: Undefined control sequence.
 l.289   \item $\# E(\mathbb
-                           {F} _q) \equiv 1 \ (\bmod p)$
+                           {F} _q) \equiv 1 \ (\bmod p)$ ($p \mid t$で$\# E...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./04_Pairing.tex:290: Undefined control sequence.
-l.290         ($p \mid t$で$\# E(\mathbb
-                                         {F} _q) = q + 1 - t$と等価)
+./04_Pairing.tex:289: Undefined control sequence.
+l.289 ... \ (\bmod p)$ ($p \mid t$で$\# E(\mathbb
+                                                  {F} _q) = q + 1 - t$と等...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -16849,72 +16849,72 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (45.47188pt too wide) in paragraph at lines 289--291
+Overfull \hbox (45.47188pt too wide) in paragraph at lines 289--290
 $\OT1/cmr/m/n/10 #\OML/cmm/m/it/10 E\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^Q
  []
 
 
-Overfull \hbox (33.05557pt too wide) in paragraph at lines 289--291
+Overfull \hbox (33.05557pt too wide) in paragraph at lines 289--290
 \OT1/cmr/m/n/10 1 ( []
  []
 
 
-Overfull \hbox (8.92015pt too wide) in paragraph at lines 289--291
+Overfull \hbox (8.92015pt too wide) in paragraph at lines 289--290
 \OML/cmm/m/it/10 p\OT1/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (14.47565pt too wide) in paragraph at lines 289--291
+Overfull \hbox (14.47565pt too wide) in paragraph at lines 289--290
 \OT1/cmr/m/n/10 ($\OML/cmm/m/it/10 p \OMS/cmsy/m/n/10 j
  []
 
 
-Overfull \hbox (3.61111pt too wide) in paragraph at lines 289--291
+Overfull \hbox (3.61111pt too wide) in paragraph at lines 289--290
 \OML/cmm/m/it/10 t$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 289--291
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 289--290
 \JY2/mc/m/n/10 で
  []
 
 
-Overfull \hbox (45.47188pt too wide) in paragraph at lines 289--291
+Overfull \hbox (45.47188pt too wide) in paragraph at lines 289--290
 \OT1/cmr/m/n/10 #\OML/cmm/m/it/10 E\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 F[]\OT1/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (12.60071pt too wide) in paragraph at lines 289--291
+Overfull \hbox (12.60071pt too wide) in paragraph at lines 289--290
 \OML/cmm/m/it/10 q \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (12.77782pt too wide) in paragraph at lines 289--291
+Overfull \hbox (12.77782pt too wide) in paragraph at lines 289--290
 \OT1/cmr/m/n/10 1 \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (3.61111pt too wide) in paragraph at lines 289--291
+Overfull \hbox (3.61111pt too wide) in paragraph at lines 289--290
 \OML/cmm/m/it/10 t$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 289--291
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 289--290
 \JY2/mc/m/n/10 と
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 289--291
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 289--290
 \JY2/mc/m/n/10 等
  []
 
 
-Overfull \hbox (13.5111pt too wide) in paragraph at lines 289--291
+Overfull \hbox (13.5111pt too wide) in paragraph at lines 289--290
 \JY2/mc/m/n/10 価\OT1/cmr/m/n/10 ) 
  []
 
-./04_Pairing.tex:291: Undefined control sequence.
-l.291   \item $E$が$\overline{\mathbb
+./04_Pairing.tex:290: Undefined control sequence.
+l.290   \item $E$が$\overline{\mathbb
                                       {F}} _q$上で位数$p$の点を取ら...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -16923,82 +16923,82 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (7.95831pt too wide) in paragraph at lines 291--292
+Overfull \hbox (7.95831pt too wide) in paragraph at lines 290--291
 $\OML/cmm/m/it/10 E$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 290--291
 \JY2/mc/m/n/10 が
  []
 
 
-Overfull \hbox (12.2358pt too wide) in paragraph at lines 291--292
+Overfull \hbox (12.2358pt too wide) in paragraph at lines 290--291
 [][]$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 290--291
 \JY2/mc/m/n/10 上
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 290--291
 \JY2/mc/m/n/10 で
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 290--291
 \JY2/mc/m/n/10 位
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 290--291
 \JY2/mc/m/n/10 数
  []
 
 
-Overfull \hbox (5.03125pt too wide) in paragraph at lines 291--292
+Overfull \hbox (5.03125pt too wide) in paragraph at lines 290--291
 \OML/cmm/m/it/10 p$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 290--291
 \JY2/mc/m/n/10 の
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 290--291
 \JY2/mc/m/n/10 点
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 290--291
 \JY2/mc/m/n/10 を
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 290--291
 \JY2/mc/m/n/10 取
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 290--291
 \JY2/mc/m/n/10 ら
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 290--291
 \JY2/mc/m/n/10 な
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 291--292
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 290--291
 \JY2/mc/m/n/10 い ． 
  []
 
-./04_Pairing.tex:292: Undefined control sequence.
-l.292   \item $\overline{\mathbb
+./04_Pairing.tex:291: Undefined control sequence.
+l.291   \item $\overline{\mathbb
                                 {F}} _q$上の$E$の自己準同型環が非...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -17007,92 +17007,92 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (12.2358pt too wide) in paragraph at lines 292--293
+Overfull \hbox (12.2358pt too wide) in paragraph at lines 291--292
 $[][]$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 292--293
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 上
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 292--293
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 の
  []
 
 
-Overfull \hbox (7.95831pt too wide) in paragraph at lines 292--293
+Overfull \hbox (7.95831pt too wide) in paragraph at lines 291--292
 \OML/cmm/m/it/10 E$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 292--293
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 の
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 292--293
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 自
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 292--293
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 己
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 292--293
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 準
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 292--293
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 同
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 292--293
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 型
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 292--293
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 環
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 292--293
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 が
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 292--293
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 非
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 292--293
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 可
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 292--293
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 換
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 292--293
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 で
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 292--293
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 あ
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 292--293
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 291--292
 \JY2/mc/m/n/10 る ． 
  []
 
