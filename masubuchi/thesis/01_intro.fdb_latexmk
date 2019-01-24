@@ -1,14 +1,14 @@
 # Fdb version 3
-["dvipdf"] 1548100666 "01_intro.dvi" "01_intro.pdf" "01_intro" 1548100667
-  "01_intro.dvi" 1548100666 920 72c37e1219af25a6648dbc328ee7dc0d "latex"
+["dvipdf"] 1548304078 "01_intro.dvi" "01_intro.pdf" "01_intro" 1548304079
+  "01_intro.dvi" 1548304078 924 dbbea82b8f3aac6a2510514b929f81d7 "latex"
   (generated)
   "01_intro.pdf"
-["latex"] 1548100666 "01_intro.tex" "01_intro.dvi" "01_intro" 1548100667
+["latex"] 1548304078 "01_intro.tex" "01_intro.dvi" "01_intro" 1548304079
   "/usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf" 1544742277 35176 ce7fee66be1fb01dfc6b702a7dbfa0ea ""
   "/usr/local/texlive/2018/texmf-var/web2c/euptex/uplatex.fmt" 1546729829 4480922 3cee28bbb6974c7b005c930359208ca1 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
   "01_intro.aux" 1546745620 8 a94a2480d3289e625eea47cd1b285758 ""
-  "01_intro.tex" 1548100665 2668 28485b8d307738a8e501386c79c82bc8 ""
+  "01_intro.tex" 1548304077 2680 2447e6702e2bf11fbc6a4a5276eb7461 ""
   (generated)
   "01_intro.log"
   "01_intro.dvi"

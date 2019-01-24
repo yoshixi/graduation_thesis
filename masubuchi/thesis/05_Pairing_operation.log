@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  24 JAN 2019 03:28
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  24 JAN 2019 14:20
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -4980,8 +4980,8 @@ and I'll forget about whatever was undefined.
 ./05_Pairing_operation.tex:84: Undefined control sequence.
 <write> ...: Citation `\@citeb ' on page \thepage 
                                                   \space undefined\on@line .^^J
-l.84 ... を用いる方法である。\cite{WML}
-                                                 
+l.84 ...算 を用いる方法である\cite{WML}
+                                                 。
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5152,13 +5152,13 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 83--85
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 83--85
-\JY2/mc/m/n/10 る 。
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 83--85
+\JY2/mc/m/n/10 る
  []
 
 
-Overfull \hbox (10.9861pt too wide) in paragraph at lines 83--85
-\OT1/cmr/m/n/10 [[]] 
+Overfull \hbox (15.7972pt too wide) in paragraph at lines 83--85
+\OT1/cmr/m/n/10 [[]]\JY2/mc/m/n/10 。 
  []
 
 ./05_Pairing_operation.tex:87: Not two-byte family.
@@ -5171,14 +5171,14 @@ l.87 $i(P) − i(O) = (P _i) −
                                  (O) + div(f _i)$ が成り立つような...
 IGNORE.
 
-./05_Pairing_operation.tex:89: Not two-byte family.
-l.89 なる $f' _i ∈
-                       \mathbb{F}_{q^k}$ を求める。
+./05_Pairing_operation.tex:88: Not two-byte family.
+l.88 ...' _i(Q + S) /f _i(S)$ となる $f' _i ∈
+                                                   \mathbb{F}_{q^k}$ を求...
 IGNORE.
 
-./05_Pairing_operation.tex:89: Undefined control sequence.
-l.89 なる $f' _i ∈ \mathbb
-                              {F}_{q^k}$ を求める。
+./05_Pairing_operation.tex:88: Undefined control sequence.
+l.88 ... S) /f _i(S)$ となる $f' _i ∈ \mathbb
+                                                  {F}_{q^k}$ を求める。
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -5186,1090 +5186,1090 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (29.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (29.6222pt too wide) in paragraph at lines 86--92
 []\JY2/mc/m/n/10 ま
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--93
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ず 、
  []
 
 
-Overfull \hbox (14.00064pt too wide) in paragraph at lines 86--93
+Overfull \hbox (14.00064pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 i \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (47.42815pt too wide) in paragraph at lines 86--93
+Overfull \hbox (47.42815pt too wide) in paragraph at lines 86--92
 \OT1/cmr/m/n/10 1\OML/cmm/m/it/10 ; [] ; \OT1/cmr/m/n/10 2\OML/cmm/m/it/10 w \OMS/cmsy/m/n/10 ^^@
  []
 
 
-Overfull \hbox (5.00002pt too wide) in paragraph at lines 86--93
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 86--92
 \OT1/cmr/m/n/10 1$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 に
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 対
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 し
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 て
  []
 
 
-Overfull \hbox (12.42827pt too wide) in paragraph at lines 86--93
+Overfull \hbox (12.42827pt too wide) in paragraph at lines 86--92
 \OT1/cmr/m/n/10 2$\OML/cmm/m/it/10 w$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 個
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 の
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 楕
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 円
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 曲
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 線
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 上
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 の
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 点
  []
 
 
-Overfull \hbox (20.30493pt too wide) in paragraph at lines 86--93
+Overfull \hbox (20.30493pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 P[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (11.25417pt too wide) in paragraph at lines 86--93
+Overfull \hbox (11.25417pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 iP$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 を
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 求
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--93
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 め 、
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 各
  []
 
 
-Overfull \hbox (9.74942pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.74942pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 P[]$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 に
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 お
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 い
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 て
  []
 
 
-Overfull \hbox (54.96597pt too wide) in paragraph at lines 86--93
+Overfull \hbox (54.96597pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 i\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P\OT1/cmr/m/n/10 )^^@\OML/cmm/m/it/10 i\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 O\OT1/cmr/m/n/10 ) =
  []
 
 
-Overfull \hbox (47.23839pt too wide) in paragraph at lines 86--93
+Overfull \hbox (47.23839pt too wide) in paragraph at lines 86--92
 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P[]\OT1/cmr/m/n/10 )^^@(\OML/cmm/m/it/10 O\OT1/cmr/m/n/10 ) +
  []
 
 
-Overfull \hbox (29.85895pt too wide) in paragraph at lines 86--93
+Overfull \hbox (29.85895pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 div\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 が
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 成
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 り
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 立
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 つ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 よ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 う
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 な
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 有
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 理
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 式
  []
 
 
-Overfull \hbox (8.22514pt too wide) in paragraph at lines 86--93
+Overfull \hbox (8.22514pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 f[]$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 に
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 対
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--93
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 し 、
  []
 
 
-Overfull \hbox (19.33333pt too wide) in paragraph at lines 86--93
+Overfull \hbox (19.33333pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 f[] \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (28.35007pt too wide) in paragraph at lines 86--93
+Overfull \hbox (28.35007pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Q \OT1/cmr/m/n/10 +
  []
 
 
-Overfull \hbox (38.30849pt too wide) in paragraph at lines 86--93
+Overfull \hbox (38.30849pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 S\OT1/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 と
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 な
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 る
  []
 
 
-Overfull \hbox (30.24629pt too wide) in paragraph at lines 86--93
+Overfull \hbox (30.24629pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 ^^@\OML/cmm/m/it/10 F[]$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 を
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 求
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 め
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--93
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 る 。
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 こ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 の
  []
 
 
-Overfull \hbox (22.97165pt too wide) in paragraph at lines 86--93
+Overfull \hbox (22.97165pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 P[]; f[]$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 を
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 用
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 い
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 る
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 こ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 と
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--93
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 で 、
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 楕
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 円
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 加
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 算
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 お
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 よ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 び
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 直
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 線
  []
 
 
-Overfull \hbox (30.23825pt too wide) in paragraph at lines 86--93
+Overfull \hbox (30.23825pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 g[]$\OT1/cmr/m/n/10 ,
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 垂
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 線
  []
 
 
-Overfull \hbox (22.45999pt too wide) in paragraph at lines 86--93
+Overfull \hbox (22.45999pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 g[]$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 に
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 関
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 係
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 す
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 る
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 演
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 算
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 を
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 削
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 減
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 す
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--93
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 る 。
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 上
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 記
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ア
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ル
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ゴ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 リ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ズ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ム
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 の
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 説
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 明
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 で
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--93
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 は 、
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 簡
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 単
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 に
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 す
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 る
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 た
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 め
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 に
  []
 
 
-Overfull \hbox (13.38661pt too wide) in paragraph at lines 86--93
+Overfull \hbox (13.38661pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 w\OMS/cmsy/m/n/10 j\OML/cmm/m/it/10 l$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 を
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 仮
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 定
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 し
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 て
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 い
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--93
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 る 。
  []
 
 
-Overfull \hbox (25.86116pt too wide) in paragraph at lines 86--93
+Overfull \hbox (25.86116pt too wide) in paragraph at lines 86--92
 \OT1/cmr/m/n/10 Miller
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 の
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ア
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ル
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ゴ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 リ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ズ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ム
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 で
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 は
  []
 
 
-Overfull \hbox (5.55557pt too wide) in paragraph at lines 86--93
+Overfull \hbox (5.55557pt too wide) in paragraph at lines 86--92
 \OT1/cmr/m/n/10 n
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 の
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ハ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ミ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ン
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 グ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 重
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 み
  []
 
 
-Overfull \hbox (30.33337pt too wide) in paragraph at lines 86--93
+Overfull \hbox (30.33337pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 wH\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 n\OT1/cmr/m/n/10 )$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 回
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 の
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 楕
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 円
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 加
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 算
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 を
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 行
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 っ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 て
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 い
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 た
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--93
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 が 、
  []
 
 
-Overfull \hbox (18.88892pt too wide) in paragraph at lines 86--93
+Overfull \hbox (18.88892pt too wide) in paragraph at lines 86--92
 \OT1/cmr/m/n/10 win-
  []
 
 
-Overfull \hbox (17.50003pt too wide) in paragraph at lines 86--93
+Overfull \hbox (17.50003pt too wide) in paragraph at lines 86--92
 \OT1/cmr/m/n/10 dow
  []
 
 
-Overfull \hbox (25.86116pt too wide) in paragraph at lines 86--93
+Overfull \hbox (25.86116pt too wide) in paragraph at lines 86--92
 \OT1/cmr/m/n/10 Miller
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ア
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ル
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ゴ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 リ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ズ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ム
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 で
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--93
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 は 、
  []
 
 
-Overfull \hbox (15.60884pt too wide) in paragraph at lines 86--93
+Overfull \hbox (15.60884pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 l=w$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 回
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 行
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 う
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 こ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 と
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 に
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 な
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 る
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 た
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--93
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 め 、
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 適
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 切
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 な
  []
 
 
-Overfull \hbox (7.42825pt too wide) in paragraph at lines 86--93
+Overfull \hbox (7.42825pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 w$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 を
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 用
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 い
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 れ
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--93
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 ば 、
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 楕
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 円
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 加
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 算
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 お
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 よ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 び
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 直
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 線
  []
 
 
-Overfull \hbox (30.23825pt too wide) in paragraph at lines 86--93
+Overfull \hbox (30.23825pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 g[]$\OT1/cmr/m/n/10 ,
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 垂
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 線
  []
 
 
-Overfull \hbox (22.45999pt too wide) in paragraph at lines 86--93
+Overfull \hbox (22.45999pt too wide) in paragraph at lines 86--92
 \OML/cmm/m/it/10 g[]$
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 の
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 計
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 算
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 を
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 削
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 減
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 す
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 る
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 こ
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 と
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 が
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 で
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--93
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 き
  []
 
 
-Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--93
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 86--92
 \JY2/mc/m/n/10 る 。 
  []
 
 
-./05_Pairing_operation.tex:95: LaTeX Error: Environment table undefined.
+./05_Pairing_operation.tex:94: LaTeX Error: Environment table undefined.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.95 \begin{table}
+l.94 \begin{table}
                   [htbp]
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (45.8334pt too wide) in paragraph at lines 95--96
+Overfull \hbox (45.8334pt too wide) in paragraph at lines 94--95
 []\OT1/cmr/m/n/10 [htbp] 
  []
 
-./05_Pairing_operation.tex:99: Undefined control sequence.
-l.99      Input: $n, \ P \in E(\mathbb
+./05_Pairing_operation.tex:98: Undefined control sequence.
+l.98      Input: $n, \ P \in E(\mathbb
                                       {F}_q)[n], \ Q \in E(\mathbb{F}_{q^k})...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6277,8 +6277,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./05_Pairing_operation.tex:99: Undefined control sequence.
-l.99 ... \in E(\mathbb{F}_q)[n], \ Q \in E(\mathbb
+./05_Pairing_operation.tex:98: Undefined control sequence.
+l.98 ... \in E(\mathbb{F}_q)[n], \ Q \in E(\mathbb
                                                   {F}_{q^k}) \ S \in E(\math...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6286,8 +6286,8 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./05_Pairing_operation.tex:99: Undefined control sequence.
-l.99 ... \in E(\mathbb{F}_{q^k}) \ S \in E(\mathbb
+./05_Pairing_operation.tex:98: Undefined control sequence.
+l.98 ... \in E(\mathbb{F}_{q^k}) \ S \in E(\mathbb
                                                   {F}_{q^k})$ \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -6295,9 +6295,9 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-./05_Pairing_operation.tex:100: Undefined control sequence.
-l.100      Output: $f \in \mathbb
-                                 {F}_{q^k}$  \\
+./05_Pairing_operation.tex:99: Undefined control sequence.
+l.99      Output: $f \in \mathbb
+                                {F}_{q^k}$  \\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -6305,30 +6305,30 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (215.41943pt too wide) in paragraph at lines 97--124
+Overfull \hbox (215.41943pt too wide) in paragraph at lines 96--121
  [][][] 
  []
 
 
-./05_Pairing_operation.tex:125: LaTeX Error: \caption outside float.
+./05_Pairing_operation.tex:122: LaTeX Error: \caption outside float.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.125  \caption
+l.122  \caption
                {Window Miller Algorithm}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-./05_Pairing_operation.tex:126: LaTeX Error: \begin{document} ended by \end{table}.
+./05_Pairing_operation.tex:123: LaTeX Error: \begin{document} ended by \end{table}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.126 \end{table}
+l.123 \end{table}
                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,

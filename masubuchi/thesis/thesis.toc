@@ -16,8 +16,7 @@
 \contentsline {section}{\numberline {3.1}楕円曲線の定義}{7}% 
 \contentsline {section}{\numberline {3.2}楕円曲線上の点の加算}{7}% 
 \contentsline {section}{\numberline {3.3}楕円離散対数問題}{9}% 
-\contentsline {subsection}{\numberline {3.3.1}離散対数問題(DLP)}{9}% 
-\contentsline {subsection}{\numberline {3.3.2}楕円離散対数問題(ECDLP)}{9}% 
+\contentsline {subsection}{\numberline {3.3.1}楕円離散対数問題(ECDLP)}{9}% 
 \contentsline {chapter}{\numberline {第4章}ペアリング}{10}% 
 \contentsline {section}{\numberline {4.1}ペアリングの定義}{10}% 
 \contentsline {section}{\numberline {4.2}ペアリングと関係する様々な定義}{10}% 

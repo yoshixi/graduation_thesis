@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  24 JAN 2019 03:18
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  24 JAN 2019 14:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1630,8 +1630,8 @@ Overfull \hbox (13.93329pt too wide) in paragraph at lines 252--254
  []
 
 
-Overfull \hbox (7.22223pt too wide) in paragraph at lines 252--254
-\OT1/cmr/m/n/10 w
+Overfull \hbox (7.42825pt too wide) in paragraph at lines 252--254
+\OML/cmm/m/it/10 w$
  []
 
 

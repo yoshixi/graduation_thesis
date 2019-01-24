@@ -81,12 +81,11 @@ f^{(q^k - 1) / n} = (f^{(q^k - 1) / \Phi _k(q)})^{(\Phi _k(q) / n)}
 \par
 
 \section{Window Miller Algorithm}
-window Miller アルゴリズムは、オンライン事前演算 を用いる方法である。\cite{WML}
+window Miller アルゴリズムは、オンライン事前演算 を用いる方法である\cite{WML}。
 
 まず、$i=1,\ldots,2w-1$ に対して2$w$ 個の楕円曲線上の点 $P_i = iP$ を求め、各 $P_i$ において
 $i(P) − i(O) = (P _i) − (O) + div(f _i)$ が成り立つような有理式 $f _i$ に対し、
-$f' _i  = f' _i(Q + S) /f _i(S)$ と
-なる $f' _i ∈ \mathbb{F}_{q^k}$ を求める。
+$f' _i  = f' _i(Q + S) /f _i(S)$ となる $f' _i ∈ \mathbb{F}_{q^k}$ を求める。
 この $P_i, f' _i$ を用いることで、楕円加算および直線 $g _{P, -P_i}$, 垂線 $g _{P_i , \mathcal{O}}$
 に関係する演算を削減する。上記アルゴリズムの説明では、簡単にするために $w|l$ を仮定している。
  Miller のアルゴリズムでは n のハミング重み $wH (n)$ 回の楕円加算を行っていたが、window Millerアルゴリズムでは、$l/w$ 回行うことになるため、適切な$w$を用いれば、楕円加算および直線 $g _{P, -P_i}$, 垂線 $g _{P_i, \mathcal{O}}$ の計算を削減することができる。
@@ -104,11 +103,9 @@ $f' _i  = f' _i(Q + S) /f _i(S)$ と
      2: \quad for $i \gets 2$ up to do $2^w -1$\\
      3: \quad \quad $P_i \gets P + P_{i-1} $\\
      4: \quad \quad $f'_i \gets f'_{i-1} \cdot \frac{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}{g_{P,-P_i}(S)g_{\mathcal{O},P_i}(Q+S)}$\\
-
      (main computation) \\
      5: \quad $V \gets P, f \gets 1 $\\
      6: \quad $n=\sum^{l - 1}_{i=0} n_i 2^i, \ n_i \in \{0,1\},\ n_0 = 1$\\
-
      7: \quad for $ n-1 \gets i$ down to 0 step w\\
      8: \quad step 8-1 から 8-2 をw回繰り返す\\
      8-1: \quad\quad $V \gets 2V $\\

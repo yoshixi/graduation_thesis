@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  22 JAN 2019 04:57
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  24 JAN 2019 13:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -358,8 +358,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 1--4
  []
 
 
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 1--4
-\JY2/mc/m/n/10 た\OT1/cmr/m/n/10 .
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 1--4
+\JY2/mc/m/n/10 た 。
  []
 
 
@@ -2228,8 +2228,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 7--9
  []
 
 
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 7--9
-\JY2/mc/m/n/10 た\OT1/cmr/m/n/10 .
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 7--9
+\JY2/mc/m/n/10 た 。
  []
 
 
@@ -2613,8 +2613,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 7--9
  []
 
 
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 7--9
-\JY2/mc/m/n/10 る\OT1/cmr/m/n/10 .
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 7--9
+\JY2/mc/m/n/10 る 。
  []
 
 
@@ -2843,8 +2843,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 7--9
  []
 
 
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 7--9
-\JY2/mc/m/n/10 る\OT1/cmr/m/n/10 . 
+Overfull \hbox (13.93329pt too wide) in paragraph at lines 7--9
+\JY2/mc/m/n/10 る 。 
  []
 
 
@@ -3311,12 +3311,12 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
 
 
 Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 と
+\JY2/mc/m/n/10 で
  []
 
 
 Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 な
+\JY2/mc/m/n/10 あ
  []
 
 
@@ -3402,11 +3402,6 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
 
 Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
 \JY2/mc/m/n/10 装
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 法
  []
 
 
@@ -3625,63 +3620,8 @@ Overfull \hbox (13.33336pt too wide) in paragraph at lines 12--15
  []
 
 
-Overfull \hbox (24.47229pt too wide) in paragraph at lines 12--15
-\OT1/cmr/m/n/10 rithm
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 に
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 加
- []
-
-
-Overfull \hbox (31.2889pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 え\OT1/cmr/m/n/10 ,win-
- []
-
-
-Overfull \hbox (17.50003pt too wide) in paragraph at lines 12--15
-\OT1/cmr/m/n/10 dow
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 法
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 と
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 呼
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 ば
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 れ
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 れ
- []
-
-
-Overfull \hbox (12.39998pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 る\OT1/cmr/m/n/10 ,
+Overfull \hbox (27.25008pt too wide) in paragraph at lines 12--15
+\OT1/cmr/m/n/10 rithm,
  []
 
 
@@ -3696,26 +3636,6 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
 
 
 Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 曲
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 線
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 上
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 の
- []
-
-
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
 \JY2/mc/m/n/10 ス
  []
 
@@ -3725,8 +3645,8 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 ラ
+Overfull \hbox (18.74438pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 ラ ー
  []
 
 
@@ -3746,7 +3666,7 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
 
 
 Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 を
+\JY2/mc/m/n/10 の
  []
 
 
@@ -3766,12 +3686,32 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
 
 
 Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 さ
+\JY2/mc/m/n/10 な
  []
 
 
 Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 せ
+\JY2/mc/m/n/10 ど
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 に
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 使
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 わ
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
+\JY2/mc/m/n/10 れ
  []
 
 
@@ -3780,8 +3720,13 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
  []
 
 
-Overfull \hbox (9.6222pt too wide) in paragraph at lines 12--15
-\JY2/mc/m/n/10 手
+Overfull \hbox (18.88892pt too wide) in paragraph at lines 12--15
+\OT1/cmr/m/n/10 win-
+ []
+
+
+Overfull \hbox (17.50003pt too wide) in paragraph at lines 12--15
+\OT1/cmr/m/n/10 dow
  []
 
 
@@ -3947,7 +3892,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.16 本
-        研究では,BKLS Algorithmにwindow法を適用した。
+        研究では,BKLS Algorithmにwindow法を適用しMiller Alogrithm...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -4032,6 +3977,51 @@ Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
  []
 
 
+Overfull \hbox (25.86116pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/n/10 Miller
+ []
+
+
+Overfull \hbox (44.75012pt too wide) in paragraph at lines 16--17
+\OT1/cmr/m/n/10 Alogrithm
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
+\JY2/mc/m/n/10 の
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
+\JY2/mc/m/n/10 高
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
+\JY2/mc/m/n/10 速
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
+\JY2/mc/m/n/10 化
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
+\JY2/mc/m/n/10 を
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
+\JY2/mc/m/n/10 図
+ []
+
+
+Overfull \hbox (9.6222pt too wide) in paragraph at lines 16--17
+\JY2/mc/m/n/10 っ
+ []
+
+
 Overfull \hbox (13.93329pt too wide) in paragraph at lines 16--17
 \JY2/mc/m/n/10 た 。 
  []
@@ -4046,9 +4036,9 @@ Overfull \hbox (13.93329pt too wide) in paragraph at lines 16--17
 Here is how much of TeX's memory you used:
  5 strings out of 493215
  58 string characters out of 6144073
- 79642 words of memory out of 5000000
+ 79622 words of memory out of 5000000
  4096 multiletter control sequences out of 15000+600000
  6281 words of font info for 32 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
  18i,4n,8p,664b,118s stack positions out of 5000i,500n,10000p,200000b,80000s
-Output written on 01_intro.dvi (1 page, 920 bytes).
+Output written on 01_intro.dvi (1 page, 924 bytes).

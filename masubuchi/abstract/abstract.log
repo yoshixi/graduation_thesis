@@ -1,4 +1,4 @@
-This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  24 JAN 2019 03:43
+This is e-upTeX, Version 3.14159265-p3.8.1-u1.23-180226-2.6 (utf8.uptex) (TeX Live 2018) (preloaded format=uplatex 2019.1.6)  24 JAN 2019 16:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -225,45 +225,22 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ./abstract.tex:55: Undefined control sequence.
 <recently read> \mthbb 
                        
-l.55 で与えられる.素数$p$,有限体$\mthbb
-                                                   {F}_q$ $(q=p^m)$上の楕...
+l.55 ...えられる．素数$p$,有限体$\mthbb
+                                                  {F}_q$ $(q=p^m)$上の楕...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 66.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 66.
 
-./abstract.tex:66: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.66 \item ・
-              双線形性 \\
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-./abstract.tex:77: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.77 \item ・
-              非退縮性 \\
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Overfull \hbox (5.73868pt too wide) detected at line 88
-\OML/cmm/m/it/10 e\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 P; Q\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Q\OT1/cmr/m/n/10 )[] = (\OML/cmm/m/it/10 f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 Q \OT1/cmr/m/n/10 + \OML/cmm/m/it/10 S\OT1/cmr/m/n/10 )\OML/cmm/m/it/10 =f[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 S\OT1/cmr/m/n/10 ))[]
- []
-
-
-Underfull \hbox (badness 2828) in paragraph at lines 90--92
+Underfull \hbox (badness 2828) in paragraph at lines 93--95
 []\OT1/cmr/m/n/10 Tate \JY2/mc/m/n/10 ペアリングの値は剰余類全体の集合
  []
 
@@ -323,30 +300,61 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
+
+./abstract.tex:188: LaTeX Error: Environment longtable undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.188 \begin{longtable}
+                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+./abstract.tex:218: LaTeX Error: \begin{document} ended by \end{longtable}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.218 \end{longtable}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 LaTeX Font Info:    Font shape `JT2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 217.
+(Font)              scaled to size 8.32214pt on input line 251.
 LaTeX Font Info:    Font shape `JY2/mc/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 217.
+(Font)              scaled to size 8.32214pt on input line 251.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 235.
+(Font)              scaled to size 8.32214pt on input line 252.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 235.
+(Font)              scaled to size 8.32214pt on input line 252.
 LaTeX Font Info:    Font shape `JT2/gt/m/it' in size <9> not available
-(Font)              Font shape `JT2/gt/m/n' tried instead on input line 235.
+(Font)              Font shape `JT2/gt/m/n' tried instead on input line 252.
 LaTeX Font Info:    Font shape `JT2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 235.
+(Font)              scaled to size 8.32214pt on input line 252.
 LaTeX Font Info:    Font shape `JY2/gt/m/it' in size <9> not available
-(Font)              Font shape `JY2/gt/m/n' tried instead on input line 235.
+(Font)              Font shape `JY2/gt/m/n' tried instead on input line 252.
 LaTeX Font Info:    Font shape `JY2/gt/m/n' will be
-(Font)              scaled to size 8.32214pt on input line 235.
+(Font)              scaled to size 8.32214pt on input line 252.
+
+Underfull \hbox (badness 4686) in paragraph at lines 252--253
+\OT1/cmr/m/n/9 and M\JY2/mc/m/n/9 ．  \OT1/cmr/m/n/9 Scott: \OT1/cmr/m/it/9 Ef-fi-cient im-ple-men-ta-tion of
+ []
+
 [2] (./abstract.aux) ) 
 Here is how much of TeX's memory you used:
- 1793 strings out of 493215
- 20853 string characters out of 6144073
+ 1810 strings out of 493215
+ 21155 string characters out of 6144073
  109571 words of memory out of 5000000
- 5797 multiletter control sequences out of 15000+600000
+ 5811 multiletter control sequences out of 15000+600000
  13685 words of font info for 69 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 27i,10n,27p,465b,284s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,10n,27p,444b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on abstract.dvi (2 pages, 18876 bytes).
+Output written on abstract.dvi (2 pages, 19568 bytes).

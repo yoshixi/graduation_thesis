@@ -1,5 +1,5 @@
 \chapter{楕円曲線}
-%楕円曲線の定義, 加算, 楕円曲線上の離散対数問題, Singular, Ordinary, Supersingularな曲線, フロベニウス写像について書く.点の加算を二進展開ですることを書く.  
+%楕円曲線の定義, 加算, 楕円曲線上の離散対数問題, Singular, Ordinary, Supersingularな曲線, フロベニウス写像について書く.点の加算を二進展開ですることを書く.
 \section{楕円曲線の定義}
 \par
 楕円曲線とは，一般的に
@@ -74,7 +74,7 @@ P _1 = (x _1, y _1), \quad P _2 = (x _2, y _2), \quad P*Q = (x _3, y _3), \quad 
 とする．
 このとき，$P _1$と$P _2$を結ぶ直線の方程式は
 \[
-y = \lambda x + \nu, \quad \lambda = \frac{y _2 - y _1}{x _2 - x _1}, \quad \nu = y _1 - \lambda x _1 
+y = \lambda x + \nu, \quad \lambda = \frac{y _2 - y _1}{x _2 - x _1}, \quad \nu = y _1 - \lambda x _1
 \]
 となり，これを楕円曲線の方程式に代入して
 \[
@@ -88,17 +88,6 @@ x _3 = \lambda ^2 - a - x _1 - x _2, \quad y _3 = \lambda x _3 + \nu
 と表される．\\
 \par
 \section{楕円離散対数問題}
-\subsection{離散対数問題(DLP)}
-\par
-$p$を素数とし，$g$を$\mathbb{Z}_p^*$の生成元とする．
-このとき任意の$y\in \mathbb{Z}_p^*$に対し，
-\[
-y\equiv g^x\pmod{p}
-\]
-となる$x$が必ず存在する．
-このような$x$を$y$の離散対数という．$y$と$g$が与えられたとき，$y\equiv g^x\pmod{p}$を満たす$x$，
-すなわち$x\equiv \log _gy\pmod{p}$を求める問題を離散対数問題という．これは，$y\equiv g^x\pmod{p}$を計算するのは容易だが，$x\equiv \log _gy\pmod{p}$を
-求めることは非常に困難であることに基づいている．
 \par
 \subsection{楕円離散対数問題(ECDLP)}
 \par

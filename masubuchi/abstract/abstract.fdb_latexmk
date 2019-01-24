@@ -1,9 +1,9 @@
 # Fdb version 3
-["dvipdf"] 1548269007 "abstract.dvi" "abstract.pdf" "abstract" 1548269007
-  "abstract.dvi" 1548269006 18876 593779d5826965306c399e032dccfa03 "latex"
+["dvipdf"] 1548316755 "abstract.dvi" "abstract.pdf" "abstract" 1548316756
+  "abstract.dvi" 1548316755 19568 4bb351894a8057813071aa0c77647984 "latex"
   (generated)
   "abstract.pdf"
-["latex"] 1548269006 "abstract.tex" "abstract.dvi" "abstract" 1548269007
+["latex"] 1548316755 "abstract.tex" "abstract.dvi" "abstract" 1548316756
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1480098698 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -33,6 +33,7 @@
   "/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsmath.sty" 1544567569 85093 77cfa18ddbae4d9b74ade33d843686d3 ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty" 1523134290 4116 32e6abd27229755a83a8b7f18e583890 ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty" 1523134290 2432 8ff93b1137020e8f21930562a874ae66 ""
+  "/usr/local/texlive/2018/texmf-dist/tex/latex/base/omscmr.fd" 1523050425 2472 aa08940f0a4dc6c24ae9f943b04ae0b9 ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1480098830 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/dvips.def" 1498170935 5895 4b59bd0c17e1116fd6b6e7c683dea655 ""
   "/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty" 1523134385 15272 5a97061616e0c8b2aa79c6615ff769f4 ""
@@ -44,10 +45,10 @@
   "/usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf" 1544742277 35176 ce7fee66be1fb01dfc6b702a7dbfa0ea ""
   "/usr/local/texlive/2018/texmf-var/web2c/euptex/uplatex.fmt" 1546729829 4480922 3cee28bbb6974c7b005c930359208ca1 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "abstract.aux" 1548269006 1645 bd076195d696de58bae932f485b25338 ""
+  "abstract.aux" 1548316755 1510 eec9b9db40e9853df8177223a3a223cf ""
   "abstract.sty" 1546789096 3783 287c8443ba1cdabb554f3d09c7218a29 ""
-  "abstract.tex" 1548269006 12987 060cc19dc03db25eafa315f5659b1a66 ""
+  "abstract.tex" 1548316755 13355 02cb0f072915d08527dc676cf9221186 ""
   (generated)
-  "abstract.aux"
-  "abstract.log"
   "abstract.dvi"
+  "abstract.log"
+  "abstract.aux"

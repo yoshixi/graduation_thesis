@@ -1,7 +1,7 @@
 %-------------------------------------------------------------------------------
 % 卒論 要約用テンプレート
-% 要約（アブスト）は両面コピーで1枚（2ページ分）です.
-% \vspace{-5mm}などを駆使して詰め込んでください.
+% 要約（アブスト）は両面コピーで1枚（2ページ分）です．
+% \vspace{-5mm}などを駆使して詰め込んでください．
 %-------------------------------------------------------------------------------
 \documentclass[twocolumn]{jsarticle} % 用紙設定
 \usepackage{amsmath,amssymb,amsthm}  % 数学記号
@@ -14,33 +14,33 @@
 %-------------------------------------------------------------------------------
 % タイトル
 %-------------------------------------------------------------------------------
-\title{Distorsion Mapのn-進展開を用いた \\ Miller Algorithm の高速化に関する研究}{Fast Computation of Miller Algorithm with N-ary expansion of Distortion maps}{15D8101012B}{増渕 佳輝}{趙}{2019}
+\title{Distorsion Mapのn-進展開を用いた \\ Miller Algorithm の高速化に関する研究}{Fast Computation of Miller Algorithm with n-adic expansion of Distortion maps}{15D8101012B}{増渕 佳輝}{趙}{2019}
 %-------------------------------------------------------------------------------
-% 要約 : 本論の内容を要約して書きます.
+% 要約 : 本論の内容を要約して書きます．
 %-------------------------------------------------------------------------------
 \vspace{-5cm}
 \paragraph{要約}
-本研究ではペアリング暗号の演算で使用するMiller Algorithmにdistortion mapを用いたBKLS AlgorihtmにWindow法を適用し,高速化を行った.
+本研究ではペアリング暗号の演算で使用するMiller Algorithmにdistortion mapを用いたBKLS AlgorihtmとWindow法を組み合わせることで,高速化を行った．
 %-------------------------------------------------------------------------------
-% キーワード : 論文に関係するキーワードを書きます. 例）楕円曲線暗号, ペアリング
+% キーワード : 論文に関係するキーワードを書きます． 例）楕円曲線暗号, ペアリング
 %-------------------------------------------------------------------------------
 \vspace{-2mm}
 \paragraph{キーワード}
 ペアリング暗号, Tate ペアリング, Miller Algorithm, BKLS Algorithm,
 %-------------------------------------------------------------------------------
-% 序論 : 研究背景を書きます.
+% 序論 : 研究背景を書きます．
 %-------------------------------------------------------------------------------
 \vspace{-5mm}
 \section{序論}
 
 
-楕円曲線暗号とは有限体上の楕円曲線を用いた暗号で, これに対する攻撃方法としてペアリングが用いられた. その後, ペアリングを用いた暗号であるIDベース暗号への応用などに使われ,
+楕円曲線暗号とは有限体上の楕円曲線を用いた暗号で, これに対する攻撃方法としてペアリングが用いられた． その後, ペアリングを用いた暗号であるIDベース暗号への応用などに使われ,
 近年では，ペアリングを用いたプロトコルが数多く提案されている．
 楕円曲線上のペアリングとして,
-Weil ペアリングやTate ペアリングがあるが, 通常の楕円演算に比べて演算量が多く, ペアリング計算の高速化が課題となっている.
+Weil ペアリングやTate ペアリングがあるが, 通常の楕円演算に比べて演算量が多く, ペアリング計算の高速化が課題となっている．
 \par
 
-本研究ではペアリング暗号の演算で使用するMiller Algorithmにdistortion mapを用いることで改良したBKLS Algorihtmに,Window法を適用しのTateペアリングの高速化を行い,計算コストと計算時間の比較を行った.
+本研究ではペアリング暗号の演算で使用するMiller Algorithmにdistortion mapを用いることで改良したBKLS Algorihtmに,Window法を適用しTateペアリングの高速化を行い,計算コストと計算時間の比較を行った．
 
 %-------------------------------------------------------------------------------
 % 節 楕円曲線の定義, Miller's Algorithm, Double-Base Chain
@@ -52,7 +52,7 @@ Weil ペアリングやTate ペアリングがあるが, 通常の楕円演算�
 E:y^2+a_1xy+a_3y=x^3+a_2x^2+a_4x+a_6
 \]
 
-で与えられる.素数$p$,有限体$\mthbb {F}_q$ $(q=p^m)$上の楕円曲線とは,この方程式を満たす有理点$(x,y)$に無限遠点$\mathcal{O}$を加えた集合のことであり, $E(\mathbb {F}_q)$と表す. また,定義体$\mathbb {F}_q$の標数が3より大きい場合は変数変換により, $y^2=x^3+ax+b$と一般化できる.
+で与えられる．素数$p$,有限体$\mthbb {F}_q$ $(q=p^m)$上の楕円曲線とは,この方程式を満たす有理点$(x,y)$に無限遠点$\mathcal{O}$を加えた集合のことであり, $E(\mathbb {F}_q)$と表す． また,定義体$\mathbb {F}_q$の標数が3より大きい場合は変数変換により, $y^2=x^3+ax+b$と一般化できる．
 \section{ペアリング}
 
 \subsection{ペアリングの定義}
@@ -61,9 +61,10 @@ $n$を整数とする．$G_1,G_2$を単位元0の加法アーベル群とする�
 \[
 e:G_1\times G_2\longrightarrow G_3
 \]
-全てのペアリングは以下の2つの性質を満たす．\\
+ペアリングは以下の2つの性質を満たす。ことが知られている。\\
+\begin{itemize}
+\item 双線形性
 
-\item ・双線形性 \\
 全ての$P,P' \in G_{1}$と$Q,Q' \in G_{2}$に対して，
 
 \[
@@ -73,35 +74,34 @@ e(P+P',Q) = e(P,Q) + e(P',Q)
 e(P,Q+Q') = e(P,Q) + e(P,Q') \\
 \]
 が成り立つ．\\
-
-\item ・非退縮性 \\
+\vspace{-1zh}
+\item 非退縮性
 
 全ての$P \in G_{1} \ (P \not= 0)$に対して $e(P,Q) \not= 1$となるような$Q \in G_{2}$が存在する．\\
 　全ての$Q \in G_{2} \ (P \not= 0)$に対して $e(P,Q) \not= 1$となるような$P \in G_{1}$が存在する．
+\end{itemize}
+
 \subsection{Tate ペアリング}
-有限体\ $\mathbb{F}_q$上の楕円曲線を$y^2=x^3+ax+b$とし, 素数\ $n$, 埋め込み次数\ $k$を$n|q^k-1$を満たす最小の整数とする. 楕円曲線上の点$P,Q$を$P\in E(\mathbb{F}_q)[n]$,\ $Q\in E(\mathbb{F}_{q^k})$と定め, Tateペアリングを次に定義する.
+有限体\ $\mathbb{F}_q$上の楕円曲線を$y^2=x^3+ax+b$とし, 素数\ $n$, 埋め込み次数\ $k$を$n|q^k-1$を満たす最小の整数とする． 楕円曲線上の点$P,Q$を$P\in E(\mathbb{F}_q)[n]$,\ $Q\in E(\mathbb{F}_{q^k})$と定め, Tateペアリングを次に定義する．
 \vspace{2mm}
 \[
 E(\mathbb{F}_q)[n]\times E(\mathbb{F}_{q^k})/nE(\mathbb{F}_{q^k})\rightarrow \mathbb{F}_{q^k}^{*}/(\mathbb{F}_{q^k}^{*})^n
 \]
 \vspace{-6mm}
-\[e(P,Q)=f_{n}(Q)^{{(q^k-1)/n}}=(f_P(Q+S)/f_P(S))^{(q^k-1)/n}\]
+\[(P,Q) \mapsto \langle P, Q \rangle _n = f_{n,P}(D)\]
 \subsection{Reduced Tate ペアリング}
-Tate ペアリングの値は剰余類全体の集合$\mathbb{F}_{q^k}^\ast/(\mathbb{F}_{q^k}^\ast)^n$に属しており, $(q^k - 1) / n$乗することで, 一意な値を得られる. Reduced Tate ペアリングを次に定義する.
+Tate ペアリングの値は剰余類全体の集合$\mathbb{F}_{q^k}^\ast/(\mathbb{F}_{q^k}^\ast)^n$に属してお り,Tate ペアリングの値に $(q^k - 1) / n$乗することで, 一意な値を得られる． Reduced Tate ペアリングを次に定義する．
 \vspace{-2mm}
 \[P \in E(\mathbb{F}_q)[n],\ Q \in E(\mathbb{F}_{q^k}),\ \mu_n = \left\{ x \in \mathbb{F}_{q^k}^\ast | x^n = 1 \right\}\]
 \vspace{-4mm}
 \[\tau \langle P,Q \rangle = \langle P,Q \rangle _n^{(q^k - 1) / n} = f_{n,P}(Q)^{(q^k - 1) / n} \in \mu_n\]
 \par
-\vspace{-2mm}
-さらに, $N = hn$に対して次の式が成立する.
-\vspace{-2mm}
-\[
-\tau(P,Q) = \langle P,Q \rangle _n^{(q^k - 1) / n}
-\]
-\vspace{-5mm}
+
 \subsection{Miller Algorithm}
-ペアリングの計算手法としてMiller Algorithmがある. $\mathbb{F}_q$上の楕円曲線のReduced Tate ペアリングにおけるMiller Algorithmを次に示す. 点$U$, $V ∈ E(F_{q^k})$ を通る直線の方程式を $g_{U,V}$ とする。$U=V$の場合$V$を通る$E$の接戦を表す。 \\
+ペアリングの計算手法としてMiller Algorithmがある． $\mathbb{F}_q$上の楕円曲線のReduced Tate ペアリングにおけるMiller Algorithmを次に示す． 点$U$, $V ∈ E(\mathbb{F}_{q^k})$ を通る直線の方程式を $g_{U,V}$ とする。$U=V$の場合$V$を通る$E$の接線を表す。 Miller Algoritmは
+$f_{i+j}=\Bigl(f_if_j\frac{g_{iP,jP}}{g_{\mathcal{O},(i+j)P}}\Bigr)$
+で表される再帰公式を利用する．
+
 \vspace{1zh}
 \begin{longtable}
  \begin{center}
@@ -112,7 +112,7 @@ Tate ペアリングの値は剰余類全体の集合$\mathbb{F}_{q^k}^\ast/(\ma
      \hline
     1: \quad $V \gets P, \ f \gets 1,\ n=\sum^{l-1}_{i=0} n_i 2^i, \ n_i \in \{0,1\}$\\
     2: \quad for $j \gets l-1$ down do 0\\
-    3: \quad \quad $f \gets f^2 \cdot \frac{g_{V,V}(Q)}{g_{\mathcal{O}, 2V}(Q)}.\ V \gets 2V$\\
+    3: \quad \quad $f \gets f^2 \cdot \frac{g_{V,V}(Q)}{g_{\mathcal{O}, 2V}(Q)}．\ V \gets 2V$\\
     4: \quad if $n_j = 1$ then\\
     5: \quad \quad $f \gets f \cdot \frac{g_{V,P}(Q)}{g_{V+P}(Q)},\ V \gets V+P$\\
     6: \quad return $f$\\
@@ -122,7 +122,7 @@ Tate ペアリングの値は剰余類全体の集合$\mathbb{F}_{q^k}^\ast/(\ma
 \end{longtable}
 
 \subsection{BKLS Algorithm}
- supersingular curveのdistortion map $\psi$ を利用して分母消去の手法を適用したBKLS Algorithm \cite{BKLS02}を次に示す. ordinary curveの場合, $Q' \in E'(K)$として, distortion mapではなくtwistの同型写像 $\psi _d$を用いる.
+ supersingular curveのdistortion map $\psi$ を利用して分母消去の手法を適用したBKLS Algorithm \cite{BKLS02}を次に示す． 体$K$をある拡大体$\mathbb{F}_{q^k}$とする。ordinary curveの場合, $Q' \in E'(K)$として, distortion mapではなくtwistの同型写像 $\psi _d$を用いる．
 
 \begin{table}[h]
  \begin{center}
@@ -149,7 +149,7 @@ Tate ペアリングの値は剰余類全体の集合$\mathbb{F}_{q^k}^\ast/(\ma
 
 \subsection{Window Miller Algorithm}
 
-window Miller アルゴリズムは、オンライン事前演算 を用いる方法である。このアルゴリズムでは、$n/w$ 回行うことになるため、適切なwを用いれば、楕円加算および直線 $l _{P, -P_i}$, 垂線 $v _{P_i}$ の計算を削減することができる。
+Window Miller アルゴリズムは、オンライン事前演算 を用いる方法である。このアルゴリズムでは、$n/w$ 回行うことになるため、適切な$w$を用いれば、楕円加算および直線 $g _{P, -P_i}$, 垂線 $g _{\mathcal{O},P_i}$ の計算を削減することができる。
 \par
 
 \begin{longtable}
@@ -181,10 +181,11 @@ Output: $f \in \mathbb{F}_{q^k}$  \\
  \end{center}
 \end{longtable}
 
+
 \section{提案手法}
 BKLS Algorithm, Window Miller Algorithmを組みわせることで新しい高速化手法を提案する。
 
-\begin{table}[htbp]
+\begin{longtable}
  \begin{center}
   \begin{tabular}{|l|}
      \hline
@@ -214,26 +215,42 @@ BKLS Algorithm, Window Miller Algorithmを組みわせることで新しい高�
      \hline
   \end{tabular}
  \end{center}
- \caption{Window方を用いたBKLS Algorithm}
-\end{table}
+\end{longtable}
 
 \section{評価}
-ペアリングで使用する2つの点の位数$n$が大きいほど、高速化できる割合は大きく、埋め込み次数$k$が大きいほど高速化できる割合は小さくなることが分かった。つまり$n$が小さく, $k$が大きいほど、今回提案した手法のメリットを享受できなくなる。提案した手法は、事前演算を必要とするため、場合によって使い分ける必要がある。
+ペアリングで使用する2つの点の位数$n$が大きいほど、高速化できる割合は大きく、埋め込み次数$k$が大きいほど高速化できる割合は小さくなることが分かった。例として以下に、$k=6$,$l=\log_2(n)=160$, $w=4$の場合の計算量を示す。
 
+\begin{table}[htbp]
+ \begin{center}
+  \begin{tabular}{|l|c|c|c|}
+  \hline
+  $k=6$,$l=160$, $w=4$ & 計算コスト \\
+  \hline
+  Miller Algorihtm & 58080M \\
+  \hline
+  Window Miller Algorithm & 53036M \\
+  \hline
+  BKLS Algorithm &  21840M \\
+  \hline
+  提案手法 & 20098M \\
+  \hline
+  \end{tabular}
+ \end{center}
+\end{table}
 \section{今後の課題}
 今後の課題としては,既存のSigned Miller Algorithmや, 3倍算の計算コストが乗算よりも小さいことを利用した標数3の有限体におけるMiller Algorithmにdistortion mapを適用した手法に今回の提案に使用したWindow Miller Algorithmを組み合わせるなどが考えられる。また、今回の手法を適用するのに適した楕円曲線を探すなどが挙げられる。
 %-------------------------------------------------------------------------------
 % 謝辞
 %-------------------------------------------------------------------------------
 \section*{謝辞}
-本研究において, あらゆる面でご指導していただいた趙晋輝教授並びに諸先輩方, 趙研究室の皆様にも深く感謝いたします.
+本研究において, あらゆる面でご指導していただいた趙晋輝教授並びに諸先輩方, 趙研究室の皆様にも深く感謝いたします．
 %-------------------------------------------------------------------------------
-% 参考文献 : 本論とは違い, 主なものだけでもOK.
+% 参考文献 : 本論とは違い, 主なものだけでもOK．
 %-------------------------------------------------------------------------------
 
 \begin{thebibliography}{99}
-\bibitem{BKLS02} P.S.L.M. Barreto, H.Y. Kim, B. Lynn, and M. Scott: {\em Efficient implementation of pairing-based cryptosystem}, Journal of Cryptology, 17(4):321-334, 2004.
-\bibitem{WML} 小林 鉄太郎, 斉藤 泰一, 今井 秀樹: "Pairing 演算の高速化 Fast Computation of Pairing" The 2004 Symposium on Cryptography and Information Security Sendai, Japan, Jan.27-30, 2004
+\bibitem{BKLS02} P．S．L．M． Barreto, H．Y． Kim, B． Lynn, and M． Scott: {\em Efficient implementation of pairing-based cryptosystem}, Journal of Cryptology, 17(4):321-334, 2004．
+\bibitem{WML} 小林 鉄太郎, 斉藤 泰一, 今井 秀樹: "Pairing 演算の高速化 Fast Computation of Pairing" The 2004 Symposium on Cryptography and Information Security Sendai, Japan, Jan．27-30, 2004
 \bibitem{DBCO}大川一樹 :Double-Base Chains を用いたペアリング 暗号における Tate ペアリングの高速化に関する考察
 
 \end{thebibliography}

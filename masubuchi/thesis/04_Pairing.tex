@@ -34,7 +34,7 @@ D=\sum\limits_{P\in (C(\overline{K})}n_P(P)
 \]
 このとき，$n_P\in \mathbb {Z}$は有限であり，$D$は$n_P=0$となるようなものを除いたものとする．$C$上のdivisorの集合はDiv$_{\overline{K}}(C)$
 で表され，加法に関して群構造をなす．divisor $D$の台とは，supp$(D) = \langle P \in E|n_P \neq 0 \rangle$であるとする．divisor $D$の次数とはdeg$(D)=\sum\limits_{P}n_P$であるとする． divisor $D$の和とは，sum$(D)=\sum n_PP$であるとする．\\
-もし, 直線$f$が$C$上で零でない関数だとすると，点$P$における$f$の重複度ord$_P(f)$を数えることができる．ord$_P(f)$は$f(P)=0$のとき正であり，$f$が点$P$で極ならば負である．また，ord$_P(f)$が1ならば$f=0$と$E$が交差し、2ならば$f=0$が$E$に接し$3P\neq \mathcal{O}$となり，3ならば$f=0$が$E$に接し$3P=\mathcal{O}$となる。零でない関数$f$のdivisorは$(f)$と書き，
+もし, 直線$f$が$C$上で零でない関数だとすると，点$P$における$f$の重複度ord$_P(f)$を数えることができる．ord$_P(f)$は$f(P)=0$のとき正であり，$f$が点$P$で極ならば負である．また，ord$_P(f)$が1ならば$f=0$と$E$が交差し、2ならば$f=0$が$E$に接し$3P\neq \mathcal{O}$となり，3ならば$f=0$が$E$に接し$3P=\mathcal{O}$となる．零でない関数$f$のdivisorは$(f)$と書き，
 \[
 \sum\limits_{P\in C(\overline K)}{\rm ord}_P(f)(P)
 \]
@@ -144,7 +144,7 @@ Tate ペアリングの値は剰余類全体の集合$\mathbb{F}_{q^k}^\ast/(\ma
 \[
 P \in E(\mathbb{F}_q)[n],\ Q \in E(\mathbb{F}_{q^k}),\ \mu_n = \left\{ x \in \mathbb{F}_{q^k}^\ast | x^n = 1 \right\}
 \]
-とする. \\
+
 \[
 \tau \langle P,Q \rangle = \langle P,Q \rangle _n^{(q^k - 1) / n} = f_{n,P}(Q)^{(q^k - 1) / n} \in \mu_n
 \]
@@ -221,7 +221,8 @@ f_P(D_Q)^{{(q^k-1)}/n}
 f_{i+j}=\Bigl(f_if_j\frac{l_{iP,jP}}{v_{(i+j)P}}\Bigr)
 \]が得られた．
 \end{proof}
-これを用いてMiller Algorithmは，$(f) = n(P) - n(\mathcal{O})$となるような関数$f$を構成している．次にMiller Algorithmを示す.点$U$, $V ∈ E(F_{q^k})$ を通る直線の方程式を $g_{U,V}$ とする。$U=V$の場合$V$を通る$E$の接戦を表す.\\ 
+これを用いてMiller Algorithmは，$(f) = n(P) - n(\mathcal{O})$となるような関数$f$を構成している．次にMiller Algorithmを示す.$l= \log _2 (n)$とし, 点$U$, $V ∈ E(F_{q^k})$ を通る直線の方程式を $g_{U,V}$ とする。$U=V$の場合$V$を通る \\
+
 \par
 \begin{table}[htbp]
  \begin{center}
@@ -247,7 +248,7 @@ f_{i+j}=\Bigl(f_if_j\frac{l_{iP,jP}}{v_{(i+j)P}}\Bigr)
  \caption{Miller Algorithm}
 \end{table}
 \par
-Miller Algorithmの主な反復は$\log _2(n)$の繰り返しなので，二重の操作は$\log _2(n)$時間で成し遂げられる．
+Miller Algorithmの主な反復は$l$の繰り返しなので，二重の操作は$l$時間で成し遂げられる．
 5行目から10行目までの掛け算と足し算の演算は$n$のHamming Weight以下で計算される．
 それゆえMiller Algorithmは多項式時間で動作する．
 \par
@@ -262,7 +263,7 @@ $n$が大きいとき，このアルゴリズムは$S = [i]P$を取ることに�
 \par
 
 distortion mapというのは，$E(\mathbb{F} _q)$上の点を$E(\mathbb{F} _{q ^k})$上の点に写像するような
-非線形な自己順同型写像である．
+非線形な自己準同型写像である．
 点$P \in E(\mathbb{F} _q)$が位数$n$の点を持つとし，$k > 1$とする．
 $E(\mathbb{F} _{q ^k})$は位数$n ^2$の点を持たないとすると，$E$上の準同型$\psi$によって
 $\psi(P) \notin E(\mathbb{F} _{q ^k})$ならば$e(P, \psi(P)) \not= 1$となる．
@@ -288,7 +289,7 @@ Supersingularとは，以下の条件を1つでも満たす場合をいう．
   \item $\# E(\mathbb{F} _q) \equiv 1 \ (\bmod p)$
         ($p \mid t$で$\# E(\mathbb{F} _q) = q + 1 - t$と等価)
   \item $E$が$\overline{\mathbb{F}} _q$上で位数$p$の点を取らない．
-  \item $\overline{\mathbb{F}} _q$上の$E$の準同型環が非可換である．
+  \item $\overline{\mathbb{F}} _q$上の$E$の自己準同型環が非可換である．
 \end{enumerate}
 もし$E$がsupersingularでない場合，ordinaryであるという．
 Supersingular curveは限られており，それは埋め込み次数が$6$以下であるので，
