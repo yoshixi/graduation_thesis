@@ -218,7 +218,7 @@ BKLS Algorithm, Window Miller Algorithmを組みわせることで新しい高�
 \end{longtable}
 
 \section{評価}
-ペアリングで使用する2つの点の位数$n$が大きいほど、高速化できる割合は大きく、埋め込み次数$k$が大きいほど高速化できる割合は小さくなることが分かった。例として以下に、$k=6$,$l=\log_2(n)=160$, $w=4$の場合の計算量を示す。
+ペアリングで使用する2つの点の位数nのビット列lが80の場合より160の場合の方が、高速化できる割合は大きく、埋め込み次数$k$が大きいほど高速化できる割合は小さくなることが分かった。例として以下に、$k=6$,$l=\log_2(n)=160$, $w=4$の場合の計算量を示す。$M$を乗算の演算量とする。
 
 \begin{table}[htbp]
  \begin{center}
@@ -226,17 +226,18 @@ BKLS Algorithm, Window Miller Algorithmを組みわせることで新しい高�
   \hline
   $k=6$,$l=160$, $w=4$ & 計算コスト \\
   \hline
-  Miller Algorihtm & 58080M \\
+  Miller Algorihtm & 58080$M$ \\
   \hline
-  Window Miller Algorithm & 53036M \\
+  Window Miller Algorithm & 53036$M$ \\
   \hline
-  BKLS Algorithm &  21840M \\
+  BKLS Algorithm &  21840$M$ \\
   \hline
-  提案手法 & 20098M \\
+  提案手法 & 20098$M$ \\
   \hline
   \end{tabular}
  \end{center}
 \end{table}
+\vspace{-2zh}
 \section{今後の課題}
 今後の課題としては,既存のSigned Miller Algorithmや, 3倍算の計算コストが乗算よりも小さいことを利用した標数3の有限体におけるMiller Algorithmにdistortion mapを適用した手法に今回の提案に使用したWindow Miller Algorithmを組み合わせるなどが考えられる。また、今回の手法を適用するのに適した楕円曲線を探すなどが挙げられる。
 %-------------------------------------------------------------------------------
