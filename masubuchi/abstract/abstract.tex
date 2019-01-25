@@ -218,7 +218,7 @@ BKLS Algorithm, Window Miller Algorithmを組みわせることで新しい高�
 \end{longtable}
 
 \section{評価}
-ペアリングで使用する2つの点の位数nのビット列lが80の場合より160の場合の方が、高速化できる割合は大きく、埋め込み次数$k$が大きいほど高速化できる割合は小さくなることが分かった。例として以下に、$k=6$,$l=\log_2(n)=160$, $w=4$の場合の計算量を示す。$M$を乗算の演算量とする。
+ペアリングで使用する2つの点の位数$n$のビット列$l$が長いほど高速化できる割合は大きくなった。例として、$l$が80より160の場合に9.7\%高速化することができた。また,埋め込み次数$k$が大きいほど高速化できる割合は小さくなることが分かった。例として以下に、$k=6$,$l=\log_2(n)=160$, $w=4$の場合の計算量を示す。$M$を乗算の演算量とする。
 
 \begin{table}[htbp]
  \begin{center}
@@ -237,9 +237,10 @@ BKLS Algorithm, Window Miller Algorithmを組みわせることで新しい高�
   \end{tabular}
  \end{center}
 \end{table}
-\vspace{-2zh}
+\vspace{-2.5zh}
 \section{今後の課題}
 今後の課題としては,既存のSigned Miller Algorithmや, 3倍算の計算コストが乗算よりも小さいことを利用した標数3の有限体におけるMiller Algorithmにdistortion mapを適用した手法に今回の提案に使用したWindow Miller Algorithmを組み合わせるなどが考えられる。また、今回の手法を適用するのに適した楕円曲線を探すなどが挙げられる。
+\vspace{-1zh}
 %-------------------------------------------------------------------------------
 % 謝辞
 %-------------------------------------------------------------------------------
@@ -248,7 +249,7 @@ BKLS Algorithm, Window Miller Algorithmを組みわせることで新しい高�
 %-------------------------------------------------------------------------------
 % 参考文献 : 本論とは違い, 主なものだけでもOK．
 %-------------------------------------------------------------------------------
-
+\vspace{-1zh}
 \begin{thebibliography}{99}
 \bibitem{BKLS02} P．S．L．M． Barreto, H．Y． Kim, B． Lynn, and M． Scott: {\em Efficient implementation of pairing-based cryptosystem}, Journal of Cryptology, 17(4):321-334, 2004．
 \bibitem{WML} 小林 鉄太郎, 斉藤 泰一, 今井 秀樹: "Pairing 演算の高速化 Fast Computation of Pairing" The 2004 Symposium on Cryptography and Information Security Sendai, Japan, Jan．27-30, 2004
