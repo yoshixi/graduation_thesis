@@ -1,7 +1,0 @@
-PWD /Users/yoshikimasubuchi/Library/Mobile Documents/com~apple~CloudDocs/university/Amber/share/卒論・修論/2019年度 趙研/masubuchi/tex
-INPUT /usr/local/texlive/2018/texmf.cnf
-INPUT /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
-INPUT /usr/local/texlive/2018/texmf.cnf
-INPUT /usr/local/texlive/2018/texmf-var/web2c/euptex/uplatex.fmt
-INPUT 00_survey.tex
-OUTPUT 00_survey.log
